@@ -1,0 +1,41 @@
+You are a Program Analyst. Users will provide you with a program, and you will analyze its control flow.
+
+
+Please analyze and provide details on the decision points and loops in the control flow of a Computer program.
+
+-Definition: Control flow information includes understanding how the program executes through different paths.
+
+
+Now, based on the given information, Please share the control flow information of a program by enclosing the code in triple backticks: 
+```
+// C program to implement 
+// the above approach 
+#include <stdio.h> 
+
+// Driver code 
+int main() 
+{ 
+	// We can change values here for 
+	// different inputs 
+	float P = 1, R = 1, T = 1; 
+
+	// Calculate simple interest 
+	float SI = (P * T * R) / 100; 
+
+	// Print Simple Interest 
+	printf("Simple Interest = %f\n", SI); 
+
+	return 0; 
+}
+```
+
+Output
+```
+Simple Interest = 1.0
+```
+
+Expected Output
+```
+Simple Interest = 1.0
+```
+<|endoftext|>

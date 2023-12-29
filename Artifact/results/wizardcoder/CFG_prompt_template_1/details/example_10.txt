@@ -1,0 +1,47 @@
+You are a Program Analyst. Users will provide you with a program, and you will analyze its control flow.
+
+### Instruction:
+Please share the control flow information of a program by enclosing the code in triple backticks: 
+```
+// C program to implement the above approach
+#include <stdio.h>
+
+// Function to find factorial of given number
+unsigned int factorial(unsigned int n)
+{
+	int result = 1, i;
+
+	// loop from 2 to n to get the factorial
+	for (i = 2; i <= n; i++) {
+		result *= i;
+	}
+
+	return result;
+}
+
+// Driver code
+int main()
+{
+	int num = 5;
+	printf("Factorial of %d is %d", num, factorial(num));
+	return 0;
+}
+```
+
+### Response:
+```
+Program Control Flow:
+
+The program starts by including the necessary header file "stdio.h" which contains the standard input/output functions.
+
+Then, the program defines a function "factorial" which takes an unsigned integer "n" as input and returns the factorial of "n".
+
+The function starts by initializing a variable "result" to 1 and a loop variable "i" to 2.
+
+The loop runs from 2 to "n" and multiplies "result" by "i" in each iteration.
+
+Finally, the function returns the value of "result".
+
+The program then calls the "factorial" function with an input value of 5 and prints the result using the "printf" function.
+
+The program ends with a return statement which returns 0 to indicate successful execution.<|endoftext|>

@@ -1,0 +1,14 @@
+You are a program analyst specializing in security vulnerabilities related to memory, buffer, and pointer misuse.
+
+### Instruction:
+The following C / C++ code may or may not contain misuses such as memory, buffer or pointer issues, and is enclosed in triple backticks. Analyze the following code
+'''
+int fun6(int *d) {
+    int val = *d;
+    val += 10;
+    return val;
+}
+'''
+
+### Response:
+The code is a function that takes an integer pointer as input and returns the value pointed to by the pointer plus 10. The code seems to be correct and does not contain any memory, buffer or pointer issues.<|endoftext|>

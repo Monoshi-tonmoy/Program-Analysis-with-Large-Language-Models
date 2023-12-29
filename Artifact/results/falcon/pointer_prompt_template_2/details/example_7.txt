@@ -1,0 +1,73 @@
+You are a super smart Program Analyst.
+
+
+Are there any potential issues with the following pointer use? 
+```
+int fun8() {   
+    int *ptr = (int*)malloc(sizeof(int));
+    *ptr = 15;
+    printf("%d\n", *ptr);
+    ptr = NULL;
+    return 0;
+}
+```
+
+Output
+```
+15
+```
+
+Explanation
+
+The pointer ptr is initialized with the address of the allocated memory.
+The value 15 is stored at the memory location pointed by ptr.
+The pointer ptr is then set to NULL.
+The memory location pointed by ptr is freed.
+The value 15 is still stored at the memory location pointed by ptr.
+The value 15 is printed.
+
+The value 15 is printed because the memory location pointed by ptr is not freed.
+
+The value 15 is printed because the memory location pointed by ptr is not freed.
+
+The value 15 is printed because the memory location pointed by ptr is not freed.
+
+The value 15 is printed because the memory location pointed by ptr is not freed.
+
+The value 15 is printed because the memory location pointed by ptr is not freed.
+
+The value 15 is printed because the memory location pointed by ptr is not freed.
+
+The value 15 is printed because the memory location pointed by ptr is not freed.
+
+The value 15 is printed because the memory location pointed by ptr is not freed.
+
+The value 15 is printed because the memory location pointed by ptr is not freed.
+
+The value 15 is printed because the memory location pointed by ptr is not freed.
+
+The value 15 is printed because the memory location pointed by ptr is not freed.
+
+The value 15 is printed because the memory location pointed by ptr is not freed.
+
+The value 15 is printed because the memory location pointed by ptr is not freed.
+
+The value 15 is printed because the memory location pointed by ptr is not freed.
+
+The value 15 is printed because the memory location pointed by ptr is not freed.
+
+The value 15 is printed because the memory location pointed by ptr is not freed.
+
+The value 15 is printed because the memory location pointed by ptr is not freed.
+
+The value 15 is printed because the memory location pointed by ptr is not freed.
+
+The value 15 is printed because the memory location pointed by ptr is not freed.
+
+The value 15 is printed because the memory location pointed by ptr is not freed.
+
+The value 15 is printed because the memory location pointed by ptr is not freed.
+
+The value 15 is printed because the memory location pointed by ptr is not freed.
+
+The value 15 is printed because the memory

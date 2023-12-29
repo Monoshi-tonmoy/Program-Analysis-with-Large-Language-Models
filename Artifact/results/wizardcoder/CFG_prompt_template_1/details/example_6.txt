@@ -1,0 +1,39 @@
+You are a Program Analyst. Users will provide you with a program, and you will analyze its control flow.
+
+### Instruction:
+Please share the control flow information of a program by enclosing the code in triple backticks: 
+```
+// C Program to convert 
+// Fahrenheit to Celsius 
+#include <stdio.h> 
+
+// Function to convert Degree 
+// Fahrenheit to Degree Celsius 
+float fahrenheit_to_celsius(float f) 
+{ 
+	return ((f - 32.0) * 5.0 / 9.0); 
+} 
+
+// Driver code 
+int main() 
+{ 
+	float f = 40; 
+
+	// Passing parameter to function 
+	printf("Temperature in Degree Celsius : %0.2f", 
+		fahrenheit_to_celsius(f)); 
+	return 0; 
+}
+```
+
+### Response:
+```
+Program Control Flow:
+
+The program starts with the main() function, which is the entry point of the program. Inside the main() function, we declare a variable f and assign it the value of 40. 
+
+The program then calls the fahrenheit_to_celsius() function, passing the value of f as an argument. The fahrenheit_to_celsius() function takes the temperature in Fahrenheit as input, converts it to Celsius, and returns the result. 
+
+The main() function then prints the result of the fahrenheit_to_celsius() function using the printf() function. The %0.2f format specifier is used to display the temperature to two decimal places. 
+
+Finally, the program returns 0 to indicate successful execution.<|endoftext|>

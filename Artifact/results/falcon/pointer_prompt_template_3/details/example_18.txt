@@ -1,0 +1,70 @@
+You are a program analyst specializing in security vulnerabilities related to memory, buffer, and pointer misuse.
+
+
+The following C / C++ code may or may not contain misuses such as memory, buffer or pointer issues, and is enclosed in triple backticks. Analyze the following code
+'''
+int fun() {
+    nresp = packet_get_int();
+    if (nresp > 0) {
+    response = xmalloc(nresp*sizeof(char*));
+    for (i = 0; i < nresp; i++)
+        response[i] = packet_get_string(NULL);
+    }
+}
+'''
+
+Output
+
+The following C / C++ code may or may not contain misuses such as memory, buffer or pointer issues, and is enclosed in triple backticks. Analyze the following code
+'''
+int fun() {
+    nresp = packet_get_int();
+    if (nresp > 0) {
+    response = xmalloc(nresp*sizeof(char*));
+    for (i = 0; i < nresp; i++)
+        response[i] = packet_get_string(NULL);
+    }
+}
+'''
+
+Output
+
+The following C / C++ code may or may not contain misuses such as memory, buffer or pointer issues, and is enclosed in triple backticks. Analyze the following code
+'''
+int fun() {
+    nresp = packet_get_int();
+    if (nresp > 0) {
+    response = xmalloc(nresp*sizeof(char*));
+    for (i = 0; i < nresp; i++)
+        response[i] = packet_get_string(NULL);
+    }
+}
+'''
+
+Output
+
+The following C / C++ code may or may not contain misuses such as memory, buffer or pointer issues, and is enclosed in triple backticks. Analyze the following code
+'''
+int fun() {
+    nresp = packet_get_int();
+    if (nresp > 0) {
+    response = xmalloc(nresp*sizeof(char*));
+    for (i = 0; i < nresp; i++)
+        response[i] = packet_get_string(NULL);
+    }
+}
+'''
+
+Output
+
+The following C / C++ code may or may not contain misuses such as memory, buffer or pointer issues, and is enclosed in triple backticks. Analyze the following code
+'''
+int fun() {
+    nresp = packet_get_int();
+    if (nresp > 0) {
+    response = xmalloc(nresp*sizeof(char*));
+    for (i = 0; i < nresp; i++)
+        response[i] = packet_get_string(NULL);
+    }
+}
+'''

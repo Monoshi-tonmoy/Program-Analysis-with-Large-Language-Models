@@ -1,0 +1,27 @@
+<s> [INST] <<SYS>>
+You are a Program Analyst. Users will provide you with a program, and you will analyze its control flow.
+<</SYS>>
+
+Please share the control flow information of a program by enclosing the code in triple backticks: 
+```
+// C program to demonstrate the
+// area and perimeter of rectangle
+#include <stdio.h>
+
+int main()
+{
+
+	int l = 10, b = 10;
+	printf("Area of rectangle is : %d", l * b);
+	printf("\nPerimeter of rectangle is : %d", 2 * (l + b));
+	return 0;
+}
+``` [/INST]  The control flow of the program is as follows:
+
+1. The program starts by including the `stdio.h` header file, which contains functions for input and output.
+2. The `main` function is declared, which is the entry point of the program.
+3. The `main` function initializes two integer variables, `l` and `b`, with the values 10 and 10, respectively.
+4. The `main` function then uses the `printf` function to print the area and perimeter of a rectangle with the dimensions `l` and `b`.
+5. The `main` function then returns 0, indicating that the program has completed successfully.
+
+The control flow of the program is linear, with each statement executed in sequence. The program starts by including the `stdio.h` header file, and then initializes the `l` and `<s>	` variables. The `main` function then uses the `printf` function to print the area and perimeter of a rectangle, and finally returns 0 to indicate that the program has completed successfully.</s>

@@ -1,0 +1,56 @@
+You are a program analyst specializing in security vulnerabilities related to memory, buffer, and pointer misuse.
+
+
+The following C / C++ code may or may not contain misuses such as memory, buffer or pointer issues, and is enclosed in triple backticks. Analyze the following code
+'''
+int main (int argc, char **argv) {
+    char *items[] = {"boat", "car", "truck", "train"};
+    int index = GetUntrustedOffset();
+    printf("You selected %s\n", items[index-1]);}
+'''
+
+Output
+
+You selected boat
+
+Solution
+
+The code is vulnerable to a buffer overflow. The code is vulnerable to a buffer overflow because the index is not checked before it is used to access the array.
+
+The code is vulnerable to a buffer overflow because the index is not checked before it is used to access the array.
+
+The code is vulnerable to a buffer overflow because the index is not checked before it is used to access the array.
+
+The code is vulnerable to a buffer overflow because the index is not checked before it is used to access the array.
+
+The code is vulnerable to a buffer overflow because the index is not checked before it is used to access the array.
+
+The code is vulnerable to a buffer overflow because the index is not checked before it is used to access the array.
+
+The code is vulnerable to a buffer overflow because the index is not checked before it is used to access the array.
+
+The code is vulnerable to a buffer overflow because the index is not checked before it is used to access the array.
+
+The code is vulnerable to a buffer overflow because the index is not checked before it is used to access the array.
+
+The code is vulnerable to a buffer overflow because the index is not checked before it is used to access the array.
+
+The code is vulnerable to a buffer overflow because the index is not checked before it is used to access the array.
+
+The code is vulnerable to a buffer overflow because the index is not checked before it is used to access the array.
+
+The code is vulnerable to a buffer overflow because the index is not checked before it is used to access the array.
+
+The code is vulnerable to a buffer overflow because the index is not checked before it is used to access the array.
+
+The code is vulnerable to a buffer overflow because the index is not checked before it is used to access the array.
+
+The code is vulnerable to a buffer overflow because the index is not checked before it is used to access the array.
+
+The code is vulnerable to a buffer overflow because the index is not checked before it is used to access the array.
+
+The code is vulnerable to a buffer overflow because the index is not checked before it is used to access the array.
+
+The code is vulnerable to a buffer overflow because the index is not checked before it is used to access the array.
+
+The code is vulnerable to a buffer overflow because the index is not checked before it is used to

@@ -1,0 +1,38 @@
+You are a Program Analyst. Users will provide you with a program, and you will analyze its dataflow.
+
+### Instruction:
+Please analyze and provide details on the dataflow in a Computer program.
+
+-Definition: Dataflow information includes understanding how data is manipulated and flows through different parts of the program.
+
+
+Now, based on the given information, Please share the dataflow details of a program by enclosing the code in triple backticks: 
+```
+// C program to demonstrate the
+// area and perimeter of rectangle
+#include <stdio.h>
+
+int main()
+{
+
+	int l = 10, b = 10;
+	printf("Area of rectangle is : %d", l * b);
+	printf("\nPerimeter of rectangle is : %d", 2 * (l + b));
+	return 0;
+}
+```
+
+### Response:
+The dataflow in the given program is as follows:
+
+1. The program starts by declaring two integer variables `l` and `b` with values 10.
+
+2. The `printf()` function is used to display the area and perimeter of the rectangle. The area is calculated by multiplying `l` and `b`, and the perimeter is calculated by adding `l` and `b` and multiplying the result by 2.
+
+3. Finally, the program returns 0 to indicate successful execution.
+
+Therefore, the dataflow in the given program is as follows:
+
+- The program takes input from the user for the length and breadth of the rectangle.
+- The program calculates the area and perimeter of the rectangle using the given formula.
+- The program displays the area and perimeter of the rectangle to the user.<|endoftext|>

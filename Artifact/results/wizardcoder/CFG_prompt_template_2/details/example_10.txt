@@ -1,0 +1,51 @@
+You are a Program Analyst. Users will provide you with a program, and you will analyze its control flow.
+
+### Instruction:
+Please analyze and provide details on the decision points and loops in the control flow of a Computer program.
+
+-Definition: Control flow information includes understanding how the program executes through different paths.
+
+
+Now, based on the given information, Please share the control flow information of a program by enclosing the code in triple backticks: 
+```
+// C program to implement the above approach
+#include <stdio.h>
+
+// Function to find factorial of given number
+unsigned int factorial(unsigned int n)
+{
+	int result = 1, i;
+
+	// loop from 2 to n to get the factorial
+	for (i = 2; i <= n; i++) {
+		result *= i;
+	}
+
+	return result;
+}
+
+// Driver code
+int main()
+{
+	int num = 5;
+	printf("Factorial of %d is %d", num, factorial(num));
+	return 0;
+}
+```
+
+### Response:
+The control flow of the program is as follows:
+
+1. The program starts executing from the main() function.
+2. In the main() function, the value of num is assigned to 5.
+3. The printf() function is called to display the factorial of num.
+4. The factorial() function is called with num as the argument.
+5. In the factorial() function, a variable result is initialized to 1.
+6. A for loop is used to iterate from 2 to n (where n is the argument passed to the factorial() function).
+7. In each iteration of the loop, the value of result is multiplied by i.
+8. After the loop completes, the value of result is returned.
+9. The value returned by the factorial() function is stored in a variable called result.
+10. The value of result is then printed using the printf() function.
+11. The program then exits from the main() function.
+
+There are no decision points or loops in the program.<|endoftext|>

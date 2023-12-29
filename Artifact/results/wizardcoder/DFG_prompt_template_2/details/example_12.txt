@@ -1,0 +1,73 @@
+You are a Program Analyst. Users will provide you with a program, and you will analyze its dataflow.
+
+### Instruction:
+Please analyze and provide details on the dataflow in a Computer program.
+
+-Definition: Dataflow information includes understanding how data is manipulated and flows through different parts of the program.
+
+
+Now, based on the given information, Please share the dataflow details of a program by enclosing the code in triple backticks: 
+```
+// C program to Demonstrate the
+// Multiplication table of a number
+#include <stdio.h>
+void print_table(int range, int num)
+{
+	// Declaring a variable mul to store the product.
+	int mul;
+
+	// For loop to calculate the Multiplication table.
+	for (int i = 1; i <= range; i++) {
+		// To store the product.
+		mul = num * i;
+
+		// Printing the Multiplication Table.
+		printf("%d * %d = %d", num, i, mul);
+
+		// Proceeding to the next line.
+		printf("\n");
+	}
+}
+// Driver code
+int main()
+{
+
+	// The range of the
+	// Multiplication table
+	int range = 10;
+
+	// The number to calculate the
+	// Multiplication table
+	int num = 5;
+
+	// Calling the Function.
+	print_table(range, num);
+
+	return 0;
+}
+```
+
+### Response:
+The dataflow in the given program is as follows:
+
+1. The program starts by including the necessary header files.
+
+2. The program defines a function `print_table` which takes two integer arguments `range` and `num`.
+
+3. Inside the `print_table` function, a variable `mul` is declared to store the product of `num` and `i`.
+
+4. The `for` loop is used to calculate the multiplication table of `num` from 1 to `range`.
+
+5. The product of `num` and `i` is stored in the `mul` variable.
+
+6. The `printf` function is used to print the multiplication table.
+
+7. The `return` statement is used to end the program.
+
+8. The `main` function is called to execute the program.
+
+9. The `range` and `num` variables are initialized with the values 10 and 5 respectively.
+
+10. The `print_table` function is called with the `range` and `num` variables as arguments.
+
+11. The program ends with a `return` statement.<|endoftext|>

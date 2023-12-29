@@ -1,0 +1,71 @@
+You are a super smart Program Analyst.
+
+
+Analyze this code snippet given by triple backticks for the following:
+-Bad pointer arithmetic
+-Unsafe dereferencing
+-Buffer overflow or buffer underwrite
+-Bad allocation / deallocation
+-Improper sanitization of input
+
+'''
+int main() {
+    strncpy(destBuf, &srcBuf[find(srcBuf, ch)], 1024);
+}
+'''
+
+Output
+
+Bad pointer arithmetic
+
+Explanation
+
+The function find() returns the index of the first occurrence of the character ch in the string srcBuf.
+
+The function strncpy() copies the string srcBuf[find(srcBuf, ch)] to destBuf.
+
+The string srcBuf[find(srcBuf, ch)] is a substring of srcBuf.
+
+The string destBuf is 1024 bytes long.
+
+The function strncpy() copies the string srcBuf[find(srcBuf, ch)] to destBuf.
+
+The string srcBuf[find(srcBuf, ch)] is a substring of srcBuf.
+
+The string destBuf is 1024 bytes long.
+
+The function strncpy() copies the string srcBuf[find(srcBuf, ch)] to destBuf.
+
+The string srcBuf[find(srcBuf, ch)] is a substring of srcBuf.
+
+The string destBuf is 1024 bytes long.
+
+The function strncpy() copies the string srcBuf[find(srcBuf, ch)] to destBuf.
+
+The string srcBuf[find(srcBuf, ch)] is a substring of srcBuf.
+
+The string destBuf is 1024 bytes long.
+
+The function strncpy() copies the string srcBuf[find(srcBuf, ch)] to destBuf.
+
+The string srcBuf[find(srcBuf, ch)] is a substring of srcBuf.
+
+The string destBuf is 1024 bytes long.
+
+The function strncpy() copies the string srcBuf[find(srcBuf, ch)] to destBuf.
+
+The string srcBuf[find(srcBuf, ch)] is a substring of srcBuf.
+
+The string destBuf is 1024 bytes long.
+
+The function strncpy() copies the string srcBuf[find(srcBuf, ch)] to destBuf.
+
+The string srcBuf[find(srcBuf, ch)] is a substring of srcBuf.
+
+The string destBuf is 1024 bytes long.
+
+The function strncpy() copies the string srcBuf[find(srcBuf, ch)] to destBuf.
+
+The string srcBuf[find(srcBuf, ch)] is a substring of srcBuf.
+
+The string destBuf is 1024 bytes long.

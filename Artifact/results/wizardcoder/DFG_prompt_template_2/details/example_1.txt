@@ -1,0 +1,56 @@
+You are a Program Analyst. Users will provide you with a program, and you will analyze its dataflow.
+
+### Instruction:
+Please analyze and provide details on the dataflow in a Computer program.
+
+-Definition: Dataflow information includes understanding how data is manipulated and flows through different parts of the program.
+
+
+Now, based on the given information, Please share the dataflow details of a program by enclosing the code in triple backticks: 
+```
+#include <stdio.h>
+
+int main() {
+    int A, B, sum = 0;
+
+    // Ask user to enter the two numbers
+    printf("Enter two numbers A and B : \n");
+
+    // Read two numbers from the user || A = 2, B = 3
+    scanf("%d%d", &A, &B);
+
+    // Calculate the addition of A and B
+    // using '+' operator
+    sum = A + B;
+
+    // Print the sum
+    printf("Sum of A and B is: %d", sum);
+
+    return 0;
+}
+```
+
+### Response:
+The dataflow in the given program is as follows:
+
+1. The program starts by including the necessary header files such as `stdio.h` which provides input/output functions.
+
+2. The `main()` function is the starting point of the program.
+
+3. Inside the `main()` function, three variables are declared: `A`, `B`, and `sum`.
+
+4. The program then asks the user to enter two numbers `A` and `B` using the `printf()` function.
+
+5. The user inputs the two numbers using the `scanf()` function and stores them in the variables `A` and `B`.
+
+6. The program then calculates the sum of `A` and `B` using the `+` operator and stores the result in the variable `sum`.
+
+7. Finally, the program prints the sum using the `printf()` function.
+
+8. The program then returns 0 to indicate successful execution of the program.
+
+Therefore, the dataflow in the given program is as follows:
+
+- The program reads two numbers from the user and stores them in the variables `A` and `B`.
+- The program then calculates the sum of `A` and `B` and stores the result in the variable `sum`.
+- The program prints the sum to the user.<|endoftext|>

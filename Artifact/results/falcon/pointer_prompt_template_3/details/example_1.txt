@@ -1,0 +1,24 @@
+You are a program analyst specializing in security vulnerabilities related to memory, buffer, and pointer misuse.
+
+
+The following C / C++ code may or may not contain misuses such as memory, buffer or pointer issues, and is enclosed in triple backticks. Analyze the following code
+'''
+int fun2() {
+    int num = 10;
+    int *intptr = &num;
+    float *floatptr = (float *)&num;
+
+    *floatptr = 20.5;
+
+    printf("Value of num: %d\n", num);
+    printf("Value at floatptr: %f\n", *floatptr);
+
+    return 0;
+}
+'''
+
+Output
+
+Value of num: 10
+Value at floatptr: 20.5
+<|endoftext|>

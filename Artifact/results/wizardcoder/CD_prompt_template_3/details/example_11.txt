@@ -1,0 +1,141 @@
+You are a Program Analyst. Users will provide you with a program, and you will analyze its cyclic dependencies.
+
+### Instruction:
+Please analyze and provide details on the cyclic dependencies in a Python program.
+-Definition: Cyclic dependency analysis involves understanding how dependencies form cycles within different parts of the program.
+
+-Example Scenario: Consider a program that involves multiple modules with interdependent imports. Analyze the cyclic dependencies to identify how modules are interconnected in a cyclic manner.
+
+
+Now, based on the given information, please share the cyclic dependency analysis details by enclosing the code in triple backticks: 
+```
+// C Program to make a Simple Calculator
+// Using switch case
+#include <stdio.h>
+#include <stdlib.h>
+
+// Driver code
+int main()
+{
+	char ch;
+	double a, b;
+	while (1) {
+		printf("Enter an operator (+, -, *, /), "
+			"if want to exit press x: ");
+		scanf(" %c", &ch);
+
+		// to exit
+		if (ch == 'x')
+			exit(0);
+		printf("Enter two first and second operand: ");
+		scanf("%lf %lf", &a, &b);
+
+		// Using switch case we will differentiate
+		// operations based on different operator
+		switch (ch) {
+
+		// For Addition
+		case '+':
+			printf("%.1lf + %.1lf = %.1lf\n", a, b, a + b);
+			break;
+
+		// For Subtraction
+		case '-':
+			printf("%.1lf - %.1lf = %.1lf\n", a, b, a - b);
+			break;
+
+		// For Multiplication
+		case '*':
+			printf("%.1lf * %.1lf = %.1lf\n", a, b, a * b);
+			break;
+
+		// For Division
+		case '/':
+			printf("%.1lf / %.1lf = %.1lf\n", a, b, a / b);
+			break;
+
+		// If operator doesn't match any case constant
+		default:
+			printf(
+				"Error! please write a valid operator\n");
+		}
+
+		printf("\n");
+	}
+}
+```
+
+### Response:
+The given program has a cyclic dependency because it imports itself in the main function. This means that the program is dependent on itself and cannot be executed without running into an infinite loop. 
+
+To fix this cyclic dependency, we need to break the circular dependency by removing the self-import. We can do this by moving the main function to a separate file and importing it in the other files. 
+
+Here's the updated code:
+
+```
+// C Program to make a Simple Calculator
+// Using switch case
+#include <stdio.h>
+#include <stdlib.h>
+
+// Function to perform addition
+double add(double a, double b)
+{
+	return a + b;
+}
+
+// Function to perform subtraction
+double subtract(double a, double b)
+{
+	return a - b;
+}
+
+// Function to perform multiplication
+double multiply(double a, double b)
+{
+	return a * b;
+}
+
+// Function to perform division
+double divide(double a, double b)
+{
+	return a / b;
+}
+
+// Driver code
+int main()
+{
+	char ch;
+	double a, b;
+	while (1) {
+		printf("Enter an operator (+, -, *, /), "
+			"if want to exit press x: ");
+		scanf(" %c", &ch);
+
+		// to exit
+		if (ch == 'x')
+			exit(0);
+		printf("Enter two first and second operand: ");
+		scanf("%lf %lf", &a, &b);
+
+		// Using switch case we will differentiate
+		// operations based on different operator
+		switch (ch) {
+
+		// For Addition
+		case '+':
+			printf("%.1lf + %.1lf = %.1lf\n", a, b, add(a, b));
+			break;
+
+		// For Subtraction
+		case '-':
+			printf("%.1lf - %.1lf = %.1lf\n", a, b, subtract(a, b));
+			break;
+
+		// For Multiplication
+		case '*':
+			printf("%.1lf * %.1lf = %.1lf\n", a, b, multiply(a, b));
+			break;
+
+		// For Division
+		case '/':

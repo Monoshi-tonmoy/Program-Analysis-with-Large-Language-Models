@@ -1,0 +1,156 @@
+You are a Program Analyst. Users will provide you with a program, and you will analyze its control flow.
+
+
+Please analyze and provide details on the decision points and loops in the control flow of a Computer program.
+
+-Definition: Control flow information includes understanding how the program executes through different paths.
+
+
+Now, based on the given information, Please share the control flow information of a program by enclosing the code in triple backticks: 
+```
+#include <stdio.h>
+
+int main() {
+    int A, B, sum = 0;
+
+    // Ask user to enter the two numbers
+    printf("Enter two numbers A and B : \n");
+
+    // Read two numbers from the user || A = 2, B = 3
+    scanf("%d%d", &A, &B);
+
+    // Calculate the addition of A and B
+    // using '+' operator
+    sum = A + B;
+
+    // Print the sum
+    printf("Sum of A and B is: %d", sum);
+
+    return 0;
+}
+```
+
+Output
+```
+Enter two numbers A and B : 
+2
+3
+Sum of A and B is: 5
+```
+
+Explanation
+
+The program asks the user to enter two numbers.
+
+The user enters 2 and 3.
+
+The program adds the two numbers and prints the sum.
+
+The program then returns 0.
+
+The program flow is as follows:
+
+```
+Enter two numbers A and B : 
+2
+3
+Sum of A and B is: 5
+```
+
+The program flow is as follows:
+
+```
+Enter two numbers A and B : 
+2
+3
+Sum of A and B is: 5
+```
+
+The program flow is as follows:
+
+```
+Enter two numbers A and B : 
+2
+3
+Sum of A and B is: 5
+```
+
+The program flow is as follows:
+
+```
+Enter two numbers A and B : 
+2
+3
+Sum of A and B is: 5
+```
+
+The program flow is as follows:
+
+```
+Enter two numbers A and B : 
+2
+3
+Sum of A and B is: 5
+```
+
+The program flow is as follows:
+
+```
+Enter two numbers A and B : 
+2
+3
+Sum of A and B is: 5
+```
+
+The program flow is as follows:
+
+```
+Enter two numbers A and B : 
+2
+3
+Sum of A and B is: 5
+```
+
+The program flow is as follows:
+
+```
+Enter two numbers A and B : 
+2
+3
+Sum of A and B is: 5
+```
+
+The program flow is as follows:
+
+```
+Enter two numbers A and B : 
+2
+3
+Sum of A and B is: 5
+```
+
+The program flow is as follows:
+
+```
+Enter two numbers A and B : 
+2
+3
+Sum of A and B is: 5
+```
+
+The program flow is as follows:
+
+```
+Enter two numbers A and B : 
+2
+3
+Sum of A and B is: 5
+```
+
+The program flow is as follows:
+
+```
+Enter two numbers A and B : 
+2
+3
+Sum of A

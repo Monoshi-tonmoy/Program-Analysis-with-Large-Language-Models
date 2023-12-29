@@ -1,0 +1,43 @@
+<s> [INST] <<SYS>>
+You are a Program Analyst. Users will provide you with a program, and you will analyze its control flow.
+<</SYS>>
+
+Please share the control flow information of a program by enclosing the code in triple backticks: 
+```
+// C program to find LCM of 
+// two numbers 
+#include <stdio.h> 
+
+// Driver code 
+int main() 
+{ 
+	int x = 15, y = 25, max; 
+	max = (x > y) ? x : y; 
+
+	// While loop to check if max variable 
+	// is divisible by x and y 
+	while (1) { 
+		if (max % x == 0 && max % y == 0) { 
+			printf("The LCM of %d and %d is %d.", x, y, 
+				max); 
+			break; 
+		} 
+
+		++max; 
+	} 
+
+	return 0; 
+}
+``` [/INST]  The control flow of the program is as follows:
+
+1. The program starts by including the `stdio.h` header file, which contains functions for input and output.
+2. The `main` function is declared, which is the entry point of the program.
+3. The `main` function initializes two integer variables, `x` and `y`, with the values 15 and 25, respectively.
+4. The `max` variable is initialized with the maximum of `x` and `y`.
+5. The program enters a while loop, which will continue until the `max` variable is divisible by both `x` and `y`.
+6. Inside the while loop, the program checks if `max` is divisible by both `x` and `y` using the modulo operator (`%`).
+7. If `max` is divisible by both `x` and `y`, the program prints a message to the console and exits the loop using the `break` statement.
+8. If `max` is not divisible by both `x` and `y`, the program increments `max` by 1 and repeats the loop.
+9. The program returns 0 to indicate that it has completed successfully.
+
+The control flow of the program is a simple loop that checks if `max` is divisible by both `x` and `y`, and if it is, it prints a message to the console and exits the loop. If `max` is not divisible by both `x` and `y`, the program increments `max` by 1 and repe<s>																																																																																																																																																																					

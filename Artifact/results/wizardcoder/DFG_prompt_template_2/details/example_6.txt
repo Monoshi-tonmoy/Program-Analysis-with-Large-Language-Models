@@ -1,0 +1,53 @@
+You are a Program Analyst. Users will provide you with a program, and you will analyze its dataflow.
+
+### Instruction:
+Please analyze and provide details on the dataflow in a Computer program.
+
+-Definition: Dataflow information includes understanding how data is manipulated and flows through different parts of the program.
+
+
+Now, based on the given information, Please share the dataflow details of a program by enclosing the code in triple backticks: 
+```
+// C Program to convert 
+// Fahrenheit to Celsius 
+#include <stdio.h> 
+
+// Function to convert Degree 
+// Fahrenheit to Degree Celsius 
+float fahrenheit_to_celsius(float f) 
+{ 
+	return ((f - 32.0) * 5.0 / 9.0); 
+} 
+
+// Driver code 
+int main() 
+{ 
+	float f = 40; 
+
+	// Passing parameter to function 
+	printf("Temperature in Degree Celsius : %0.2f", 
+		fahrenheit_to_celsius(f)); 
+	return 0; 
+}
+```
+
+### Response:
+The dataflow in the given program is as follows:
+
+1. The program starts by including the necessary header files.
+
+2. The program defines a function `fahrenheit_to_celsius` which takes a temperature in Fahrenheit as input and returns the temperature in Celsius.
+
+3. The program then defines a `main` function which initializes a variable `f` with a value of 40 degrees Fahrenheit.
+
+4. The program then calls the `fahrenheit_to_celsius` function with the value of `f` as input and stores the result in a variable `c`.
+
+5. Finally, the program prints the temperature in Celsius using the `printf` function.
+
+The dataflow of the program is as follows:
+
+- The program starts by including the necessary header files.
+- The program defines a function `fahrenheit_to_celsius` which takes a temperature in Fahrenheit as input and returns the temperature in Celsius.
+- The program then defines a `main` function which initializes a variable `f` with a value of 40 degrees Fahrenheit.
+- The program then calls the `fahrenheit_to_celsius` function with the value of `f` as input and stores the result in a variable `c`.
+- Finally, the program prints the temperature in Celsius using the `printf` function.<|endoftext|>

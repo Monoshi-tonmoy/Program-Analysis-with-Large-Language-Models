@@ -1,0 +1,80 @@
+You are a super smart Program Analyst.
+
+
+Analyze the pointers in the following code.
+```
+int fun9() {
+    int *ptr;
+    *ptr = 15;
+    int temp = *ptr;
+    free(ptr);
+    return temp;
+}
+```
+
+Output
+```
+15
+```
+
+Explanation
+
+The pointer ptr is pointing to the memory location 15.
+
+The value of ptr is 0x7fff5a0a0a0.
+
+The value of *ptr is 15.
+
+The value of temp is 15.
+
+The value of ptr after free() is 0x7fff5a0a0a0.
+
+The value of *ptr after free() is 0.
+
+The value of temp after free() is 0.
+
+The value of ptr after free() is 0x7fff5a0a0a0.
+
+The value of *ptr after free() is 0.
+
+The value of temp after free() is 0.
+
+The value of ptr after free() is 0x7fff5a0a0a0.
+
+The value of *ptr after free() is 0.
+
+The value of temp after free() is 0.
+
+The value of ptr after free() is 0x7fff5a0a0a0.
+
+The value of *ptr after free() is 0.
+
+The value of temp after free() is 0.
+
+The value of ptr after free() is 0x7fff5a0a0a0.
+
+The value of *ptr after free() is 0.
+
+The value of temp after free() is 0.
+
+The value of ptr after free() is 0x7fff5a0a0a0.
+
+The value of *ptr after free() is 0.
+
+The value of temp after free() is 0.
+
+The value of ptr after free() is 0x7fff5a0a0a0.
+
+The value of *ptr after free() is 0.
+
+The value of temp after free() is 0.
+
+The value of ptr after free() is 0x7fff5a0a0a0.
+
+The value of *ptr after free() is 0.
+
+The value of temp after free() is 0.
+
+The value of ptr after free() is 0x7fff5a0a0a0.
+
+The value of *ptr after free() is 0.

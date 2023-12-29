@@ -1,0 +1,23 @@
+You are a super smart Program Analyst.
+
+
+Are there any potential issues with the following pointer use? 
+```
+int fun4() {
+    int *ptr = NULL;
+    int value;
+    value = *ptr;
+    return 0;
+}
+```
+
+Output
+```
+0
+```
+
+Explanation
+```
+The value of ptr is NULL. So, the value of value is 0.
+```
+<|endoftext|>

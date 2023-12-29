@@ -1,0 +1,82 @@
+You are a Program Analyst. Users will provide you with a program, and you will analyze its dataflow.
+
+### Instruction:
+Please analyze and provide details on the dataflow in a Computer program.
+
+-Definition: Dataflow information includes understanding how data is manipulated and flows through different parts of the program.
+
+
+Now, based on the given information, Please share the dataflow details of a program by enclosing the code in triple backticks: 
+```
+// C Program to make a Simple Calculator
+// Using switch case
+#include <stdio.h>
+#include <stdlib.h>
+
+// Driver code
+int main()
+{
+	char ch;
+	double a, b;
+	while (1) {
+		printf("Enter an operator (+, -, *, /), "
+			"if want to exit press x: ");
+		scanf(" %c", &ch);
+
+		// to exit
+		if (ch == 'x')
+			exit(0);
+		printf("Enter two first and second operand: ");
+		scanf("%lf %lf", &a, &b);
+
+		// Using switch case we will differentiate
+		// operations based on different operator
+		switch (ch) {
+
+		// For Addition
+		case '+':
+			printf("%.1lf + %.1lf = %.1lf\n", a, b, a + b);
+			break;
+
+		// For Subtraction
+		case '-':
+			printf("%.1lf - %.1lf = %.1lf\n", a, b, a - b);
+			break;
+
+		// For Multiplication
+		case '*':
+			printf("%.1lf * %.1lf = %.1lf\n", a, b, a * b);
+			break;
+
+		// For Division
+		case '/':
+			printf("%.1lf / %.1lf = %.1lf\n", a, b, a / b);
+			break;
+
+		// If operator doesn't match any case constant
+		default:
+			printf(
+				"Error! please write a valid operator\n");
+		}
+
+		printf("\n");
+	}
+}
+```
+
+### Response:
+The dataflow in the given program is as follows:
+
+1. The program starts by declaring a character variable `ch` to store the operator entered by the user.
+2. It then declares two double variables `a` and `b` to store the operands entered by the user.
+3. The program then enters a while loop to keep asking the user for input until the user wants to exit.
+4. Inside the while loop, the program prompts the user to enter an operator and two operands.
+5. The program then uses a switch case statement to differentiate between different operators entered by the user.
+6. If the user enters an addition operator, the program will add the two operands and display the result.
+7. If the user enters a subtraction operator, the program will subtract the two operands and display the result.
+8. If the user enters a multiplication operator, the program will multiply the two operands and display the result.
+9. If the user enters a division operator, the program will divide the two operands and display the result.
+10. If the user enters an invalid operator, the program will display an error message.
+11. Finally, the program will display a new line after each operation.
+
+Overall, the dataflow in the program is simple and easy to understand.<|endoftext|>

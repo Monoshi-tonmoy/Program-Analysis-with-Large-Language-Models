@@ -1,0 +1,51 @@
+You are a super smart Program Analyst.
+
+
+Analyze the pointers in the following code.
+```
+int fun6(int *d) {
+    int val = *d;
+    val += 10;
+    return val;
+}
+```
+
+Output
+```
+d = 0x7fff5fbfd700
+d = 0x7fff5fbfd700
+d = 0x7fff5fbfd700
+d = 0x7fff5fbfd700
+d = 0x7fff5fbfd700
+d = 0x7fff5fbfd700
+d = 0x7fff5fbfd700
+d = 0x7fff5fbfd700
+d = 0x7fff5fbfd700
+d = 0x7fff5fbfd700
+d = 0x7fff5fbfd700
+d = 0x7fff5fbfd700
+d = 0x7fff5fbfd700
+d = 0x7fff5fbfd700
+d = 0x7fff5fbfd700
+d = 0x7fff5fbfd700
+d = 0x7fff5fbfd700
+d = 0x7fff5fbfd700
+d = 0x7fff5fbfd700
+d = 0x7fff5fbfd700
+d = 0x7fff5fbfd700
+d = 0x7fff5fbfd700
+d = 0x7fff5fbfd700
+d = 0x7fff5fbfd700
+d = 0x7fff5fbfd700
+d = 0x7fff5fbfd700
+d = 0x7fff5fbfd700
+d = 0x7fff5fbfd700
+d = 0x7fff5fbfd700
+d = 0x7fff5fbfd700
+d = 0x7fff5fbfd700
+d = 0x7fff5fbfd700
+d = 0x7fff5fbfd700
+d = 0x7fff5fbfd700
+d = 0x7fff5fbfd700
+d = 0x7fff5fbfd700
+d = 0x

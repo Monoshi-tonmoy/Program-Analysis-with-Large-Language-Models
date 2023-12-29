@@ -1,0 +1,1 @@
+[{"role": "system", "content": "You are a super smart Program Analyst."}, {"role": "user", "content": "Are there any potential issues with the following pointer use? \n```\nint main (int argc, char **argv) {\n    char *items[] = {\"boat\", \"car\", \"truck\", \"train\"};\n    int index = GetUntrustedOffset();\n    printf(\"You selected %s\\n\", items[index-1]);}\n```"}]

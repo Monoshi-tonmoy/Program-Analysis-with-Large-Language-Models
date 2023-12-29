@@ -1,0 +1,73 @@
+You are a Program Analyst. Users will provide you with a program, and you will analyze its cyclic dependencies.
+
+### Instruction:
+Please analyze and provide details on the cyclic dependencies in a Computer program.
+
+-Definition: Cyclic dependency analysis involves understanding how dependencies form cycles within different parts of the program.
+
+
+Now, based on the given information, Please share the cyclic dependency analysis details of a program by enclosing the code in triple backticks: 
+```
+// C program to implement the above approach
+#include <stdio.h>
+
+// Function to find factorial of given number
+unsigned int factorial(unsigned int n)
+{
+	int result = 1, i;
+
+	// loop from 2 to n to get the factorial
+	for (i = 2; i <= n; i++) {
+		result *= i;
+	}
+
+	return result;
+}
+
+// Driver code
+int main()
+{
+	int num = 5;
+	printf("Factorial of %d is %d", num, factorial(num));
+	return 0;
+}
+```
+
+### Response:
+The given program has a cyclic dependency between the `factorial()` function and the `main()` function. 
+
+The `factorial()` function calls itself recursively to calculate the factorial of a given number. This creates a cycle in the program, where the output of one function is used as an input to another function. 
+
+To break this cycle, we can use a global variable to store the result of the factorial calculation and pass it as an argument to the `factorial()` function. This way, the `factorial()` function can use the result of the previous calculation instead of recalculating it. 
+
+Here's the modified program:
+
+```
+// C program to implement the above approach
+#include <stdio.h>
+
+// Function to find factorial of given number
+unsigned int factorial(unsigned int n, unsigned int *result)
+{
+	if (n == 0) {
+		*result = 1;
+		return *result;
+	}
+
+	*result = n * factorial(n - 1, result);
+	return *result;
+}
+
+// Driver code
+int main()
+{
+	int num = 5;
+	unsigned int result = 0;
+	printf("Factorial of %d is %d", num, factorial(num, &result));
+	return 0;
+}
+```
+
+In the modified program, we have added a pointer `result` to the `factorial()` function, which will store the result of the factorial calculation. In the `main()` function, we have initialized the `result` variable to 0, and passed its address to the `factorial()` function. 
+
+This way, the `factorial()` function can use the `result` variable to store the result of the previous calculation instead of recalculating it. This breaks the cycle and avoids infinite recursion.<|endoftext|>

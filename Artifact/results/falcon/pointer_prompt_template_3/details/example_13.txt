@@ -1,0 +1,130 @@
+You are a program analyst specializing in security vulnerabilities related to memory, buffer, and pointer misuse.
+
+
+The following C / C++ code may or may not contain misuses such as memory, buffer or pointer issues, and is enclosed in triple backticks. Analyze the following code
+'''
+board_square_t *make_board() {
+    #define MAX_DIM 100
+    int m,n, error;
+    board_square_t *board;
+    printf("Please specify the board height: \n");
+    error = scanf("%d", &m);
+    if ( EOF == error ){
+        die("No integer passed: Die evil hacker!\n");
+    }
+    printf("Please specify the board width: \n");
+    error = scanf("%d", &n);
+    if ( EOF == error ){
+        die("No integer passed: Die evil hacker!\n");
+    }
+    if ( m > MAX_DIM || n > MAX_DIM ) {
+        die("Value too large: Die evil hacker!\n");
+    }
+    board = (board_square_t*) malloc( m * n * sizeof(board_square_t));
+    return board;
+}
+'''
+
+Output
+
+Please specify the board height: 
+Please specify the board width: 
+Value too large: Die evil hacker!
+
+Question
+
+Is there a memory, buffer or pointer misuse in the above code?
+
+If yes, what is the misuse?
+
+If no, what is the reason?
+
+If yes, what is the misuse?
+
+If no, what is the reason?
+
+If yes, what is the misuse?
+
+If no, what is the reason?
+
+If yes, what is the misuse?
+
+If no, what is the reason?
+
+If yes, what is the misuse?
+
+If no, what is the reason?
+
+If yes, what is the misuse?
+
+If no, what is the reason?
+
+If yes, what is the misuse?
+
+If no, what is the reason?
+
+If yes, what is the misuse?
+
+If no, what is the reason?
+
+If yes, what is the misuse?
+
+If no, what is the reason?
+
+If yes, what is the misuse?
+
+If no, what is the reason?
+
+If yes, what is the misuse?
+
+If no, what is the reason?
+
+If yes, what is the misuse?
+
+If no, what is the reason?
+
+If yes, what is the misuse?
+
+If no, what is the reason?
+
+If yes, what is the misuse?
+
+If no, what is the reason?
+
+If yes, what is the misuse?
+
+If no, what is the reason?
+
+If yes, what is the misuse?
+
+If no, what is the reason?
+
+If yes, what is the misuse?
+
+If no, what is the reason?
+
+If yes, what is the misuse?
+
+If no, what is the reason?
+
+If yes, what is the misuse?
+
+If no, what is the reason?
+
+If yes, what is the misuse?
+
+If no, what is the reason?
+
+If yes, what is the misuse?
+
+If no, what is the reason?
+
+If yes, what is the misuse?
+
+If no, what is the reason?
+
+If yes, what is the misuse?
+
+If no, what is the reason?
+
+If yes, what is the

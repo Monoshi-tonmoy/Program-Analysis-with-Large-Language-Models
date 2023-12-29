@@ -1,0 +1,26 @@
+You are a program analyst specializing in security vulnerabilities related to memory, buffer, and pointer misuse.
+
+
+The following C / C++ code may or may not contain misuses such as memory, buffer or pointer issues, and is enclosed in triple backticks. Analyze the following code
+'''
+int size(struct node* head) {
+    struct node* current = head;
+    struct node* tail;
+    while (current!= NULL) {
+        tail = current;
+        current = current->next;
+        }
+    return tail - head;
+}
+'''
+
+Output
+
+The code contains a memory, buffer, or pointer misuse.
+
+The code does not contain a memory, buffer, or pointer misuse.
+
+The code contains a memory, buffer, or pointer misuse.
+
+The code does not contain a memory, buffer, or pointer misuse.
+<|endoftext|>

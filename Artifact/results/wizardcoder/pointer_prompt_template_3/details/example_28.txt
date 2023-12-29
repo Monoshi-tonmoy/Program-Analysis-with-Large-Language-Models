@@ -1,0 +1,36 @@
+You are a program analyst specializing in security vulnerabilities related to memory, buffer, and pointer misuse.
+
+### Instruction:
+The following C / C++ code may or may not contain misuses such as memory, buffer or pointer issues, and is enclosed in triple backticks. Analyze the following code
+'''
+#define SUCCESS (1)
+#define FAILURE (0)
+
+int contains_char(char c){
+    char *str;
+    str = (char*)malloc(20*sizeof(char));
+    strcpy(str, "Search Me!");
+    while( *str!= NULL){
+        if( *str == c ){
+            /* matched char, free string and return success */
+            free(str);
+            return SUCCESS;
+        }
+        /* didn't match yet, increment pointer and try next char */
+        str = str + 1;
+    }
+    /* we did not match the char in the string, free mem and return failure */
+
+    free(str);
+    return FAILURE;
+}
+'''
+
+### Response:
+The code defines two constants SUCCESS and FAILURE. It then defines a function `contains_char` that takes a character `c` as input and returns a boolean value indicating whether the character is present in the string "Search Me!".
+
+The function first allocates memory for a string of 20 characters using `malloc`. It then copies the string "Search Me!" into the allocated memory using `strcpy`.
+
+The function then loops through each character in the string using a `while` loop. If the current character matches the input character `c`, the function frees the allocated memory and returns `SUCCESS`. If the loop completes without finding a match, the function frees the allocated memory and returns `FAILURE`.
+
+The function does not appear to contain any memory or buffer issues. However, it does not check whether the input character `c` is a valid ASCII character or whether the string "Search Me!" is null-terminated. If these checks are necessary, they should be added to the function.<|endoftext|>

@@ -1,0 +1,35 @@
+You are a Program Analyst. Users will provide you with a program, and you will analyze its dataflow.
+
+### Instruction:
+Please share the dataflow information of a program by enclosing the code in triple backticks: 
+```
+// C program to implement 
+// the above approach 
+#include <stdio.h> 
+
+// Driver code 
+int main() 
+{ 
+	// We can change values here for 
+	// different inputs 
+	float P = 1, R = 1, T = 1; 
+
+	// Calculate simple interest 
+	float SI = (P * T * R) / 100; 
+
+	// Print Simple Interest 
+	printf("Simple Interest = %f\n", SI); 
+
+	return 0; 
+}
+```
+
+### Response:
+The dataflow of the program is as follows:
+
+1. The program starts by including the necessary header files.
+2. The program defines the main function.
+3. The program initializes the variables P, R, and T with the given values.
+4. The program calculates the simple interest SI using the formula (P * T * R) / 100.
+5. The program prints the value of SI using the printf() function.
+6. The program returns 0 to indicate successful execution.<|endoftext|>

@@ -1,0 +1,49 @@
+You are a Program Analyst. Users will provide you with a program, and you will analyze its control flow.
+
+
+Please analyze and provide details on the decision points and loops in the control flow of a Computer program.
+
+-Definition: Control flow information includes understanding how the program executes through different paths.
+
+
+Now, based on the given information, Please share the control flow information of a program by enclosing the code in triple backticks: 
+```
+// C Program to convert 
+// Fahrenheit to Celsius 
+#include <stdio.h> 
+
+// Function to convert Degree 
+// Fahrenheit to Degree Celsius 
+float fahrenheit_to_celsius(float f) 
+{ 
+	return ((f - 32.0) * 5.0 / 9.0); 
+} 
+
+// Driver code 
+int main() 
+{ 
+	float f = 40; 
+
+	// Passing parameter to function 
+	printf("Temperature in Degree Celsius : %0.2f", 
+		fahrenheit_to_celsius(f)); 
+	return 0; 
+}
+```
+
+Output
+```
+Temperature in Degree Celsius : 4.44
+```
+
+Explanation
+
+The control flow of the program is as follows:
+
+1. The program starts with the main function.
+2. The main function calls the fahrenheit_to_celsius function.
+3. The fahrenheit_to_celsius function receives the value of f as 40.
+4. The fahrenheit_to_celsius function returns the value of c as 4.44.
+5. The main function prints the value of c as 4.44.
+6. The program ends.
+<|endoftext|>

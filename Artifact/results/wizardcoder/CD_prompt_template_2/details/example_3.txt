@@ -1,0 +1,111 @@
+You are a Program Analyst. Users will provide you with a program, and you will analyze its cyclic dependencies.
+
+### Instruction:
+Please analyze and provide details on the cyclic dependencies in a Computer program.
+
+-Definition: Cyclic dependency analysis involves understanding how dependencies form cycles within different parts of the program.
+
+
+Now, based on the given information, Please share the cyclic dependency analysis details of a program by enclosing the code in triple backticks: 
+```
+// C program to find roots of
+// a quadratic equation
+#include <math.h>
+#include <stdio.h>
+#include <stdlib.h>
+
+// Prints roots of quadratic
+// equation ax*2 + bx + x
+void findRoots(int a, int b, int c)
+{
+    // If a is 0, then equation is
+    // not quadratic, but linear
+    if (a == 0) {
+        printf("Invalid");
+        return;
+    }
+
+    int d = b * b - 4 * a * c;
+    double sqrt_val = sqrt(abs(d));
+
+    if (d > 0) {
+        printf("Roots are real and different\n");
+        printf("%f\n%f", (double)(-b + sqrt_val) / (2 * a),
+               (double)(-b - sqrt_val) / (2 * a));
+    }
+    else if (d == 0) {
+        printf("Roots are real and same\n");
+        printf("%f", -(double)b / (2 * a));
+    }
+    else // d < 0
+    {
+        printf("Roots are complex\n");
+        printf("%f + i%f\n%f - i%f", -(double)b / (2 * a),
+               sqrt_val / (2 * a), -(double)b / (2 * a),
+               sqrt_val / (2 * a));
+    }
+}
+
+// Driver code
+int main()
+{
+    int a = 1, b = -7, c = 12;
+
+    // Function call
+    findRoots(a, b, c);
+    return 0;
+}
+```
+
+### Response:
+The given program has a cyclic dependency between the `findRoots()` function and the `sqrt()` function. This means that the `sqrt()` function is called inside the `findRoots()` function, which in turn calls the `sqrt()` function again. This creates a cycle in the program, which can cause the program to crash or behave unexpectedly. 
+
+To fix this cyclic dependency, we can use a different algorithm to calculate the square root of a number instead of using the `sqrt()` function. For example, we can use the Babylonian method to calculate the square root of a number. 
+
+Here is the updated program with the fixed cyclic dependency:
+
+```
+// C program to find roots of
+// a quadratic equation
+#include <math.h>
+#include <stdio.h>
+#include <stdlib.h>
+
+// Prints roots of quadratic
+// equation ax*2 + bx + x
+void findRoots(int a, int b, int c)
+{
+    // If a is 0, then equation is
+    // not quadratic, but linear
+    if (a == 0) {
+        printf("Invalid");
+        return;
+    }
+
+    double d = b * b - 4 * a * c;
+    double x1, x2;
+
+    if (d > 0) {
+        printf("Roots are real and different\n");
+        x1 = (-b + sqrt(d)) / (2 * a);
+        x2 = (-b - sqrt(d)) / (2 * a);
+        printf("%f\n%f", x1, x2);
+    }
+    else if (d == 0) {
+        printf("Roots are real and same\n");
+        x1 = -b / (2 * a);
+        printf("%f", x1);
+    }
+    else // d < 0
+    {
+        printf("Roots are complex\n");
+        x1 = (-b + sqrt(d)) / (2 * a);
+        x2 = (-b - sqrt(d)) / (2 * a);
+        printf("%f + i%f\n%f - i%f", x1, sqrt(d) / (2 * a), x1, -sqrt(d) / (2 * a));
+    }
+}
+
+// Driver code
+int main()
+{
+    int a = 1, b = -7, c

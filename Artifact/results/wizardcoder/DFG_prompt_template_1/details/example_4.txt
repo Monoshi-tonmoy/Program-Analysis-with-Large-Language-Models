@@ -1,0 +1,75 @@
+You are a Program Analyst. Users will provide you with a program, and you will analyze its dataflow.
+
+### Instruction:
+Please share the dataflow information of a program by enclosing the code in triple backticks: 
+```
+// C program interchange the elements
+// of first and last in a matrix
+// across rows.
+#include <stdio.h>
+
+#define n 3
+
+// Function to swap the element
+// of first and last row
+void interchangeFirstLast(int m[][n])
+{
+    int rows = n;
+
+    // Swapping of element between first
+    // and last rows
+    for (int i = 0; i < n; i++)
+    {
+        int t = m[0][i];
+        m[0][i] = m[rows - 1][i];
+        m[rows - 1][i] = t;
+    }
+}
+
+// Driver code
+int main()
+{
+    // Input matrix
+    int m[n][n] = {{6, 3, 1},
+                   {4, 5, 2},
+                   {2, 4, 9}};
+
+    // Printing the input matrix
+    printf("Input Matrix: \n");
+    for (int i = 0; i < n; i++)
+    {
+        for (int j = 0; j < n; j++)
+        {
+            printf("%d ", m[i][j]);
+        }
+        printf("\n");
+    }
+
+    // call interchangeFirstLast(m) function.
+    // This function swap the element of
+    // first and last row
+    interchangeFirstLast(m);
+
+    // Printing the original matrix
+    printf("\nOutput Matrix: \n");
+    for (int i = 0; i < n; i++)
+    {
+        for (int j = 0; j < n; j++)
+        {
+            printf("%d ", m[i][j]);
+        }
+        printf("\n");
+    }
+}
+```
+
+### Response:
+The dataflow of the program is as follows:
+
+1. The program takes an input matrix of size 3x3.
+2. The program calls the `interchangeFirstLast()` function which swaps the element of the first and last row of the matrix.
+3. The `interchangeFirstLast()` function takes the matrix as an argument and swaps the element of the first and last row.
+4. The `interchangeFirstLast()` function uses a nested loop to iterate over all the elements of the matrix.
+5. The `interchangeFirstLast()` function swaps the element of the first and last row by storing the element of the first row in a temporary variable and then storing the element of the last row in the first row.
+6. The `interchangeFirstLast()` function returns the modified matrix.
+7. The `main()` function calls the `interchangeFirstLast()` function and prints the original matrix and the modified matrix.<|endoftext|>

@@ -1,0 +1,49 @@
+<s> [INST] <<SYS>>
+You are a Program Analyst. Users will provide you with a program, and you will analyze its dataflow.
+<</SYS>>
+
+Please analyze and provide details on the dataflow in a Computer program.
+
+-Definition: Dataflow information includes understanding how data is manipulated and flows through different parts of the program.
+
+
+Now, based on the given information, Please share the dataflow details of a program by enclosing the code in triple backticks: 
+```
+// C program for the even or odd
+#include <stdio.h>
+
+// Function to check if a 
+// number is even or odd
+void checkEvenOdd(int N) {
+    // Find remainder
+    int r = N % 2;
+
+    // Condition for even
+    if (r == 0)  {
+        printf("Even");
+    }
+
+    // Otherwise
+    else {
+        printf("Odd");
+    }
+}
+``` [/INST]  The program is a C program that takes an integer input from the user and checks if it is even or odd. The program uses the modulo operator (%) to find the remainder of the division of the input number by 2. If the remainder is 0, the number is even, otherwise it is odd.
+
+The dataflow of the program can be described as follows:
+
+1. The program starts by including the `stdio.h` header file, which provides functions for input and output operations.
+2. The program then defines a function called `checkEvenOdd` that takes an integer input `N`.
+3. The function first finds the remainder of the division of `N` by 2 using the modulo operator (%).
+4. The function then checks if the remainder is 0. If it is, the number is even, and the function prints "Even" to the console.
+5. If the remainder is not 0, the number is odd, and the function prints "Odd" to the console.
+6. The function then returns, and the program ends.
+
+The dataflow of the program is as follows:
+
+1. The user inputs an integer `N`.
+2. The program calls the `checkEvenOdd` function with `N` as an argument.
+3. The function finds the remainder of the division of `N` by 2 using the modulo operator (%).
+4. The function checks if the remainder is 0. If it is, the number is even, and the function prints "Even" to the console.
+5. If the remainder is not 0, the number is odd, and the function prints "Odd" to the console.
+6. The function returns, and the program ends.</s>

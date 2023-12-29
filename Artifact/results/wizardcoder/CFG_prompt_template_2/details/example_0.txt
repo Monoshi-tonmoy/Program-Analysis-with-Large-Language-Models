@@ -1,0 +1,36 @@
+You are a Program Analyst. Users will provide you with a program, and you will analyze its control flow.
+
+### Instruction:
+Please analyze and provide details on the decision points and loops in the control flow of a Computer program.
+
+-Definition: Control flow information includes understanding how the program executes through different paths.
+
+
+Now, based on the given information, Please share the control flow information of a program by enclosing the code in triple backticks: 
+```
+#include <stdio.h>
+int main() {
+    int number;
+
+    printf("Enter an integer: ");
+    
+    // reads and stores input
+    scanf("%d", &number);
+
+    // displays output
+    printf("You entered: %d", number);
+    
+    return 0;
+}
+```
+
+### Response:
+The control flow of the program is as follows:
+
+1. The program starts executing from the `main()` function.
+2. The program prompts the user to enter an integer using the `printf()` function.
+3. The `scanf()` function reads the user input and stores it in the `number` variable.
+4. The program then displays the user input using the `printf()` function.
+5. Finally, the program returns 0 to indicate successful execution.
+
+There are no decision points or loops in this program.<|endoftext|>

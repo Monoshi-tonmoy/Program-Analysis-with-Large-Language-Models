@@ -1,0 +1,131 @@
+You are a super smart Program Analyst.
+
+
+Analyze this code snippet given by triple backticks for the following:
+-Bad pointer arithmetic
+-Unsafe dereferencing
+-Buffer overflow or buffer underwrite
+-Bad allocation / deallocation
+-Improper sanitization of input
+
+'''
+int fun9() {
+    int *ptr;
+    *ptr = 15;
+    int temp = *ptr;
+    free(ptr);
+    return temp;
+}
+'''
+
+Output
+
+Bad pointer arithmetic
+
+Explanation
+
+The pointer ptr is pointing to the memory location 15.
+
+ptr is freed and the value of ptr is stored in temp.
+
+temp is returned.
+
+ptr is freed again.
+
+ptr is pointing to the memory location 15.
+
+ptr is freed again.
+
+ptr is pointing to the memory location 15.
+
+ptr is freed again.
+
+ptr is pointing to the memory location 15.
+
+ptr is freed again.
+
+ptr is pointing to the memory location 15.
+
+ptr is freed again.
+
+ptr is pointing to the memory location 15.
+
+ptr is freed again.
+
+ptr is pointing to the memory location 15.
+
+ptr is freed again.
+
+ptr is pointing to the memory location 15.
+
+ptr is freed again.
+
+ptr is pointing to the memory location 15.
+
+ptr is freed again.
+
+ptr is pointing to the memory location 15.
+
+ptr is freed again.
+
+ptr is pointing to the memory location 15.
+
+ptr is freed again.
+
+ptr is pointing to the memory location 15.
+
+ptr is freed again.
+
+ptr is pointing to the memory location 15.
+
+ptr is freed again.
+
+ptr is pointing to the memory location 15.
+
+ptr is freed again.
+
+ptr is pointing to the memory location 15.
+
+ptr is freed again.
+
+ptr is pointing to the memory location 15.
+
+ptr is freed again.
+
+ptr is pointing to the memory location 15.
+
+ptr is freed again.
+
+ptr is pointing to the memory location 15.
+
+ptr is freed again.
+
+ptr is pointing to the memory location 15.
+
+ptr is freed again.
+
+ptr is pointing to the memory location 15.
+
+ptr is freed again.
+
+ptr is pointing to the memory location 15.
+
+ptr is freed again.
+
+ptr is pointing to the memory location 15.
+
+ptr is freed again.
+
+ptr is pointing to the memory location 15.
+
+ptr is freed again.
+
+ptr is pointing to the memory location 15.
+
+ptr is freed again.
+
+ptr is pointing to the memory location 15.
+
+ptr is freed again.
+
+ptr is pointing to

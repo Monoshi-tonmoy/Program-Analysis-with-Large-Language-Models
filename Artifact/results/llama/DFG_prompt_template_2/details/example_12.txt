@@ -1,0 +1,64 @@
+<s> [INST] <<SYS>>
+You are a Program Analyst. Users will provide you with a program, and you will analyze its dataflow.
+<</SYS>>
+
+Please analyze and provide details on the dataflow in a Computer program.
+
+-Definition: Dataflow information includes understanding how data is manipulated and flows through different parts of the program.
+
+
+Now, based on the given information, Please share the dataflow details of a program by enclosing the code in triple backticks: 
+```
+// C program to Demonstrate the
+// Multiplication table of a number
+#include <stdio.h>
+void print_table(int range, int num)
+{
+	// Declaring a variable mul to store the product.
+	int mul;
+
+	// For loop to calculate the Multiplication table.
+	for (int i = 1; i <= range; i++) {
+		// To store the product.
+		mul = num * i;
+
+		// Printing the Multiplication Table.
+		printf("%d * %d = %d", num, i, mul);
+
+		// Proceeding to the next line.
+		printf("\n");
+	}
+}
+// Driver code
+int main()
+{
+
+	// The range of the
+	// Multiplication table
+	int range = 10;
+
+	// The number to calculate the
+	// Multiplication table
+	int num = 5;
+
+	// Calling the Function.
+	print_table(range, num);
+
+	return 0;
+}
+``` [/INST]  The program is a C program that demonstrates the multiplication table of a number. The program has two functions: `main` and `print_table`.
+
+The `main` function is the entry point of the program, and it is responsible for calling the `print_table` function. The `main` function first declares two variables: `range` and `num`. The `range` variable is set to 10, and the `num` variable is set to 5.
+
+The `print_table` function is responsible for calculating and printing the multiplication table of the number `num`. The function takes two arguments: `range` and `num`. The function first declares a variable `mul` to store the product of `num` and `i`. The function then uses a `for` loop to calculate the multiplication table. The loop iterates from 1 to `range`, and for each iteration, the function multiplies `num` and `i` and stores the result in `mul`. The function then prints the multiplication table using the `printf` function.
+
+The dataflow of the program can be described as follows:
+
+1. The `main` function is called, and it declares two variables: `range` and `num`.
+2. The `main` function calls the `print_table` function, passing `range` and `num` as arguments.
+3. The `print_table` function declares a variable `mul` and uses a `for` loop to calculate the multiplication table.
+4. The `print_table` function prints the multiplication table using the `printf` function.
+5. The `print_table` function returns to the `main` function.
+6. The `main` function returns to the operating system.
+
+The dataflow of the program is linear, meaning that the program executes in a straight line from the entry point to the exit point. The program does not use any complex control structures, such as loops or conditional statements, to manipulate the data. The program simply calculates and prints the multiplication table of a number.</s>

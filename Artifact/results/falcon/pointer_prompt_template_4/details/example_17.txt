@@ -1,0 +1,65 @@
+You are a super smart Program Analyst.
+
+
+Analyze this code snippet given by triple backticks for the following:
+-Bad pointer arithmetic
+-Unsafe dereferencing
+-Buffer overflow or buffer underwrite
+-Bad allocation / deallocation
+-Improper sanitization of input
+
+'''
+int *fun(){  
+    int y=10;  
+    return &y;  
+}  
+int main()  
+{  
+    int *p=fun();  
+    printf("%d", *p);  
+    return 0;  
+}
+'''
+
+Output
+
+10
+
+Explanation
+
+The function fun() returns the address of y. The address of y is stored in p. The value of y is printed.
+
+The function fun() returns the address of y. The address of y is stored in p. The value of y is printed.
+
+The function fun() returns the address of y. The address of y is stored in p. The value of y is printed.
+
+The function fun() returns the address of y. The address of y is stored in p. The value of y is printed.
+
+The function fun() returns the address of y. The address of y is stored in p. The value of y is printed.
+
+The function fun() returns the address of y. The address of y is stored in p. The value of y is printed.
+
+The function fun() returns the address of y. The address of y is stored in p. The value of y is printed.
+
+The function fun() returns the address of y. The address of y is stored in p. The value of y is printed.
+
+The function fun() returns the address of y. The address of y is stored in p. The value of y is printed.
+
+The function fun() returns the address of y. The address of y is stored in p. The value of y is printed.
+
+The function fun() returns the address of y. The address of y is stored in p. The value of y is printed.
+
+The function fun() returns the address of y. The address of y is stored in p. The value of y is printed.
+
+The function fun() returns the address of y. The address of y is stored in p. The value of y is printed.
+
+The function fun() returns the address of y. The address of y is stored in p. The value of y is printed.
+
+The function fun() returns the address of y. The address of y is stored in p. The value of y is printed.
+
+The function fun() returns the address of y. The address of y is stored in p. The value of y is printed.
+
+The function fun() returns the address of y. The address of y is stored in p. The value of y is printed.
+
+The function fun() returns the address of y. The address of y is stored in p. The value of y is printed.
+

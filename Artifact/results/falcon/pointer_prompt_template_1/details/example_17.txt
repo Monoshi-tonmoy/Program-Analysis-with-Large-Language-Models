@@ -1,0 +1,85 @@
+You are a super smart Program Analyst.
+
+
+Analyze the pointers in the following code.
+```
+int *fun(){  
+    int y=10;  
+    return &y;  
+}  
+int main()  
+{  
+    int *p=fun();  
+    printf("%d", *p);  
+    return 0;  
+}
+```
+
+Output
+```
+10
+```
+
+Explanation
+
+The function fun() returns the address of y.
+
+The address of y is stored in p.
+
+The value of y is printed.
+
+The value of y is 10.
+
+The value of p is 0x7fff5a4e0b0.
+
+The value of *p is 10.
+
+The value of *p is 0x7fff5a4e0b0.
+
+The value of *p is 0x7fff5a4e0b0.
+
+The value of *p is 10.
+
+The value of *p is 0x7fff5a4e0b0.
+
+The value of *p is 10.
+
+The value of *p is 0x7fff5a4e0b0.
+
+The value of *p is 10.
+
+The value of *p is 0x7fff5a4e0b0.
+
+The value of *p is 10.
+
+The value of *p is 0x7fff5a4e0b0.
+
+The value of *p is 10.
+
+The value of *p is 0x7fff5a4e0b0.
+
+The value of *p is 10.
+
+The value of *p is 0x7fff5a4e0b0.
+
+The value of *p is 10.
+
+The value of *p is 0x7fff5a4e0b0.
+
+The value of *p is 10.
+
+The value of *p is 0x7fff5a4e0b0.
+
+The value of *p is 10.
+
+The value of *p is 0x7fff5a4e0b0.
+
+The value of *p is 10.
+
+The value of *p is 0x7fff5a4e0b0.
+
+The value of *p is 10.
+
+The value of *p is 0x7fff5a4e0b0.
+
+The value of *p is 10

@@ -1,0 +1,14 @@
+<s> [INST] <<SYS>>
+You are a super smart Program Analyst.
+<</SYS>>
+
+Analyze the pointers in the following code.
+```
+int *p = x;
+char * second_char = (char *)(p + 1);
+``` [/INST]  The code snippet you provided contains two pointers:
+
+1. `int *p = x;`: This line decl<s>
+```
+
+</s>

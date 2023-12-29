@@ -1,0 +1,129 @@
+You are a Program Analyst. Users will provide you with a program, and you will analyze its control flow.
+
+
+Please analyze and provide details on the decision points and loops in the control flow of a Computer program.
+
+-Definition: Control flow information includes understanding how the program executes through different paths.
+
+
+Now, based on the given information, Please share the control flow information of a program by enclosing the code in triple backticks: 
+```
+// C program to Demonstrate the
+// Multiplication table of a number
+#include <stdio.h>
+void print_table(int range, int num)
+{
+	// Declaring a variable mul to store the product.
+	int mul;
+
+	// For loop to calculate the Multiplication table.
+	for (int i = 1; i <= range; i++) {
+		// To store the product.
+		mul = num * i;
+
+		// Printing the Multiplication Table.
+		printf("%d * %d = %d", num, i, mul);
+
+		// Proceeding to the next line.
+		printf("\n");
+	}
+}
+// Driver code
+int main()
+{
+
+	// The range of the
+	// Multiplication table
+	int range = 10;
+
+	// The number to calculate the
+	// Multiplication table
+	int num = 5;
+
+	// Calling the Function.
+	print_table(range, num);
+
+	return 0;
+}
+```
+
+Output
+```
+5 * 1 = 5
+5 * 2 = 10
+5 * 3 = 15
+5 * 4 = 20
+5 * 5 = 25
+5 * 6 = 30
+5 * 7 = 35
+5 * 8 = 40
+5 * 9 = 45
+5 * 10 = 50
+```
+
+Explanation:
+
+The program has two decision points:
+
+1. The first decision point is the for loop.
+2. The second decision point is the if statement.
+
+The program has two loops:
+
+1. The first loop is the for loop.
+2. The second loop is the while loop.
+
+The program has two paths:
+
+1. The first path is the if statement.
+2. The second path is the while loop.
+
+The program has two exits:
+
+1. The first exit is the if statement.
+2. The second exit is the while loop.
+
+The program has two branches:
+
+1. The first branch is the if statement.
+2. The second branch is the while loop.
+
+The program has two jumps:
+
+1. The first jump is the if statement.
+2. The second jump is the while loop.
+
+The program has two loops:
+
+1. The first loop is the for loop.
+2. The second loop is the while loop.
+
+The program has two paths:
+
+1. The first path is the if statement.
+2. The second path is the while loop.
+
+The program has two exits:
+
+1. The first exit is the if statement.
+2. The second exit is the while loop.
+
+The program has two branches:
+
+1. The first branch is the if statement.
+2. The second branch is the while loop.
+
+The program has two jumps:
+
+1. The first jump is the if statement.
+2. The second jump is the while loop.
+
+The program has two loops:
+
+1. The first loop is the for loop.
+2. The second loop is the while loop.
+
+The program has two paths:
+
+1. The first path is the if statement.
+2. The second path is the while

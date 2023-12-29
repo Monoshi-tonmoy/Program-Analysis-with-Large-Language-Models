@@ -1,0 +1,71 @@
+You are a super smart Program Analyst.
+
+
+Are there any potential issues with the following pointer use? 
+```
+int fun7() {
+    int* p;
+    int n = *p1;
+    printf("%d", n);
+    return 0;
+}
+```
+
+Output
+```
+Segmentation fault (core dumped)
+```
+
+Explanation
+
+The pointer p1 is not initialized. It is pointing to a random location in the memory.
+
+When we try to access the memory location pointed by p1, we get a segmentation fault.
+
+The segmentation fault is caused because the memory location pointed by p1 is not allocated to the program.
+
+The program is trying to access a memory location which is not allocated to the program.
+
+The program is trying to access a memory location which is not allocated to the program.
+
+The program is trying to access a memory location which is not allocated to the program.
+
+The program is trying to access a memory location which is not allocated to the program.
+
+The program is trying to access a memory location which is not allocated to the program.
+
+The program is trying to access a memory location which is not allocated to the program.
+
+The program is trying to access a memory location which is not allocated to the program.
+
+The program is trying to access a memory location which is not allocated to the program.
+
+The program is trying to access a memory location which is not allocated to the program.
+
+The program is trying to access a memory location which is not allocated to the program.
+
+The program is trying to access a memory location which is not allocated to the program.
+
+The program is trying to access a memory location which is not allocated to the program.
+
+The program is trying to access a memory location which is not allocated to the program.
+
+The program is trying to access a memory location which is not allocated to the program.
+
+The program is trying to access a memory location which is not allocated to the program.
+
+The program is trying to access a memory location which is not allocated to the program.
+
+The program is trying to access a memory location which is not allocated to the program.
+
+The program is trying to access a memory location which is not allocated to the program.
+
+The program is trying to access a memory location which is not allocated to the program.
+
+The program is trying to access a memory location which is not allocated to the program.
+
+The program is trying to access a memory location which is not allocated to the program.
+
+The program is trying to access a memory location which is not allocated to the program.
+
+The program is trying to access a memory location which is not

@@ -1,0 +1,35 @@
+<s> [INST] <<SYS>>
+You are a Program Analyst. Users will provide you with a program, and you will analyze its control flow.
+<</SYS>>
+
+Please share the control flow information of a program by enclosing the code in triple backticks: 
+```
+// C program for the even or odd
+#include <stdio.h>
+
+// Function to check if a 
+// number is even or odd
+void checkEvenOdd(int N) {
+    // Find remainder
+    int r = N % 2;
+
+    // Condition for even
+    if (r == 0)  {
+        printf("Even");
+    }
+
+    // Otherwise
+    else {
+        printf("Odd");
+    }
+}
+``` [/INST]  The control flow of the program is as follows:
+
+1. The program starts by including the `stdio.h` header file, which contains functions for input and output.
+2. The program then defines a function called `checkEvenOdd` that takes an integer argument `N`.
+3. Inside the `checkEvenOdd` function, the program calculates the remainder of `N` divided by 2 using the modulo operator (`%`).
+4. The program then checks if the remainder is equal to 0. If it is, the program prints the string "Even" using the `printf` function.
+5. If the remainder is not equal to 0, the program prints the string "Odd" using the `printf` function.
+6. The program then ends.
+
+Note that the program only checks if the input number is even or odd, and does not perform any other operations.</s>

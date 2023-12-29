@@ -1,0 +1,121 @@
+You are a super smart Program Analyst.
+
+
+Are there any potential issues with the following pointer use? 
+```
+int bar() { int a = 12, b = 24; int *sum = (int*)malloc(sizeof(int)); *sum = a + b; printf("%d\n", *sum); printf("%d\n", *sum); return 0; }
+```
+
+Output
+```
+24
+24
+```
+
+Explanation
+
+The pointer sum is initialized to point to the memory location of a.
+
+The value of a is stored in the memory location pointed by sum.
+
+The value of b is stored in the memory location pointed by sum.
+
+The value of sum is printed.
+
+The value of sum is printed.
+
+The memory location pointed by sum is freed.
+
+The value of sum is printed.
+
+The value of sum is printed.
+
+The value of sum is printed.
+
+The value of sum is printed.
+
+The value of sum is printed.
+
+The value of sum is printed.
+
+The value of sum is printed.
+
+The value of sum is printed.
+
+The value of sum is printed.
+
+The value of sum is printed.
+
+The value of sum is printed.
+
+The value of sum is printed.
+
+The value of sum is printed.
+
+The value of sum is printed.
+
+The value of sum is printed.
+
+The value of sum is printed.
+
+The value of sum is printed.
+
+The value of sum is printed.
+
+The value of sum is printed.
+
+The value of sum is printed.
+
+The value of sum is printed.
+
+The value of sum is printed.
+
+The value of sum is printed.
+
+The value of sum is printed.
+
+The value of sum is printed.
+
+The value of sum is printed.
+
+The value of sum is printed.
+
+The value of sum is printed.
+
+The value of sum is printed.
+
+The value of sum is printed.
+
+The value of sum is printed.
+
+The value of sum is printed.
+
+The value of sum is printed.
+
+The value of sum is printed.
+
+The value of sum is printed.
+
+The value of sum is printed.
+
+The value of sum is printed.
+
+The value of sum is printed.
+
+The value of sum is printed.
+
+The value of sum is printed.
+
+The value of sum is printed.
+
+The value of sum is printed.
+
+The value of sum is printed.
+
+The value of sum is printed.
+
+The value of sum is printed.
+
+The value of sum is printed.
+
+The value of sum is printed.

@@ -1,0 +1,40 @@
+You are a Program Analyst. Users will provide you with a program, and you will analyze its dataflow.
+
+### Instruction:
+Please analyze and provide details on the dataflow in a Java program.
+-Definition: Dataflow information includes understanding how data is manipulated and flows through different parts of the program.
+
+-Example Scenario: Consider a program that sorts an array of integers. Analyze the dataflow to identify how the elements are manipulated during the sorting process.
+
+
+Now, based on the given information, please share the dataflow details by enclosing the code in triple backticks: 
+```
+// C program to implement 
+// the above approach 
+#include <stdio.h> 
+
+// Driver code 
+int main() 
+{ 
+	// We can change values here for 
+	// different inputs 
+	float P = 1, R = 1, T = 1; 
+
+	// Calculate simple interest 
+	float SI = (P * T * R) / 100; 
+
+	// Print Simple Interest 
+	printf("Simple Interest = %f\n", SI); 
+
+	return 0; 
+}
+```
+
+### Response:
+The dataflow in the given program is as follows:
+
+1. The program takes three inputs, P, R, and T, which represent principal amount, rate of interest, and time period respectively.
+2. The program calculates the simple interest using the formula (P * T * R) / 100.
+3. The program prints the calculated simple interest.
+
+The dataflow is a sequential process, where the output of one step is fed as input to the next step. In this program, the input values are first stored in variables, and then used to calculate the simple interest. Finally, the calculated simple interest is printed to the console.<|endoftext|>

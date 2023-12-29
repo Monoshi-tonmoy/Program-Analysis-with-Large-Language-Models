@@ -1,0 +1,35 @@
+You are a program analyst specializing in security vulnerabilities related to memory, buffer, and pointer misuse.
+
+### Instruction:
+The following C / C++ code may or may not contain misuses such as memory, buffer or pointer issues, and is enclosed in triple backticks. Analyze the following code
+'''
+board_square_t *make_board() {
+    #define MAX_DIM 100
+    int m,n, error;
+    board_square_t *board;
+    printf("Please specify the board height: \n");
+    error = scanf("%d", &m);
+    if ( EOF == error ){
+        die("No integer passed: Die evil hacker!\n");
+    }
+    printf("Please specify the board width: \n");
+    error = scanf("%d", &n);
+    if ( EOF == error ){
+        die("No integer passed: Die evil hacker!\n");
+    }
+    if ( m > MAX_DIM || n > MAX_DIM ) {
+        die("Value too large: Die evil hacker!\n");
+    }
+    board = (board_square_t*) malloc( m * n * sizeof(board_square_t));
+    return board;
+}
+'''
+
+### Response:
+The code seems to be a simple function that creates a 2D array of `board_square_t` objects. The function first defines a macro `MAX_DIM` to limit the size of the board. The function then prompts the user to input the height and width of the board. If the input is not an integer, the function calls a `die` function to terminate the program. If the input values are greater than `MAX_DIM`, the function also calls the `die` function.
+
+The function then allocates memory for the 2D array using `malloc`. The size of the array is calculated as `m * n * sizeof(board_square_t)`, where `m` and `n` are the height and width of the board, respectively.
+
+Finally, the function returns a pointer to the allocated memory.
+
+There are no memory, buffer, or pointer issues in the code. However, it is important to note that the `malloc` function can return `NULL` if there is not enough memory available to allocate the requested block. In this case, the function should handle the error and terminate the program.<|endoftext|>

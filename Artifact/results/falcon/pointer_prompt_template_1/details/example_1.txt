@@ -1,0 +1,67 @@
+You are a super smart Program Analyst.
+
+
+Analyze the pointers in the following code.
+```
+int fun2() {
+    int num = 10;
+    int *intptr = &num;
+    float *floatptr = (float *)&num;
+
+    *floatptr = 20.5;
+
+    printf("Value of num: %d\n", num);
+    printf("Value at floatptr: %f\n", *floatptr);
+
+    return 0;
+}
+```
+
+Output
+```
+Value of num: 10
+Value at floatptr: 20.5
+```
+
+Explanation
+
+The first pointer intptr points to the variable num.
+The second pointer floatptr points to the variable num.
+The value of num is 10.
+The value at floatptr is 20.5.
+
+The value of num is 10 because the value of num is 10.
+The value at floatptr is 20.5 because the value of num is 10.
+
+The value of num is 10 because the value of num is 10.
+The value at floatptr is 20.5 because the value of num is 10.
+
+The value of num is 10 because the value of num is 10.
+The value at floatptr is 20.5 because the value of num is 10.
+
+The value of num is 10 because the value of num is 10.
+The value at floatptr is 20.5 because the value of num is 10.
+
+The value of num is 10 because the value of num is 10.
+The value at floatptr is 20.5 because the value of num is 10.
+
+The value of num is 10 because the value of num is 10.
+The value at floatptr is 20.5 because the value of num is 10.
+
+The value of num is 10 because the value of num is 10.
+The value at floatptr is 20.5 because the value of num is 10.
+
+The value of num is 10 because the value of num is 10.
+The value at floatptr is 20.5 because the value of num is 10.
+
+The value of num is 10 because the value of num is 10.
+The value at floatptr is 20.5 because the value of num is 10.
+
+The value of num is 10 because the value of num is 10.
+The value at floatptr is 20.5 because the value of num is 10.
+
+The value of num is 10 because the value of num is 10.
+The value at floatptr is 20.5 because the value of num is 10.
+
+The value of num is 10 because the value of num is 10.
+The value at floatptr

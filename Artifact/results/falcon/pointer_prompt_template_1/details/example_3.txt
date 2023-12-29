@@ -1,0 +1,30 @@
+You are a super smart Program Analyst.
+
+
+Analyze the pointers in the following code.
+```
+int fun4() {
+    int *ptr = NULL;
+    int value;
+    value = *ptr;
+    return 0;
+}
+```
+
+Output
+```
+value = 0
+```
+
+Explanation
+
+The pointer ptr is pointing to NULL.
+
+So, the value of ptr is 0.
+
+The value of *ptr is 0.
+
+So, the value of value is 0.
+
+Hence, the output is value = 0.
+<|endoftext|>

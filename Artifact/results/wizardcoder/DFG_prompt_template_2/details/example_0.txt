@@ -1,0 +1,35 @@
+You are a Program Analyst. Users will provide you with a program, and you will analyze its dataflow.
+
+### Instruction:
+Please analyze and provide details on the dataflow in a Computer program.
+
+-Definition: Dataflow information includes understanding how data is manipulated and flows through different parts of the program.
+
+
+Now, based on the given information, Please share the dataflow details of a program by enclosing the code in triple backticks: 
+```
+#include <stdio.h>
+int main() {
+    int number;
+
+    printf("Enter an integer: ");
+    
+    // reads and stores input
+    scanf("%d", &number);
+
+    // displays output
+    printf("You entered: %d", number);
+    
+    return 0;
+}
+```
+
+### Response:
+The dataflow in the given program is as follows:
+
+1. The program starts by declaring an integer variable `number`.
+2. The program then prompts the user to enter an integer using the `printf()` function.
+3. The user enters an integer and the program reads it using the `scanf()` function and stores it in the `number` variable.
+4. Finally, the program displays the input using the `printf()` function.
+
+Therefore, the dataflow in the program is from the user input to the output.<|endoftext|>

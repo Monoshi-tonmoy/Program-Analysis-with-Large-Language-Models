@@ -1,0 +1,89 @@
+You are a super smart Program Analyst.
+
+
+Analyze this code snippet given by triple backticks for the following:
+-Bad pointer arithmetic
+-Unsafe dereferencing
+-Buffer overflow or buffer underwrite
+-Bad allocation / deallocation
+-Improper sanitization of input
+
+'''
+int foo(struc ptr*) {
+    free(ptr->member);
+    free(ptr->field);
+    return 0;
+}
+'''
+
+Output
+
+Bad pointer arithmetic
+
+Explanation
+
+ptr is a pointer to a structure.
+
+ptr->member is a pointer to a member of the structure.
+
+ptr->field is a pointer to a field of the structure.
+
+free() is a function that deallocates memory.
+
+free(ptr->member) deallocates the memory pointed to by ptr->member.
+
+free(ptr->field) deallocates the memory pointed to by ptr->field.
+
+free(ptr) deallocates the memory pointed to by ptr.
+
+ptr is a pointer to a structure.
+
+ptr->member is a pointer to a member of the structure.
+
+ptr->field is a pointer to a field of the structure.
+
+free() is a function that deallocates memory.
+
+free(ptr->member) deallocates the memory pointed to by ptr->member.
+
+free(ptr->field) deallocates the memory pointed to by ptr->field.
+
+free(ptr) deallocates the memory pointed to by ptr.
+
+ptr is a pointer to a structure.
+
+ptr->member is a pointer to a member of the structure.
+
+ptr->field is a pointer to a field of the structure.
+
+free() is a function that deallocates memory.
+
+free(ptr->member) deallocates the memory pointed to by ptr->member.
+
+free(ptr->field) deallocates the memory pointed to by ptr->field.
+
+free(ptr) deallocates the memory pointed to by ptr.
+
+ptr is a pointer to a structure.
+
+ptr->member is a pointer to a member of the structure.
+
+ptr->field is a pointer to a field of the structure.
+
+free() is a function that deallocates memory.
+
+free(ptr->member) deallocates the memory pointed to by ptr->member.
+
+free(ptr->field) deallocates the memory pointed to by ptr->field.
+
+free(ptr) deallocates the memory pointed to by ptr.
+
+ptr is a pointer to a structure.
+
+ptr->member is a pointer to a member of the structure.
+
+ptr->field is a pointer to a field of the structure.
+
+free() is a function that deallocates memory.
+
+free(ptr->member) deallocates the memory pointed to

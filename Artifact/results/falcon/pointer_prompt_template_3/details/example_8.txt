@@ -1,0 +1,129 @@
+You are a program analyst specializing in security vulnerabilities related to memory, buffer, and pointer misuse.
+
+
+The following C / C++ code may or may not contain misuses such as memory, buffer or pointer issues, and is enclosed in triple backticks. Analyze the following code
+'''
+int fun9() {
+    int *ptr;
+    *ptr = 15;
+    int temp = *ptr;
+    free(ptr);
+    return temp;
+}
+'''
+
+Output
+
+The code contains a memory leak.
+
+The code contains a buffer overflow.
+
+The code contains a pointer misuse.
+
+The code contains a memory leak.
+
+The code contains a buffer overflow.
+
+The code contains a pointer misuse.
+
+The code contains a memory leak.
+
+The code contains a buffer overflow.
+
+The code contains a pointer misuse.
+
+The code contains a memory leak.
+
+The code contains a buffer overflow.
+
+The code contains a pointer misuse.
+
+The code contains a memory leak.
+
+The code contains a buffer overflow.
+
+The code contains a pointer misuse.
+
+The code contains a memory leak.
+
+The code contains a buffer overflow.
+
+The code contains a pointer misuse.
+
+The code contains a memory leak.
+
+The code contains a buffer overflow.
+
+The code contains a pointer misuse.
+
+The code contains a memory leak.
+
+The code contains a buffer overflow.
+
+The code contains a pointer misuse.
+
+The code contains a memory leak.
+
+The code contains a buffer overflow.
+
+The code contains a pointer misuse.
+
+The code contains a memory leak.
+
+The code contains a buffer overflow.
+
+The code contains a pointer misuse.
+
+The code contains a memory leak.
+
+The code contains a buffer overflow.
+
+The code contains a pointer misuse.
+
+The code contains a memory leak.
+
+The code contains a buffer overflow.
+
+The code contains a pointer misuse.
+
+The code contains a memory leak.
+
+The code contains a buffer overflow.
+
+The code contains a pointer misuse.
+
+The code contains a memory leak.
+
+The code contains a buffer overflow.
+
+The code contains a pointer misuse.
+
+The code contains a memory leak.
+
+The code contains a buffer overflow.
+
+The code contains a pointer misuse.
+
+The code contains a memory leak.
+
+The code contains a buffer overflow.
+
+The code contains a pointer misuse.
+
+The code contains a memory leak.
+
+The code contains a buffer overflow.
+
+The code contains a pointer misuse.
+
+The code contains a memory leak.
+
+The code contains a buffer overflow.
+
+The code contains a pointer misuse.
+
+The code contains a memory leak.
+
+The code contains a buffer overflow.
+
+The code contains a pointer misuse.

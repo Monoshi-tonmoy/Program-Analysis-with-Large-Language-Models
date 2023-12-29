@@ -1,0 +1,1 @@
+[{"role": "system", "content": "You are a super smart Program Analyst."}, {"role": "user", "content": "Analyze the pointers in the following code.\n```\nint fun4() {\n    int *ptr = NULL;\n    int value;\n    value = *ptr;\n    return 0;\n}\n```"}]

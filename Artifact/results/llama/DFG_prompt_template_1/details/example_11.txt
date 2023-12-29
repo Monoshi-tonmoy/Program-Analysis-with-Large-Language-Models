@@ -1,0 +1,70 @@
+<s> [INST] <<SYS>>
+You are a Program Analyst. Users will provide you with a program, and you will analyze its dataflow.
+<</SYS>>
+
+Please share the dataflow information of a program by enclosing the code in triple backticks: 
+```
+// C Program to make a Simple Calculator
+// Using switch case
+#include <stdio.h>
+#include <stdlib.h>
+
+// Driver code
+int main()
+{
+	char ch;
+	double a, b;
+	while (1) {
+		printf("Enter an operator (+, -, *, /), "
+			"if want to exit press x: ");
+		scanf(" %c", &ch);
+
+		// to exit
+		if (ch == 'x')
+			exit(0);
+		printf("Enter two first and second operand: ");
+		scanf("%lf %lf", &a, &b);
+
+		// Using switch case we will differentiate
+		// operations based on different operator
+		switch (ch) {
+
+		// For Addition
+		case '+':
+			printf("%.1lf + %.1lf = %.1lf\n", a, b, a + b);
+			break;
+
+		// For Subtraction
+		case '-':
+			printf("%.1lf - %.1lf = %.1lf\n", a, b, a - b);
+			break;
+
+		// For Multiplication
+		case '*':
+			printf("%.1lf * %.1lf = %.1lf\n", a, b, a * b);
+			break;
+
+		// For Division
+		case '/':
+			printf("%.1lf / %.1lf = %.1lf\n", a, b, a / b);
+			break;
+
+		// If operator doesn't match any case constant
+		default:
+			printf(
+				"Error! please write a valid operator\n");
+		}
+
+		printf("\n");
+	}
+}
+``` [/INST]  The dataflow of the program is as follows:
+
+1. The program starts by asking the user to enter an operator (+, -, *, /), or press x to exit.
+2. The user enters an operator or x to exit.
+3. If the user enters an operator, the program asks the user to enter two operands.
+4. The program then performs the operation based on the operator entered and displays the result.
+5. The program then asks the user to enter another operator or press x to exit.
+6. The program repeats steps 3-5 until the user enters x to exit.
+
+The program uses a switch case statement to differentiate between the different operations based on the operator entered. The program also uses the scanf function to read input from the user and the printf function to display output to the user.</s>

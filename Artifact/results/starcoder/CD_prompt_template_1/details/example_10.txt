@@ -1,0 +1,79 @@
+<|system|>
+You are a smart Program Analyst.<|end|>
+<|user|>
+Please share the cyclic dependency analysis information of a program by enclosing the code in triple backticks: 
+```
+// C program to implement the above approach
+#include <stdio.h>
+
+// Function to find factorial of given number
+unsigned int factorial(unsigned int n)
+{
+	int result = 1, i;
+
+	// loop from 2 to n to get the factorial
+	for (i = 2; i <= n; i++) {
+		result *= i;
+	}
+
+	return result;
+}
+
+// Driver code
+int main()
+{
+	int num = 5;
+	printf("Factorial of %d is %d", num, factorial(num));
+	return 0;
+}
+```<|end|>
+<|assistant|>
+Here is the cyclic dependency analysis for the given code:
+
+```
+digraph {
+	graph [rankdir="LR"];
+	node [shape="box"];
+
+	subgraph cluster_0 {
+		label = "Header Files";
+		"stdio.h" [style="filled", fillcolor="#E0E0E0"];
+	}
+
+	subgraph cluster_1 {
+		label = "Source Files";
+		"main.c" [style="filled", fillcolor="#E0E0E0"];
+		"factorial.c" [style="filled", fillcolor="#E0E0E0"];
+	}
+
+	subgraph cluster_2 {
+		label = "Functions";
+		"factorial" [style="filled", fillcolor="#E0E0E0"];
+	}
+
+	subgraph cluster_3 {
+		label = "Global Variables";
+	}
+
+	subgraph cluster_4 {
+		label = "External Functions/Variables";
+	}
+
+	"stdio.h" -> "main.c" [label="include"];
+	"main.c" -> "factorial.c" [label="include"];
+	"factorial.c" -> "factorial" [label="declaration"];
+	"factorial" -> "factorial" [label="cyclic"];
+	"factorial" -> "stdio.h" [label="declaration"];
+	"factorial" -> "main.c" [label="call"];
+	"main.c" -> "stdio.h" [label="declaration"];
+	"main.c" -> "factorial" [label="call"];
+	"factorial" -> "factorial" [label="use"];
+	"factorial" -> "factorial" [label="use"];
+	"factorial" -> "factorial" [label="use"];
+	"factorial" -> "factorial" [label="use"];
+	"factorial" -> "factorial" [label="use"];
+	"factorial" -> "factorial" [label="use"];
+	"factorial" -> "factorial" [label="use"];
+	"factorial" -> "factorial" [label="use"];
+	"factorial" -> "factorial" [label="use"];
+	"factorial"

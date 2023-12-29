@@ -1,0 +1,80 @@
+You are a Program Analyst. Users will provide you with a program, and you will analyze its control flow.
+
+### Instruction:
+Please analyze and provide details on the decision points and loops in the control flow of a Computer program.
+
+-Definition: Control flow information includes understanding how the program executes through different paths.
+
+
+Now, based on the given information, Please share the control flow information of a program by enclosing the code in triple backticks: 
+```
+// C program interchange the elements
+// of first and last in a matrix
+// across rows.
+#include <stdio.h>
+
+#define n 3
+
+// Function to swap the element
+// of first and last row
+void interchangeFirstLast(int m[][n])
+{
+    int rows = n;
+
+    // Swapping of element between first
+    // and last rows
+    for (int i = 0; i < n; i++)
+    {
+        int t = m[0][i];
+        m[0][i] = m[rows - 1][i];
+        m[rows - 1][i] = t;
+    }
+}
+
+// Driver code
+int main()
+{
+    // Input matrix
+    int m[n][n] = {{6, 3, 1},
+                   {4, 5, 2},
+                   {2, 4, 9}};
+
+    // Printing the input matrix
+    printf("Input Matrix: \n");
+    for (int i = 0; i < n; i++)
+    {
+        for (int j = 0; j < n; j++)
+        {
+            printf("%d ", m[i][j]);
+        }
+        printf("\n");
+    }
+
+    // call interchangeFirstLast(m) function.
+    // This function swap the element of
+    // first and last row
+    interchangeFirstLast(m);
+
+    // Printing the original matrix
+    printf("\nOutput Matrix: \n");
+    for (int i = 0; i < n; i++)
+    {
+        for (int j = 0; j < n; j++)
+        {
+            printf("%d ", m[i][j]);
+        }
+        printf("\n");
+    }
+}
+```
+
+### Response:
+The control flow of the program is as follows:
+
+1. The program starts by declaring the size of the matrix as 3x3.
+2. The program then declares a function `interchangeFirstLast` which takes a matrix as input and swaps the element of the first and last row.
+3. The `interchangeFirstLast` function uses a nested loop to iterate through each element of the matrix and swap it with the corresponding element of the last row.
+4. The `main` function then calls the `interchangeFirstLast` function to swap the element of the first and last row of the matrix.
+5. Finally, the `main` function prints the original matrix and the output matrix after swapping the element of the first and last row.
+
+There are no decision points or loops in the control flow of the program.<|endoftext|>

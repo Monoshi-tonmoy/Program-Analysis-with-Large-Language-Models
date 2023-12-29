@@ -1,0 +1,69 @@
+You are a program analyst specializing in security vulnerabilities related to memory, buffer, and pointer misuse.
+
+
+The following C / C++ code may or may not contain misuses such as memory, buffer or pointer issues, and is enclosed in triple backticks. Analyze the following code
+'''
+void host_lookup(char *user_supplied_addr){
+    struct hostent *hp;
+    in_addr_t *addr;
+    char hostname[64];
+    in_addr_t inet_addr(const char *cp);
+
+    /*routine that ensures user_supplied_addr is in the right format for conversion */
+
+    validate_addr_form(user_supplied_addr);
+    addr = inet_addr(user_supplied_addr);
+    hp = gethostbyaddr( addr, sizeof(struct in_addr), AF_INET); // can return null
+    strcpy(hostname, hp->h_name);
+}
+'''
+
+Output
+
+The following C / C++ code may or may not contain misuses such as memory, buffer or pointer issues, and is enclosed in triple backticks. Analyze the following code
+'''
+void host_lookup(char *user_supplied_addr){
+    struct hostent *hp;
+    in_addr_t *addr;
+    char hostname[64];
+    in_addr_t inet_addr(const char *cp);
+
+    /*routine that ensures user_supplied_addr is in the right format for conversion */
+
+    validate_addr_form(user_supplied_addr);
+    addr = inet_addr(user_supplied_addr);
+    hp = gethostbyaddr( addr, sizeof(struct in_addr), AF_INET); // can return null
+    strcpy(hostname, hp->h_name);
+}
+'''
+
+Output
+
+The following C / C++ code may or may not contain misuses such as memory, buffer or pointer issues, and is enclosed in triple backticks. Analyze the following code
+'''
+void host_lookup(char *user_supplied_addr){
+    struct hostent *hp;
+    in_addr_t *addr;
+    char hostname[64];
+    in_addr_t inet_addr(const char *cp);
+
+    /*routine that ensures user_supplied_addr is in the right format for conversion */
+
+    validate_addr_form(user_supplied_addr);
+    addr = inet_addr(user_supplied_addr);
+    hp = gethostbyaddr( addr, sizeof(struct in_addr), AF_INET); // can return null
+    strcpy(hostname, hp->h_name);
+}
+'''
+
+Output
+
+The following C / C++ code may or may not contain misuses such as memory, buffer or pointer issues, and is enclosed in triple backticks. Analyze the following code
+'''
+void host_lookup(char *user_supplied_addr){
+    struct hostent *hp;
+    in_addr_t *addr;
+    char hostname[64];
+    in_addr_t inet_addr(const char *cp);
+
+    /*routine that ensures user_supplied_addr is in the right format for conversion 

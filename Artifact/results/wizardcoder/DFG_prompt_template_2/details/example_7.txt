@@ -1,0 +1,39 @@
+You are a Program Analyst. Users will provide you with a program, and you will analyze its dataflow.
+
+### Instruction:
+Please analyze and provide details on the dataflow in a Computer program.
+
+-Definition: Dataflow information includes understanding how data is manipulated and flows through different parts of the program.
+
+
+Now, based on the given information, Please share the dataflow details of a program by enclosing the code in triple backticks: 
+```
+// C program to implement 
+// the above approach 
+#include <stdio.h> 
+
+// Driver code 
+int main() 
+{ 
+	// We can change values here for 
+	// different inputs 
+	float P = 1, R = 1, T = 1; 
+
+	// Calculate simple interest 
+	float SI = (P * T * R) / 100; 
+
+	// Print Simple Interest 
+	printf("Simple Interest = %f\n", SI); 
+
+	return 0; 
+}
+```
+
+### Response:
+The dataflow in the given program is as follows:
+
+1. The program takes three inputs: P, R, and T.
+2. The program calculates the Simple Interest using the formula (P * T * R) / 100.
+3. The program prints the Simple Interest.
+
+The dataflow is a sequential process, where the output of one step is fed as input to the next step. In this program, the data is passed from the main function to the SI variable, which is then printed to the console.<|endoftext|>

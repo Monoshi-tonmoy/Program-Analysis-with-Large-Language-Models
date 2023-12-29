@@ -1,0 +1,1 @@
+[{"role": "system", "content": "You are a super smart Program Analyst."}, {"role": "user", "content": "Are there any potential issues with the following pointer use? \n```\nstruct Ex {\n    int field;\n};\n\nint fun5(struct Ex *d) {\n    int val;\n    if (d->field) \n        val = 1;\n\n    if (d->field)\n        val = 2;\n    return 0;\n}\n```"}]

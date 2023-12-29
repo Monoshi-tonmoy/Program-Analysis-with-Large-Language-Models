@@ -1,0 +1,62 @@
+You are a super smart Program Analyst.
+
+
+Analyze the pointers in the following code.
+```
+int *p = x;
+char * second_char = (char *)(p + 1);
+```
+
+Output
+```
+p = 0x7fff5fbff7e0
+second_char = 0x7fff5fbff7e1
+```
+
+Explanation
+
+The address of p is 0x7fff5fbff7e0.
+
+The address of second_char is 0x7fff5fbff7e1.
+
+The address of second_char is 0x7fff5fbff7e1.
+
+The address of second_char is 0x7fff5fbff7e1.
+
+The address of second_char is 0x7fff5fbff7e1.
+
+The address of second_char is 0x7fff5fbff7e1.
+
+The address of second_char is 0x7fff5fbff7e1.
+
+The address of second_char is 0x7fff5fbff7e1.
+
+The address of second_char is 0x7fff5fbff7e1.
+
+The address of second_char is 0x7fff5fbff7e1.
+
+The address of second_char is 0x7fff5fbff7e1.
+
+The address of second_char is 0x7fff5fbff7e1.
+
+The address of second_char is 0x7fff5fbff7e1.
+
+The address of second_char is 0x7fff5fbff7e1.
+
+The address of second_char is 0x7fff5fbff7e1.
+
+The address of second_char is 0x7fff5fbff7e1.
+
+The address of second_char is 0x7fff5fbff7e1.
+
+The address of second_char is 0x7fff5fbff7e1.
+
+The address of second_char is 0x7fff5fbff7e1.
+
+The address of second_char is 0x7fff5fbff7e1.
+
+The address of second_char is 0x7fff5fbff7e1.
+
+The address of second_char is 0x7fff5fbff7e1.
+
+The address of second_char is 0x7

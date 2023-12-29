@@ -1,0 +1,37 @@
+You are a super smart Program Analyst.
+
+
+Are there any potential issues with the following pointer use? 
+```
+char **ap, *argv[10], *inputstring;
+for (ap = argv; (*ap = strsep(&inputstring, " \t"))!= NULL;)
+    if (**ap!= '\0')
+        if (++ap >= &argv[10])
+            break;
+
+free(ap[4]);
+```
+
+Output
+```
+argv[0] = "hello"
+argv[1] = "world"
+argv[2] = "hello"
+argv[3] = "world"
+argv[4] = "hello"
+argv[5] = "world"
+argv[6] = "hello"
+argv[7] = "world"
+argv[8] = "hello"
+argv[9] = "world"
+```
+
+What is the issue?
+
+1. The pointer ap is not initialized
+2. The pointer ap is not initialized to NULL
+3. The pointer ap is not initialized to NULL and the loop will never terminate
+4. The pointer ap is not initialized to NULL and the loop will never terminate and the code is vulnerable to a buffer overflow attack
+5. The pointer ap is not initialized to NULL and the loop will never terminate and the code is vulnerable to a buffer overflow attack and the code is vulnerable to a buffer overflow attack
+6. The pointer ap is not initialized to NULL and the loop will never terminate and the code is vulnerable to a buffer overflow attack and the code is vulnerable to a buffer overflow attack and the code is vulnerable to a buffer overflow attack
+7. The pointer ap is not initialized to NULL and the loop will never terminate and the code is vulnerable to a buffer overflow attack and the code is vulnerable to a buffer overflow attack and the code is vulnerable to a buffer overflow attack and the code is vulnerable to a buffer overflow attack and the code is vulnerable to a buffer overflow attack and the code is vulnerable to a buffer overflow attack and the code is vulnerable to a buffer overflow attack and the code is vulnerable to a buffer overflow attack and the code is vulnerable to a buffer overflow attack and the code is vulnerable to a buffer overflow attack and the code is vulnerable to a buffer overflow attack and the code is vulnerable to a buffer overflow attack and the code is vulnerable to a buffer overflow attack and the code is vulnerable to a buffer overflow attack and the code is vulnerable to a buffer overflow attack and the code is vulnerable to a buffer overflow attack and the code is vulnerable to a buffer overflow attack and the code is vulnerable to a buffer overflow attack and the code is vulnerable to a buffer overflow attack and the code is vulnerable to a buffer overflow attack and the code is vulnerable to a buffer overflow attack and the code is vulnerable to a buffer overflow attack and the code is vulnerable to

@@ -1,0 +1,50 @@
+<s> [INST] <<SYS>>
+You are a Program Analyst. Users will provide you with a program, and you will analyze its dataflow.
+<</SYS>>
+
+Please analyze and provide details on the dataflow in a Computer program.
+
+-Definition: Dataflow information includes understanding how data is manipulated and flows through different parts of the program.
+
+
+Now, based on the given information, Please share the dataflow details of a program by enclosing the code in triple backticks: 
+```
+// C Program to convert 
+// Fahrenheit to Celsius 
+#include <stdio.h> 
+
+// Function to convert Degree 
+// Fahrenheit to Degree Celsius 
+float fahrenheit_to_celsius(float f) 
+{ 
+	return ((f - 32.0) * 5.0 / 9.0); 
+} 
+
+// Driver code 
+int main() 
+{ 
+	float f = 40; 
+
+	// Passing parameter to function 
+	printf("Temperature in Degree Celsius : %0.2f", 
+		fahrenheit_to_celsius(f)); 
+	return 0; 
+}
+``` [/INST]  The program is a C program that takes a temperature in Fahrenheit as input and converts it to Celsius using the formula: Celsius = (Fahrenheit - 32) × 5/9.
+
+The program consists of two functions:
+
+1. `main()`: This is the entry point of the program. It takes the input temperature in Fahrenheit and passes it to the `fahrenheit_to_celsius()` function. The function returns the temperature in Celsius, which is then printed to the console using the `printf()` function.
+2. `fahrenheit_to_celsius()`: This function takes a temperature in Fahrenheit as input and returns the temperature in Celsius using the formula mentioned above.
+
+The dataflow of the program can be described as follows:
+
+1. The program starts executing at the `main()` function.
+2. The `main()` function takes the input temperature in Fahrenheit from the user and passes it to the `fahrenheit_to_celsius()` function.
+3. The `fahrenheit_to_celsius()` function calculates the temperature in Celsius using the formula and returns the result to the `main()` function.
+4. The `main()` function prints the temperature in Celsius to the console using the `printf()` function.
+5. The program ends.
+
+The dataflow diagram for the program is as follows:
+```
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                

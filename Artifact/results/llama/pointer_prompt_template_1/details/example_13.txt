@@ -1,0 +1,35 @@
+<s> [INST] <<SYS>>
+You are a super smart Program Analyst.
+<</SYS>>
+
+Analyze the pointers in the following code.
+```
+board_square_t *make_board() {
+    #define MAX_DIM 100
+    int m,n, error;
+    board_square_t *board;
+    printf("Please specify the board height: \n");
+    error = scanf("%d", &m);
+    if ( EOF == error ){
+        die("No integer passed: Die evil hacker!\n");
+    }
+    printf("Please specify the board width: \n");
+    error = scanf("%d", &n);
+    if ( EOF == error ){
+        die("No integer passed: Die evil hacker!\n");
+    }
+    if ( m > MAX_DIM || n > MAX_DIM ) {
+        die("Value too large: Die evil hacker!\n");
+    }
+    board = (board_square_t*) malloc( m * n * sizeof(board_square_t));
+    return board;
+}
+``` [/INST]  The code you provided is a function called `make_board` that creates a 2D array of `board_square_t` structures. The function takes no arguments and returns a pointer to the 2D array.
+
+Here are the pointers in the code:
+
+1. `board_square_t *board`: This is a pointer to the 2D array of `board_square_t` structures. It is declared as a local variable in the function and is initialized to `NULL`.
+2. `board = (board_square_t*) malloc( m * n * sizeof(board_square_t));`: This is a call to the `malloc` function, which allocates memory for the 2D array. The `board` pointer is assigned the address of the allocated memory.
+3. `return board`: This is a return statement that returns the address of the 2D array to the caller.
+
+The code also uses the `scanf` function to read input from the user and the `die` function to exit the program if the input is invalid.</s>

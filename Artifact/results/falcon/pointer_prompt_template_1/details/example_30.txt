@@ -1,0 +1,69 @@
+You are a super smart Program Analyst.
+
+
+Analyze the pointers in the following code.
+```
+int main (int argc, char **argv) {
+    char *items[] = {"boat", "car", "truck", "train"};
+    int index = GetUntrustedOffset();
+    printf("You selected %s\n", items[index-1]);}
+```
+
+Output
+```
+You selected boat
+```
+
+Explanation
+
+The code is vulnerable to a buffer overflow.
+
+The `items` array is allocated on the stack.
+
+The `index` variable is used to index into the array.
+
+The `index` variable is initialized with the value of `GetUntrustedOffset()`.
+
+The `GetUntrustedOffset()` function is vulnerable to a buffer overflow.
+
+The `index` variable is used to index into the array.
+
+The `index` variable is initialized with the value of `GetUntrustedOffset()`.
+
+The `GetUntrustedOffset()` function is vulnerable to a buffer overflow.
+
+The `index` variable is used to index into the array.
+
+The `index` variable is initialized with the value of `GetUntrustedOffset()`.
+
+The `GetUntrustedOffset()` function is vulnerable to a buffer overflow.
+
+The `index` variable is used to index into the array.
+
+The `index` variable is initialized with the value of `GetUntrustedOffset()`.
+
+The `GetUntrustedOffset()` function is vulnerable to a buffer overflow.
+
+The `index` variable is used to index into the array.
+
+The `index` variable is initialized with the value of `GetUntrustedOffset()`.
+
+The `GetUntrustedOffset()` function is vulnerable to a buffer overflow.
+
+The `index` variable is used to index into the array.
+
+The `index` variable is initialized with the value of `GetUntrustedOffset()`.
+
+The `GetUntrustedOffset()` function is vulnerable to a buffer overflow.
+
+The `index` variable is used to index into the array.
+
+The `index` variable is initialized with the value of `GetUntrustedOffset()`.
+
+The `GetUntrustedOffset()` function is vulnerable to a buffer overflow.
+
+The `index` variable is used to index into the array.
+
+The `index` variable is initialized with the value of `GetUntrustedOffset()`.
+
+The `GetUntrust

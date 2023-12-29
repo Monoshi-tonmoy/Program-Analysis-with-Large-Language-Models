@@ -1,0 +1,122 @@
+You are a super smart Program Analyst.
+
+
+Are there any potential issues with the following pointer use? 
+```
+struct Ex {
+    int field;
+};
+
+int fun5(struct Ex *d) {
+    int val;
+    if (d->field) 
+        val = 1;
+
+    if (d->field)
+        val = 2;
+    return 0;
+}
+```
+
+Output
+```
+val = 2
+```
+
+Explanation
+
+The pointer d is pointing to the same memory location.
+
+The first if condition is true, so the value of val is set to 1.
+
+The second if condition is also true, so the value of val is set to 2.
+
+The value of val is 2.
+
+The value of val is 2.
+
+The value of val is 2.
+
+The value of val is 2.
+
+The value of val is 2.
+
+The value of val is 2.
+
+The value of val is 2.
+
+The value of val is 2.
+
+The value of val is 2.
+
+The value of val is 2.
+
+The value of val is 2.
+
+The value of val is 2.
+
+The value of val is 2.
+
+The value of val is 2.
+
+The value of val is 2.
+
+The value of val is 2.
+
+The value of val is 2.
+
+The value of val is 2.
+
+The value of val is 2.
+
+The value of val is 2.
+
+The value of val is 2.
+
+The value of val is 2.
+
+The value of val is 2.
+
+The value of val is 2.
+
+The value of val is 2.
+
+The value of val is 2.
+
+The value of val is 2.
+
+The value of val is 2.
+
+The value of val is 2.
+
+The value of val is 2.
+
+The value of val is 2.
+
+The value of val is 2.
+
+The value of val is 2.
+
+The value of val is 2.
+
+The value of val is 2.
+
+The value of val is 2.
+
+The value of val is 2.
+
+The value of val is 2.
+
+The value of val is 2.
+
+The value of val is 2.
+
+The value of val is 2.
+
+The value of val is 2.
+
+The value of val is 2.
+
+The value of val is 2.
+
+The value of

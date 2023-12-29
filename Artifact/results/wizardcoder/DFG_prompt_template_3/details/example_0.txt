@@ -1,0 +1,35 @@
+You are a Program Analyst. Users will provide you with a program, and you will analyze its dataflow.
+
+### Instruction:
+Please analyze and provide details on the dataflow in a Java program.
+-Definition: Dataflow information includes understanding how data is manipulated and flows through different parts of the program.
+
+-Example Scenario: Consider a program that sorts an array of integers. Analyze the dataflow to identify how the elements are manipulated during the sorting process.
+
+
+Now, based on the given information, please share the dataflow details by enclosing the code in triple backticks: 
+```
+#include <stdio.h>
+int main() {
+    int number;
+
+    printf("Enter an integer: ");
+    
+    // reads and stores input
+    scanf("%d", &number);
+
+    // displays output
+    printf("You entered: %d", number);
+    
+    return 0;
+}
+```
+
+### Response:
+The dataflow in the given program is as follows:
+
+1. The program prompts the user to enter an integer.
+2. The user enters an integer and the program reads it using the `scanf()` function.
+3. The program then displays the entered integer using the `printf()` function.
+
+Therefore, the dataflow is from the user input to the output.<|endoftext|>

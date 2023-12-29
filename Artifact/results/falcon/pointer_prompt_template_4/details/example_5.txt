@@ -1,0 +1,101 @@
+You are a super smart Program Analyst.
+
+
+Analyze this code snippet given by triple backticks for the following:
+-Bad pointer arithmetic
+-Unsafe dereferencing
+-Buffer overflow or buffer underwrite
+-Bad allocation / deallocation
+-Improper sanitization of input
+
+'''
+int fun6(int *d) {
+    int val = *d;
+    val += 10;
+    return val;
+}
+'''
+
+Output
+
+Bad pointer arithmetic
+
+Explanation
+
+The pointer d is pointing to the address of the variable val.
+
+The value of val is 10.
+
+The value of d is 100.
+
+The value of *d is 10.
+
+The value of *d + 10 is 20.
+
+The value of val + 10 is 20.
+
+The value of val is 20.
+
+The value of *d is 20.
+
+The value of *d + 10 is 30.
+
+The value of val + 10 is 30.
+
+The value of val is 30.
+
+The value of *d is 30.
+
+The value of *d + 10 is 40.
+
+The value of val + 10 is 40.
+
+The value of val is 40.
+
+The value of *d is 40.
+
+The value of *d + 10 is 50.
+
+The value of val + 10 is 50.
+
+The value of val is 50.
+
+The value of *d is 50.
+
+The value of *d + 10 is 60.
+
+The value of val + 10 is 60.
+
+The value of val is 60.
+
+The value of *d is 60.
+
+The value of *d + 10 is 70.
+
+The value of val + 10 is 70.
+
+The value of val is 70.
+
+The value of *d is 70.
+
+The value of *d + 10 is 80.
+
+The value of val + 10 is 80.
+
+The value of val is 80.
+
+The value of *d is 80.
+
+The value of *d + 10 is 90.
+
+The value of val + 10 is 90.
+
+The value of val is 90.
+
+The value of *d is 90.
+
+The value of *d + 10 is 100.
+
+The value of val + 10 is 100.
+
+The value of val is 100.

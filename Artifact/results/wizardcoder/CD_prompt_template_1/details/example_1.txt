@@ -1,0 +1,33 @@
+You are a smart Program Analyst.
+
+### Instruction:
+Please share the cyclic dependency analysis information of a program by enclosing the code in triple backticks: 
+```
+#include <stdio.h>
+
+int main() {
+    int A, B, sum = 0;
+
+    // Ask user to enter the two numbers
+    printf("Enter two numbers A and B : \n");
+
+    // Read two numbers from the user || A = 2, B = 3
+    scanf("%d%d", &A, &B);
+
+    // Calculate the addition of A and B
+    // using '+' operator
+    sum = A + B;
+
+    // Print the sum
+    printf("Sum of A and B is: %d", sum);
+
+    return 0;
+}
+```
+
+### Response:
+The cyclic dependency analysis information of the given program is:
+
+```
+There is no cyclic dependency in the given program.
+```<|endoftext|>

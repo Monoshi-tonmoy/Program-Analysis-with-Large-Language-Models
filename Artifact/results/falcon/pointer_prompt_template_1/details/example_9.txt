@@ -1,0 +1,50 @@
+You are a super smart Program Analyst.
+
+
+Analyze the pointers in the following code.
+```
+int fun10() {
+    int *ptr = (int *)malloc(sizeof(int));
+    int val = 50;
+    for(int i = 0; i < 25; i++) {
+        *ptr = val * i;
+        free(ptr);
+    }
+    return 0;
+}
+```
+
+Output
+```
+ptr = 0x7fff5fbfc0a0
+ptr = 0x7fff5fbfc0a0
+ptr = 0x7fff5fbfc0a0
+ptr = 0x7fff5fbfc0a0
+ptr = 0x7fff5fbfc0a0
+ptr = 0x7fff5fbfc0a0
+ptr = 0x7fff5fbfc0a0
+ptr = 0x7fff5fbfc0a0
+ptr = 0x7fff5fbfc0a0
+ptr = 0x7fff5fbfc0a0
+ptr = 0x7fff5fbfc0a0
+ptr = 0x7fff5fbfc0a0
+ptr = 0x7fff5fbfc0a0
+ptr = 0x7fff5fbfc0a0
+ptr = 0x7fff5fbfc0a0
+ptr = 0x7fff5fbfc0a0
+ptr = 0x7fff5fbfc0a0
+ptr = 0x7fff5fbfc0a0
+ptr = 0x7fff5fbfc0a0
+ptr = 0x7fff5fbfc0a0
+ptr = 0x7fff5fbfc0a0
+ptr = 0x7fff5fbfc0a0
+ptr = 0x7fff5fbfc0a0
+ptr = 0x7fff5fbfc0a0
+ptr = 0x7fff5fbfc0a0
+ptr = 0x7fff5fbfc0a0
+ptr = 0x7fff5fbfc0a0
+ptr = 0x7fff5fbfc0a0
+ptr = 0x7fff5fbfc0a0
+ptr = 0x7fff5fbfc0a0
+ptr = 0x7fff5fbfc0a0
+ptr = 0x7fff5fbfc0a

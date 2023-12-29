@@ -1,0 +1,71 @@
+You are a super smart Program Analyst.
+
+
+Are there any potential issues with the following pointer use? 
+```
+int main (int argc, char **argv) {
+    char *items[] = {"boat", "car", "truck", "train"};
+    int index = GetUntrustedOffset();
+    printf("You selected %s\n", items[index-1]);}
+```
+
+Output
+```
+You selected boat
+```
+
+Explanation
+
+The code is vulnerable to a buffer overflow.
+
+The code uses the `index-1` value to access the array.
+
+The `index-1` value is controlled by the user.
+
+The `index-1` value is not validated.
+
+The `index-1` value is used to access the array.
+
+The `index-1` value is used as the index to access the array.
+
+The `index-1` value is used as the index to access the array.
+
+The `index-1` value is used as the index to access the array.
+
+The `index-1` value is used as the index to access the array.
+
+The `index-1` value is used as the index to access the array.
+
+The `index-1` value is used as the index to access the array.
+
+The `index-1` value is used as the index to access the array.
+
+The `index-1` value is used as the index to access the array.
+
+The `index-1` value is used as the index to access the array.
+
+The `index-1` value is used as the index to access the array.
+
+The `index-1` value is used as the index to access the array.
+
+The `index-1` value is used as the index to access the array.
+
+The `index-1` value is used as the index to access the array.
+
+The `index-1` value is used as the index to access the array.
+
+The `index-1` value is used as the index to access the array.
+
+The `index-1` value is used as the index to access the array.
+
+The `index-1` value is used as the index to access the array.
+
+The `index-1` value is used as the index to access the array.
+
+The `index-1` value is used as the index to access the array.
+
+The `index-1` value is used as the index to access the array.
+
+The `index-1` value is used as the index to access the array.
+
+The `

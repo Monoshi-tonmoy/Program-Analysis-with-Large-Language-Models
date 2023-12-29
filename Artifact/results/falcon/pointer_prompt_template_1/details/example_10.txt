@@ -1,0 +1,57 @@
+You are a super smart Program Analyst.
+
+
+Analyze the pointers in the following code.
+```
+int send_msg(char *ptr, int len) {
+    while(i < len) {
+        buf_write_msg(ptr + i);
+        i++;
+    }
+    free(ptr);
+    return i;
+}
+
+int tx_int(char *ptr) {
+    int val = OBJ_SIZE;
+    while(val < OBJ_SIZE) {
+        send_msg(ptr, 16);
+    }
+    free(ptr);
+}
+```
+
+Output
+```
+ptr = 0x7fff5fbfc0a0
+ptr = 0x7fff5fbfc0a0
+ptr = 0x7fff5fbfc0a0
+ptr = 0x7fff5fbfc0a0
+ptr = 0x7fff5fbfc0a0
+ptr = 0x7fff5fbfc0a0
+ptr = 0x7fff5fbfc0a0
+ptr = 0x7fff5fbfc0a0
+ptr = 0x7fff5fbfc0a0
+ptr = 0x7fff5fbfc0a0
+ptr = 0x7fff5fbfc0a0
+ptr = 0x7fff5fbfc0a0
+ptr = 0x7fff5fbfc0a0
+ptr = 0x7fff5fbfc0a0
+ptr = 0x7fff5fbfc0a0
+ptr = 0x7fff5fbfc0a0
+ptr = 0x7fff5fbfc0a0
+ptr = 0x7fff5fbfc0a0
+ptr = 0x7fff5fbfc0a0
+ptr = 0x7fff5fbfc0a0
+ptr = 0x7fff5fbfc0a0
+ptr = 0x7fff5fbfc0a0
+ptr = 0x7fff5fbfc0a0
+ptr = 0x7fff5fbfc0a0
+ptr = 0x7fff5fbfc0a0
+ptr = 0x7fff5fbfc0a0
+ptr = 0x7fff5fbfc0a0
+ptr = 0x7fff5fbfc0a0
+ptr = 0x7fff5fbfc0a0
+ptr = 0x7fff5fbfc0a0
+ptr = 0x7fff5fbfc0a0
+ptr = 0x7fff5fbfc0a

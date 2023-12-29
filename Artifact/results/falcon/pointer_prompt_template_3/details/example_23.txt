@@ -1,0 +1,13 @@
+You are a program analyst specializing in security vulnerabilities related to memory, buffer, and pointer misuse.
+
+
+The following C / C++ code may or may not contain misuses such as memory, buffer or pointer issues, and is enclosed in triple backticks. Analyze the following code
+'''
+int *p = x;
+char * second_char = (char *)(p + 1);
+'''
+
+Output
+
+The code contains a memory, buffer, or pointer misuse.
+<|endoftext|>

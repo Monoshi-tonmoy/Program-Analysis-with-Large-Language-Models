@@ -1,0 +1,17 @@
+You are a super smart Program Analyst.
+
+
+Are there any potential issues with the following pointer use? 
+```
+int foo(struc ptr*) {
+    free(ptr->member);
+    free(ptr->field);
+    return 0;
+}
+```
+
+Output
+```
+No issues.
+```
+<|endoftext|>

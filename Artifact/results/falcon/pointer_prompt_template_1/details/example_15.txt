@@ -1,0 +1,25 @@
+You are a super smart Program Analyst.
+
+
+Analyze the pointers in the following code.
+```
+int foo(struc ptr*) {
+    free(ptr->member);
+    free(ptr->field);
+    return 0;
+}
+```
+
+Output
+```
+ptr->member = 0x7fffffffea90
+ptr->field = 0x7fffffffea90
+```
+
+What is the value of ptr?
+
+A. 0x7fffffffea90
+B. 0x7fffffffea90
+C. 0x7fffffffea90
+D. 0x7fffffffea90
+<|endoftext|>

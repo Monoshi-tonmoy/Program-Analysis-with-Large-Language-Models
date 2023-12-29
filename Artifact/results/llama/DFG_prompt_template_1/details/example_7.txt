@@ -1,0 +1,45 @@
+<s> [INST] <<SYS>>
+You are a Program Analyst. Users will provide you with a program, and you will analyze its dataflow.
+<</SYS>>
+
+Please share the dataflow information of a program by enclosing the code in triple backticks: 
+```
+// C program to implement 
+// the above approach 
+#include <stdio.h> 
+
+// Driver code 
+int main() 
+{ 
+	// We can change values here for 
+	// different inputs 
+	float P = 1, R = 1, T = 1; 
+
+	// Calculate simple interest 
+	float SI = (P * T * R) / 100; 
+
+	// Print Simple Interest 
+	printf("Simple Interest = %f\n", SI); 
+
+	return 0; 
+}
+``` [/INST]  The program you provided is a C program that calculates the simple interest of a principal amount (P) for a given time (T) and interest rate (R). The program uses the formula:
+
+Simple Interest = (P \* T \* R) / 100
+
+The program starts by including the `stdio.h` header file, which provides input/output functions. The program then defines the `main` function, which is the entry point of the program.
+
+Inside the `main` function, the program first declares three variables: `P`, `R`, and `T`, which are the principal amount, interest rate, and time, respectively. The program then calculates the simple interest using the formula mentioned above and stores it in the `SI` variable.
+
+Finally, the program prints the simple interest using the `printf` function and returns 0 to indicate that the program executed successfully.
+
+The dataflow of the program is as follows:
+
+1. The program starts by including the `stdio.h` header file.
+2. The program then defines the `main` function, which is the entry point of the program.
+3. Inside the `main` function, the program declares three variables: `P`, `R`, and `T`.
+4. The program then calculates the simple interest using the formula: `SI = (P * T * R) / 100`.
+5. The program then prints the simple interest using the `printf` function.
+6. The program returns 0 to indicate that the program executed successfully.
+
+I hope this helps! Let me know if you have any questions.</s>

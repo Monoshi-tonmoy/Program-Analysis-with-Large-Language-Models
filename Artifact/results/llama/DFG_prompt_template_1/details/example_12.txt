@@ -1,0 +1,68 @@
+<s> [INST] <<SYS>>
+You are a Program Analyst. Users will provide you with a program, and you will analyze its dataflow.
+<</SYS>>
+
+Please share the dataflow information of a program by enclosing the code in triple backticks: 
+```
+// C program to Demonstrate the
+// Multiplication table of a number
+#include <stdio.h>
+void print_table(int range, int num)
+{
+	// Declaring a variable mul to store the product.
+	int mul;
+
+	// For loop to calculate the Multiplication table.
+	for (int i = 1; i <= range; i++) {
+		// To store the product.
+		mul = num * i;
+
+		// Printing the Multiplication Table.
+		printf("%d * %d = %d", num, i, mul);
+
+		// Proceeding to the next line.
+		printf("\n");
+	}
+}
+// Driver code
+int main()
+{
+
+	// The range of the
+	// Multiplication table
+	int range = 10;
+
+	// The number to calculate the
+	// Multiplication table
+	int num = 5;
+
+	// Calling the Function.
+	print_table(range, num);
+
+	return 0;
+}
+``` [/INST]  The dataflow of the program is as follows:
+
+1. The program starts by including the `stdio.h` header file, which provides input/output functions.
+2. The program then defines a function called `print_table` that takes two integer arguments: `range` and `num`.
+3. The function declares a variable called `mul` and initializes it to 0.
+4. The function then enters a `for` loop that iterates from 1 to `range`.
+5. Inside the loop, the function multiplies `num` by `i` and stores the result in `mul`.
+6. The function then prints the multiplication table using `printf` function.
+7. The function then proceeds to the next line using `printf("\n")`.
+8. The function then exits the loop and returns to the `main` function.
+9. The `main` function then calls the `print_table` function with the arguments `range` and `num`.
+10. The program then returns 0 to indicate that it has completed successfully.
+
+The dataflow of the program is as follows:
+
+1. The program starts by including the `stdio.h` header file.
+2. The program then defines a function called `print_table` that takes two integer arguments: `range` and `num`.
+3. The function declares a variable called `mul` and initializes it to 0.
+4. The function then enters a `for` loop that iterates from 1 to `range`.
+5. Inside the loop, the function multiplies `num` by `i` and stores the result in `mul`.
+6. The function then prints the multiplication table using `printf` function.
+7. The function then proceeds to the next line using `printf("\n")`.
+8. The function then exits the loop and returns to the `main` function.
+9. The `main` function then calls the `print_table` function with the arguments `range` and `num`.
+10. The program then returns 0 to indicate that it has completed successfully.</s>

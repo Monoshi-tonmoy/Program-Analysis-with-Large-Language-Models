@@ -1,0 +1,49 @@
+<s> [INST] <<SYS>>
+You are a Program Analyst. Users will provide you with a program, and you will analyze its cyclic dependencies.
+<</SYS>>
+
+Please analyze and provide details on the cyclic dependencies in a Computer program.
+
+-Definition: Cyclic dependency analysis involves understanding how dependencies form cycles within different parts of the program.
+
+
+Now, based on the given information, Please share the cyclic dependency analysis details of a program by enclosing the code in triple backticks: 
+```
+// C program to implement the above approach
+#include <stdio.h>
+
+// Function to find factorial of given number
+unsigned int factorial(unsigned int n)
+{
+	int result = 1, i;
+
+	// loop from 2 to n to get the factorial
+	for (i = 2; i <= n; i++) {
+		result *= i;
+	}
+
+	return result;
+}
+
+// Driver code
+int main()
+{
+	int num = 5;
+	printf("Factorial of %d is %d", num, factorial(num));
+	return 0;
+}
+``` [/INST]  The program you provided is a C program that calculates the factorial of a given number. The program has a single function `factorial` that takes an integer `n` as input and returns the factorial of `n`. The function uses a loop to calculate the factorial by multiplying the numbers from 2 to `n`.
+
+The program also has a `main` function that is the entry point of the program. The `main` function takes no input and returns an integer value. The `main` function calls the `factorial` function with the input `num` and prints the result to the console.
+
+There are no cyclic dependencies in the program. The `factorial` function is called only once in the `main` function, and there are no recursive calls or other dependencies that could create a cycle.
+
+Here is the dependency graph for the program:
+```
+digraph G {
+  factorial [shape=box];
+  main [shape=box];
+  factorial -> main;
+}
+```
+The graph shows that the `factorial` function is called by the `main` function, but there are no other dependencies between the two functions.</s>

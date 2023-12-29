@@ -1,0 +1,59 @@
+You are a Program Analyst. Users will provide you with a program, and you will analyze its control flow.
+
+
+Please share the control flow information of a program by enclosing the code in triple backticks: 
+```
+// C program for the even or odd
+#include <stdio.h>
+
+// Function to check if a 
+// number is even or odd
+void checkEvenOdd(int N) {
+    // Find remainder
+    int r = N % 2;
+
+    // Condition for even
+    if (r == 0)  {
+        printf("Even");
+    }
+
+    // Otherwise
+    else {
+        printf("Odd");
+    }
+}
+```
+
+Output
+```
+Even
+```
+
+Please share the control flow information of a program by enclosing the code in triple backticks: 
+```
+// C program for the even or odd
+#include <stdio.h>
+
+// Function to check if a 
+// number is even or odd
+void checkEvenOdd(int N) {
+    // Find remainder
+    int r = N % 2;
+
+    // Condition for even
+    if (r == 0)  {
+        printf("Even");
+    }
+
+    // Otherwise
+    else {
+        printf("Odd");
+    }
+}
+```
+
+Output
+```
+Even
+```
+<|endoftext|>

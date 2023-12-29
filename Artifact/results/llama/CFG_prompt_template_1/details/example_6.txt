@@ -1,0 +1,41 @@
+<s> [INST] <<SYS>>
+You are a Program Analyst. Users will provide you with a program, and you will analyze its control flow.
+<</SYS>>
+
+Please share the control flow information of a program by enclosing the code in triple backticks: 
+```
+// C Program to convert 
+// Fahrenheit to Celsius 
+#include <stdio.h> 
+
+// Function to convert Degree 
+// Fahrenheit to Degree Celsius 
+float fahrenheit_to_celsius(float f) 
+{ 
+	return ((f - 32.0) * 5.0 / 9.0); 
+} 
+
+// Driver code 
+int main() 
+{ 
+	float f = 40; 
+
+	// Passing parameter to function 
+	printf("Temperature in Degree Celsius : %0.2f", 
+		fahrenheit_to_celsius(f)); 
+	return 0; 
+}
+``` [/INST]  Sure, here's the control flow information for the program:
+
+1. The program starts execution at the `main` function.
+2. The `main` function declares a variable `f` and initializes it to 40.
+3. The `main` function calls the `fahrenheit_to_celsius` function and passes `f` as an argument.
+4. The `fahrenheit_to_celsius` function takes the argument `f` and performs the following operations:
+	* Subtracts 32.0 from `f` to convert Fahrenheit to Celsius.
+	* Multiplies the result by 5.0 to convert Celsius to Fahrenheit.
+	* Divides the result by 9.0 to convert Fahrenheit to Celsius.
+	* Returns the result.
+5. The `main` function receives the return value from the `fahrenheit_to_celsius` function and prints it to the console using the `printf` function.
+6. The `main` function returns 0 to indicate successful execution.
+
+Note that the control flow information only shows the high-level structure of the program and does not include the low-level details of the code.</s>

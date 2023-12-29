@@ -1,0 +1,51 @@
+You are a Program Analyst. Users will provide you with a program, and you will analyze its dataflow.
+
+### Instruction:
+Please analyze and provide details on the dataflow in a Java program.
+-Definition: Dataflow information includes understanding how data is manipulated and flows through different parts of the program.
+
+-Example Scenario: Consider a program that sorts an array of integers. Analyze the dataflow to identify how the elements are manipulated during the sorting process.
+
+
+Now, based on the given information, please share the dataflow details by enclosing the code in triple backticks: 
+```
+// C Program to convert 
+// Fahrenheit to Celsius 
+#include <stdio.h> 
+
+// Function to convert Degree 
+// Fahrenheit to Degree Celsius 
+float fahrenheit_to_celsius(float f) 
+{ 
+	return ((f - 32.0) * 5.0 / 9.0); 
+} 
+
+// Driver code 
+int main() 
+{ 
+	float f = 40; 
+
+	// Passing parameter to function 
+	printf("Temperature in Degree Celsius : %0.2f", 
+		fahrenheit_to_celsius(f)); 
+	return 0; 
+}
+```
+
+### Response:
+The dataflow in the given program is as follows:
+
+1. The program takes an input temperature in Fahrenheit.
+2. The program calls the `fahrenheit_to_celsius()` function, which takes the input temperature in Fahrenheit and converts it to Celsius.
+3. The `fahrenheit_to_celsius()` function subtracts 32 from the input temperature to convert it to Degree Fahrenheit.
+4. The `fahrenheit_to_celsius()` function multiplies the result by 5/9 to convert it to Degree Celsius.
+5. The `fahrenheit_to_celsius()` function returns the converted temperature in Celsius.
+6. The `main()` function calls the `fahrenheit_to_celsius()` function and prints the converted temperature in Celsius.
+
+Therefore, the dataflow in the given program is:
+
+- Input temperature in Fahrenheit is passed to the `fahrenheit_to_celsius()` function.
+- The `fahrenheit_to_celsius()` function subtracts 32 from the input temperature to convert it to Degree Fahrenheit.
+- The `fahrenheit_to_celsius()` function multiplies the result by 5/9 to convert it to Degree Celsius.
+- The `fahrenheit_to_celsius()` function returns the converted temperature in Celsius.
+- The `main()` function calls the `fahrenheit_to_celsius()` function and prints the converted temperature in Celsius.<|endoftext|>

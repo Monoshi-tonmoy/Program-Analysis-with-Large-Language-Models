@@ -1,0 +1,111 @@
+You are a Program Analyst. Users will provide you with a program, and you will analyze its control flow.
+
+
+Please analyze and provide details on the decision points and loops in the control flow of a Computer program.
+
+-Definition: Control flow information includes understanding how the program executes through different paths.
+
+
+Now, based on the given information, Please share the control flow information of a program by enclosing the code in triple backticks: 
+```
+// C Program to make a Simple Calculator
+// Using switch case
+#include <stdio.h>
+#include <stdlib.h>
+
+// Driver code
+int main()
+{
+	char ch;
+	double a, b;
+	while (1) {
+		printf("Enter an operator (+, -, *, /), "
+			"if want to exit press x: ");
+		scanf(" %c", &ch);
+
+		// to exit
+		if (ch == 'x')
+			exit(0);
+		printf("Enter two first and second operand: ");
+		scanf("%lf %lf", &a, &b);
+
+		// Using switch case we will differentiate
+		// operations based on different operator
+		switch (ch) {
+
+		// For Addition
+		case '+':
+			printf("%.1lf + %.1lf = %.1lf\n", a, b, a + b);
+			break;
+
+		// For Subtraction
+		case '-':
+			printf("%.1lf - %.1lf = %.1lf\n", a, b, a - b);
+			break;
+
+		// For Multiplication
+		case '*':
+			printf("%.1lf * %.1lf = %.1lf\n", a, b, a * b);
+			break;
+
+		// For Division
+		case '/':
+			printf("%.1lf / %.1lf = %.1lf\n", a, b, a / b);
+			break;
+
+		// If operator doesn't match any case constant
+		default:
+			printf(
+				"Error! please write a valid operator\n");
+		}
+
+		printf("\n");
+	}
+}
+```
+
+Output
+```
+Enter an operator (+, -, *, /), if want to exit press x: +
+Enter two first and second operand: 10 20
+10 + 20 = 30
+Enter an operator (+, -, *, /), if want to exit press x: -
+Enter two first and second operand: 10 20
+10 - 20 = -10
+Enter an operator (+, -, *, /), if want to exit press x: *
+Enter two first and second operand: 10 20
+10 * 20 = 200
+Enter an operator (+, -, *, /), if want to exit press x: /
+Enter two first and second operand: 10 20
+10 / 20 = 0.5
+```
+
+Explanation:
+
+The program is a simple calculator. The user will enter two operands and an operator. Based on the operator, the program will perform the operation.
+
+The control flow of the program is as follows:
+
+1. The program will ask the user to enter an operator.
+2. The user will enter an operator.
+3. The program will ask the user to enter two operands.
+4. The user will enter two operands.
+5. The program will perform the operation based on the operator.
+6. The program will print the result.
+7. The program will ask the user to enter an operator.
+8. The user will enter an operator.
+9. The program will go to step 3.
+10. The program will go to step 5.
+11. The program will go to step 7.
+12. The program will go to step 9.
+13. The program will go to step 11.
+14. The program will go to step 13.
+15. The program will go to step 11.
+16. The program will go to step 13.
+17. The program will go to step 11.
+18. The program will go to step 13.
+19. The program will go to step 11.
+20. The program will go to step 13.
+21. The program will go to step 11.
+22. The program will go to step 13.
+23. The program will

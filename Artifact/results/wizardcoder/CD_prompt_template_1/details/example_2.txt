@@ -1,0 +1,30 @@
+You are a smart Program Analyst.
+
+### Instruction:
+Please share the cyclic dependency analysis information of a program by enclosing the code in triple backticks: 
+```
+// C program for the even or odd
+#include <stdio.h>
+
+// Function to check if a 
+// number is even or odd
+void checkEvenOdd(int N) {
+    // Find remainder
+    int r = N % 2;
+
+    // Condition for even
+    if (r == 0)  {
+        printf("Even");
+    }
+
+    // Otherwise
+    else {
+        printf("Odd");
+    }
+}
+```
+
+### Response:
+The cyclic dependency analysis information of the given program is:
+
+- There is no cyclic dependency in the program.<|endoftext|>

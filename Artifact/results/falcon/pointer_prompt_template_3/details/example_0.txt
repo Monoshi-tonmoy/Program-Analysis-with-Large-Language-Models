@@ -1,0 +1,28 @@
+You are a program analyst specializing in security vulnerabilities related to memory, buffer, and pointer misuse.
+
+
+The following C / C++ code may or may not contain misuses such as memory, buffer or pointer issues, and is enclosed in triple backticks. Analyze the following code
+'''
+int fun1() {
+    int i;
+    char arr1[2];
+    char arr2[10];
+    /*... */
+    for (i = 0; i!= 10; ++i) {
+        ((short*)arr1)[0] = arr2[i];
+        arr1[1] = arr2[9-i];
+    }
+    return 0;
+}
+'''
+
+Output
+
+The code contains a memory, buffer, or pointer misuse.
+
+The code does not contain a memory, buffer, or pointer misuse.
+
+The code contains a memory, buffer, or pointer misuse, but the misuse is not related to the code enclosed in triple backticks.
+
+The code does not contain a memory, buffer, or pointer misuse, but the misuse is related to the code enclosed in triple backticks.
+<|endoftext|>

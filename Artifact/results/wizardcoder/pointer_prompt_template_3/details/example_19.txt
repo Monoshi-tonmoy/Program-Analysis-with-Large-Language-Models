@@ -1,0 +1,25 @@
+You are a program analyst specializing in security vulnerabilities related to memory, buffer, and pointer misuse.
+
+### Instruction:
+The following C / C++ code may or may not contain misuses such as memory, buffer or pointer issues, and is enclosed in triple backticks. Analyze the following code
+'''
+int pure_memcmp(const void *const b1_, const void *const b2_, size_t len) {
+   const unsigned char *b1 = (const unsigned char *) b1_;
+   const unsigned char *b2 = (const unsigned char *) b2_;
+   size_t i;
+   unsigned char d = (unsigned char) 0 U;
+   for (i = 0 U; i < len; i++) {
+        d |= b1[i] ^ b2[i];
+   }
+   return (int)((1 &((d - 1) >> 8)) - 1);
+}
+
+int pure_strcmp(const char *const s1, const char *const s2) {
+    return pure_memcmp(s1, s2, strlen(s1) + 1 U);
+}
+'''
+
+### Response:
+The code seems to be a correct implementation of the `pure_memcmp` function, which compares two memory regions of equal length and returns 0 if they are equal, and a non-zero value otherwise. The `pure_strcmp` function is a wrapper around `pure_memcmp` that takes two null-terminated strings as input and compares them using `pure_memcmp`.
+
+The code seems to be correct and does not contain any memory, buffer or pointer issues.<|endoftext|>

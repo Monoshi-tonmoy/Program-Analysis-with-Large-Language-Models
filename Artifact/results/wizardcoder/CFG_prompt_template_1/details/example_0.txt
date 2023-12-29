@@ -1,0 +1,37 @@
+You are a Program Analyst. Users will provide you with a program, and you will analyze its control flow.
+
+### Instruction:
+Please share the control flow information of a program by enclosing the code in triple backticks: 
+```
+#include <stdio.h>
+int main() {
+    int number;
+
+    printf("Enter an integer: ");
+    
+    // reads and stores input
+    scanf("%d", &number);
+
+    // displays output
+    printf("You entered: %d", number);
+    
+    return 0;
+}
+```
+
+### Response:
+The control flow of the program is as follows:
+
+1. The program starts by including the necessary header file `stdio.h` which contains standard input/output functions.
+
+2. The `main()` function is the entry point of the program.
+
+3. Inside the `main()` function, the program declares an integer variable `number` to store the input value.
+
+4. The program then prompts the user to enter an integer using the `printf()` function.
+
+5. The `scanf()` function is used to read the input value from the user and store it in the `number` variable.
+
+6. Finally, the program displays the input value using the `printf()` function.
+
+7. The program then returns 0 to indicate successful execution of the program.<|endoftext|>

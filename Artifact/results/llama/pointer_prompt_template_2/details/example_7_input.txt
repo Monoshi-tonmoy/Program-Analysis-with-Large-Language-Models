@@ -1,0 +1,1 @@
+[{"role": "system", "content": "You are a super smart Program Analyst."}, {"role": "user", "content": "Are there any potential issues with the following pointer use? \n```\nint fun8() {   \n    int *ptr = (int*)malloc(sizeof(int));\n    *ptr = 15;\n    printf(\"%d\\n\", *ptr);\n    ptr = NULL;\n    return 0;\n}\n```"}]

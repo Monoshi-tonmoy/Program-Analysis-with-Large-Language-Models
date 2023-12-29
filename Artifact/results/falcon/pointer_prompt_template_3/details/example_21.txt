@@ -1,0 +1,91 @@
+You are a program analyst specializing in security vulnerabilities related to memory, buffer, and pointer misuse.
+
+
+The following C / C++ code may or may not contain misuses such as memory, buffer or pointer issues, and is enclosed in triple backticks. Analyze the following code
+'''
+char* trimTrailingWhitespace(char *strMessage, int length) {
+    char *retMessage;
+    char *message = malloc(sizeof(char)*(length+1));
+
+    // copy input string to a temporary string
+    char message[length+1];
+    int index;
+    for (index = 0; index < length; index++) {
+        message[index] = strMessage[index];
+    }
+    message[index] = '\0';
+
+    // trim trailing whitespace
+    int len = index-1;
+    while (isspace(message[len])) {
+        message[len] = '\0';
+        len--;
+    }
+
+    // return string without trailing whitespace
+    retMessage = message;
+    return retMessage;
+}
+'''
+
+Output
+
+The following C / C++ code may or may not contain misuses such as memory, buffer or pointer issues, and is enclosed in triple backticks. Analyze the following code
+```
+char* trimTrailingWhitespace(char *strMessage, int length) {
+    char *retMessage;
+    char *message = malloc(sizeof(char)*(length+1));
+
+    // copy input string to a temporary string
+    char message[length+1];
+    int index;
+    for (index = 0; index < length; index++) {
+        message[index] = strMessage[index];
+    }
+    message[index] = '\0';
+
+    // trim trailing whitespace
+    int len = index-1;
+    while (isspace(message[len])) {
+        message[len] = '\0';
+        len--;
+    }
+
+    // return string without trailing whitespace
+    retMessage = message;
+    return retMessage;
+}
+```
+
+The following C / C++ code may or may not contain misuses such as memory, buffer or pointer issues, and is enclosed in triple backticks. Analyze the following code
+```
+char* trimTrailingWhitespace(char *strMessage, int length) {
+    char *retMessage;
+    char *message = malloc(sizeof(char)*(length+1));
+
+    // copy input string to a temporary string
+    char message[length+1];
+    int index;
+    for (index = 0; index < length; index++) {
+        message[index] = strMessage[index];
+    }
+    message[index] = '\0';
+
+    // trim trailing whitespace
+    int len = index-1;
+    while (isspace(message[len])) {
+        message[len] = '\0';
+        len--;
+    }
+
+    // return string without trailing whitespace
+    retMessage = message;
+    return retMessage;
+}
+```
+
+The following C / C++ code may or may not contain misuses such as memory, buffer or pointer issues, and is enclosed in triple backticks. Analyze the following code
+```
+char* trimTrailingWhitespace(char *strMessage, int length) {
+    char *retMessage;
+    char

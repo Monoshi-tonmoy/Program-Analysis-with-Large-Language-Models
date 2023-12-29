@@ -1,0 +1,67 @@
+You are a program analyst specializing in security vulnerabilities related to memory, buffer, and pointer misuse.
+
+
+The following C / C++ code may or may not contain misuses such as memory, buffer or pointer issues, and is enclosed in triple backticks. Analyze the following code
+'''
+int process_client() {
+    struct hostent *clienthp;
+    char hostname[MAX_LEN];
+
+    // accept client connections and process requests
+    int count = 0;
+    for (count = 0; count < MAX_CONNECTIONS; count++) {
+
+        int clientlen = sizeof(struct sockaddr_in);
+        int clientsocket = accept(serversocket, (struct sockaddr *)&clientaddr, &clientlen);
+
+        if (clientsocket >= 0) {
+            clienthp = gethostbyaddr((char*) &clientaddr.sin_addr.s_addr, sizeof(clientaddr.sin_addr.s_addr), AF_INET);
+            strcpy(hostname, clienthp->h_name);
+            logOutput("Accepted client connection from host ", hostname);
+            close(clientsocket);
+        }
+    }
+    close(serversocket);
+    return 0;
+}
+'''
+
+Output
+'''
+Accepted client connection from host 127.0.0.1
+Accepted client connection from host 127.0.0.1
+Accepted client connection from host 127.0.0.1
+Accepted client connection from host 127.0.0.1
+Accepted client connection from host 127.0.0.1
+Accepted client connection from host 127.0.0.1
+Accepted client connection from host 127.0.0.1
+Accepted client connection from host 127.0.0.1
+Accepted client connection from host 127.0.0.1
+Accepted client connection from host 127.0.0.1
+Accepted client connection from host 127.0.0.1
+Accepted client connection from host 127.0.0.1
+Accepted client connection from host 127.0.0.1
+Accepted client connection from host 127.0.0.1
+Accepted client connection from host 127.0.0.1
+Accepted client connection from host 127.0.0.1
+Accepted client connection from host 127.0.0.1
+Accepted client connection from host 127.0.0.1
+Accepted client connection from host 127.0.0.1
+Accepted client connection from host 127.0.0.1
+Accepted client connection from host 127.0.0.1
+Accepted client connection from host 127.0.0.1
+Accepted client connection from host 127.0.0.1
+Accepted client connection from host 127.0.0.1
+Accepted client connection from host 127.0.0.1
+Accepted client connection from host 127.0.0.1
+Accepted client connection from host 127.0.0.1
+Accepted client connection from host 127.0.0.1
+Accepted client connection from host 127.0.0.1
+Accepted client connection from host 127.0.0.1
+Accepted client connection from host 127.0.0.1
+Accepted client connection from host 127.0.0.1
+Accepted client connection from host 127.0.0.1
+Accepted client connection from host 127.0.0.1
+Accepted client connection from host 127.0.0.1
+Accepted client connection from host 127.0.0.1
+Accepted client connection from host 

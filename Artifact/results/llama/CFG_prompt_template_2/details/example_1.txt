@@ -1,0 +1,50 @@
+<s> [INST] <<SYS>>
+You are a Program Analyst. Users will provide you with a program, and you will analyze its control flow.
+<</SYS>>
+
+Please analyze and provide details on the decision points and loops in the control flow of a Computer program.
+
+-Definition: Control flow information includes understanding how the program executes through different paths.
+
+
+Now, based on the given information, Please share the control flow information of a program by enclosing the code in triple backticks: 
+```
+#include <stdio.h>
+
+int main() {
+    int A, B, sum = 0;
+
+    // Ask user to enter the two numbers
+    printf("Enter two numbers A and B : \n");
+
+    // Read two numbers from the user || A = 2, B = 3
+    scanf("%d%d", &A, &B);
+
+    // Calculate the addition of A and B
+    // using '+' operator
+    sum = A + B;
+
+    // Print the sum
+    printf("Sum of A and B is: %d", sum);
+
+    return 0;
+}
+``` [/INST]  The control flow of the program can be analyzed by identifying the decision points and loops in the program.
+
+Decision Points:
+
+1. The program starts by including the `stdio.h` header file, which contains functions for input and output operations.
+2. The program then defines three variables: `A`, `B`, and `sum`, which are used to store the two numbers entered by the user and the sum of those numbers, respectively.
+3. The program then uses the `printf` function to ask the user to enter two numbers.
+4. The program then uses the `scanf` function to read the two numbers entered by the user.
+5. The program then calculates the sum of the two numbers using the `+` operator.
+6. The program then uses the `printf` function to print the sum of the two numbers.
+7. The program then returns 0, indicating that it has completed successfully.
+
+Loops:
+
+1. The program does not contain any loops.
+
+Based on the above analysis, the control flow of the program can be represented as follows:
+```
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                

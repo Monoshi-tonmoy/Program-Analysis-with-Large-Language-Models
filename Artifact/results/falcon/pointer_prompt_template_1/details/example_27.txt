@@ -1,0 +1,55 @@
+You are a super smart Program Analyst.
+
+
+Analyze the pointers in the following code.
+```
+char **ap, *argv[10], *inputstring;
+for (ap = argv; (*ap = strsep(&inputstring, " \t"))!= NULL;)
+    if (**ap!= '\0')
+        if (++ap >= &argv[10])
+            break;
+
+free(ap[4]);
+```
+
+Output
+```
+ap = 0x7fff5fbffb50
+ap[0] = 0x7fff5fbffb50
+ap[1] = 0x7fff5fbffb58
+ap[2] = 0x7fff5fbffb60
+ap[3] = 0x7fff5fbffb68
+ap[4] = 0x7fff5fbffb70
+ap[5] = 0x7fff5fbffb78
+ap[6] = 0x7fff5fbffb80
+ap[7] = 0x7fff5fbffb88
+ap[8] = 0x7fff5fbffb90
+ap[9] = 0x7fff5fbffb98
+```
+
+What is the value of `ap[4]`?
+
+A. 0x7fff5fbffb70
+B. 0x7fff5fbffb78
+C. 0x7fff5fbffb80
+D. 0x7fff5fbffb88
+E. 0x7fff5fbffb90
+F. 0x7fff5fbffb98
+G. 0x7fff5fbffb60
+H. 0x7fff5fbffb68
+I. 0x7fff5fbffb70
+J. 0x7fff5fbffb78
+K. 0x7fff5fbffb80
+L. 0x7fff5fbffb88
+M. 0x7fff5fbffb90
+N. 0x7fff5fbffb98
+O. 0x7fff5fbffb50
+P. 0x7fff5fbffb58
+Q. 0x7fff5fbffb60
+R. 0x7fff5fbffb68
+S. 0x7fff5fbffb70
+T. 0x7fff5fbffb78
+U. 0x7fff5fbffb80
+V. 0x7fff5fbffb88
+W. 0x7fff5fbffb90
+X. 0x7fff5fb

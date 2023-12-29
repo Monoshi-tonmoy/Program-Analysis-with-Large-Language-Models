@@ -1,0 +1,83 @@
+You are a super smart Program Analyst.
+
+
+Analyze this code snippet given by triple backticks for the following:
+-Bad pointer arithmetic
+-Unsafe dereferencing
+-Buffer overflow or buffer underwrite
+-Bad allocation / deallocation
+-Improper sanitization of input
+
+'''
+int foo(int SIZE) {
+    char* ptr = (char*)malloc (SIZE);
+    if (err) {
+        abrt = 1;
+        free(ptr);
+    }
+
+    // Some code here
+
+    if (abrt) {
+        logError("operation aborted before commit", ptr);
+    }
+}
+'''
+
+Output
+
+Bad pointer arithmetic
+
+Explanation
+
+ptr is allocated with malloc, but the size is not checked.
+
+ptr is dereferenced with *ptr, but the pointer is not checked.
+
+ptr is dereferenced with *ptr, but the pointer is not checked.
+
+ptr is dereferenced with *ptr, but the pointer is not checked.
+
+ptr is dereferenced with *ptr, but the pointer is not checked.
+
+ptr is dereferenced with *ptr, but the pointer is not checked.
+
+ptr is dereferenced with *ptr, but the pointer is not checked.
+
+ptr is dereferenced with *ptr, but the pointer is not checked.
+
+ptr is dereferenced with *ptr, but the pointer is not checked.
+
+ptr is dereferenced with *ptr, but the pointer is not checked.
+
+ptr is dereferenced with *ptr, but the pointer is not checked.
+
+ptr is dereferenced with *ptr, but the pointer is not checked.
+
+ptr is dereferenced with *ptr, but the pointer is not checked.
+
+ptr is dereferenced with *ptr, but the pointer is not checked.
+
+ptr is dereferenced with *ptr, but the pointer is not checked.
+
+ptr is dereferenced with *ptr, but the pointer is not checked.
+
+ptr is dereferenced with *ptr, but the pointer is not checked.
+
+ptr is dereferenced with *ptr, but the pointer is not checked.
+
+ptr is dereferenced with *ptr, but the pointer is not checked.
+
+ptr is dereferenced with *ptr, but the pointer is not checked.
+
+ptr is dereferenced with *ptr, but the pointer is not checked.
+
+ptr is dereferenced with *ptr, but the pointer is not checked.
+
+ptr is dereferenced with *ptr, but the pointer is not checked.
+
+ptr is dereferenced with *ptr, but the pointer is not checked.
+
+ptr is dereferenced with *ptr, but the pointer is not checked.
+
+ptr is dereferenced

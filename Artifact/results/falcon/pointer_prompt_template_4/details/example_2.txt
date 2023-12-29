@@ -1,0 +1,62 @@
+You are a super smart Program Analyst.
+
+
+Analyze this code snippet given by triple backticks for the following:
+-Bad pointer arithmetic
+-Unsafe dereferencing
+-Buffer overflow or buffer underwrite
+-Bad allocation / deallocation
+-Improper sanitization of input
+
+'''
+int fun3() {
+    int arr[5] = {0, 1, 2, 3, 4};
+    int *ptr = arr;
+    int value = *(ptr + 6);
+    return 0;
+}
+'''
+
+Output
+
+Bad pointer arithmetic
+
+Explanation
+
+The array arr has only 5 elements. The pointer ptr is pointing to the 6th element of the array.
+
+The value of ptr is 0x7fff5e9c1e80.
+
+The value of *(ptr + 6) is 0x7fff5e9c1e84.
+
+The value of *(ptr + 6) is 0x7fff5e9c1e84.
+
+The value of *(ptr + 6) is 0x7fff5e9c1e84.
+
+The value of *(ptr + 6) is 0x7fff5e9c1e84.
+
+The value of *(ptr + 6) is 0x7fff5e9c1e84.
+
+The value of *(ptr + 6) is 0x7fff5e9c1e84.
+
+The value of *(ptr + 6) is 0x7fff5e9c1e84.
+
+The value of *(ptr + 6) is 0x7fff5e9c1e84.
+
+The value of *(ptr + 6) is 0x7fff5e9c1e84.
+
+The value of *(ptr + 6) is 0x7fff5e9c1e84.
+
+The value of *(ptr + 6) is 0x7fff5e9c1e84.
+
+The value of *(ptr + 6) is 0x7fff5e9c1e84.
+
+The value of *(ptr + 6) is 0x7fff5e9c1e84.
+
+The value of *(ptr + 6) is 0x7fff5e9c1e84.
+
+The value of *(ptr + 6) is 0x7fff5e9c1e84.
+
+The value of *(ptr + 6) is 0x7fff5e9c1e84.
+
+The value of *(ptr + 6) is 0x7fff5e9c1e84

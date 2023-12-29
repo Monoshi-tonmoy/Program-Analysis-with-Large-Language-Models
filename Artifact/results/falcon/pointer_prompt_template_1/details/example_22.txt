@@ -1,0 +1,25 @@
+You are a super smart Program Analyst.
+
+
+Analyze the pointers in the following code.
+```
+int main() {
+    strncpy(destBuf, &srcBuf[find(srcBuf, ch)], 1024);
+}
+```
+
+Output
+```
+destBuf = 0x7fff5fbfd000
+srcBuf = 0x7fff5fbfc000
+ch = 0x7fff5fbfc000
+find = 0x7fff5fbfc000
+```
+
+What is the value of destBuf?
+
+A. 0x7fff5fbfd000
+B. 0x7fff5fbfc000
+C. 0x7fff5fbfc100
+D. 0x7fff5fbfc200
+<|endoftext|>

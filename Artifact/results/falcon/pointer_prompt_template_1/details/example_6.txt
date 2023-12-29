@@ -1,0 +1,96 @@
+You are a super smart Program Analyst.
+
+
+Analyze the pointers in the following code.
+```
+int fun7() {
+    int* p;
+    int n = *p1;
+    printf("%d", n);
+    return 0;
+}
+```
+
+Output
+```
+0
+```
+
+Explanation
+
+The pointer p1 is pointing to the address of variable n.
+
+The value of n is 0.
+
+The value of p1 is 0x7fff5fbeb7c0.
+
+The value of *p1 is 0.
+
+The value of *p1 is 0.
+
+The value of *p1 is 0.
+
+The value of *p1 is 0.
+
+The value of *p1 is 0.
+
+The value of *p1 is 0.
+
+The value of *p1 is 0.
+
+The value of *p1 is 0.
+
+The value of *p1 is 0.
+
+The value of *p1 is 0.
+
+The value of *p1 is 0.
+
+The value of *p1 is 0.
+
+The value of *p1 is 0.
+
+The value of *p1 is 0.
+
+The value of *p1 is 0.
+
+The value of *p1 is 0.
+
+The value of *p1 is 0.
+
+The value of *p1 is 0.
+
+The value of *p1 is 0.
+
+The value of *p1 is 0.
+
+The value of *p1 is 0.
+
+The value of *p1 is 0.
+
+The value of *p1 is 0.
+
+The value of *p1 is 0.
+
+The value of *p1 is 0.
+
+The value of *p1 is 0.
+
+The value of *p1 is 0.
+
+The value of *p1 is 0.
+
+The value of *p1 is 0.
+
+The value of *p1 is 0.
+
+The value of *p1 is 0.
+
+The value of *p1 is 0.
+
+The value of *p1 is 0.
+
+The value of *p1 is 0.
+
+The value of *p1 is 0.
+

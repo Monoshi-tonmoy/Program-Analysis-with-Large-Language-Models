@@ -1,0 +1,58 @@
+<s> [INST] <<SYS>>
+You are a Program Analyst. Users will provide you with a program, and you will analyze its control flow.
+<</SYS>>
+
+Please analyze and provide details on the decision points and loops in the control flow of a Computer program.
+
+-Definition: Control flow information includes understanding how the program executes through different paths.
+
+
+Now, based on the given information, Please share the control flow information of a program by enclosing the code in triple backticks: 
+```
+// C program to implement the above approach
+#include <stdio.h>
+
+// Function to find factorial of given number
+unsigned int factorial(unsigned int n)
+{
+	int result = 1, i;
+
+	// loop from 2 to n to get the factorial
+	for (i = 2; i <= n; i++) {
+		result *= i;
+	}
+
+	return result;
+}
+
+// Driver code
+int main()
+{
+	int num = 5;
+	printf("Factorial of %d is %d", num, factorial(num));
+	return 0;
+}
+``` [/INST]  The control flow of the program can be analyzed as follows:
+
+1. The program starts execution at the `main` function.
+2. The `main` function declares two variables: `num` and `result`.
+3. The `main` function calls the `factorial` function with the argument `num`.
+4. The `factorial` function declares two variables: `result` and `i`.
+5. The `factorial` function initializes `result` to 1 and `i` to 2.
+6. The `factorial` function enters a loop that runs from 2 to `n` (inclusive).
+7. Inside the loop, the `result` variable is multiplied by `i`.
+8. The loop increments `i` by 1.
+9. The loop repeats until `i` is greater than `n`.
+10. After the loop, the `factorial` function returns the value of `result`.
+11. The `main` function prints the result of the `factorial` function to the console.
+12. The `main` function returns 0 to indicate successful execution.
+
+The decision points in the program are:
+
+* The `main` function calls the `factorial` function with the argument `num`.
+* The `factorial` function enters a loop that runs from 2 to `n` (inclusive).
+* The `factorial` function returns the value of `result`.
+
+The loops in the program are:
+
+* The loop in the `factorial` function that runs from 2 to `n` (inclusive).</s>

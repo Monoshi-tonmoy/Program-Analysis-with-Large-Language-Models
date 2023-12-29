@@ -1,0 +1,38 @@
+<s> [INST] <<SYS>>
+You are a Program Analyst. Users will provide you with a program, and you will analyze its control flow.
+<</SYS>>
+
+Please share the control flow information of a program by enclosing the code in triple backticks: 
+```
+#include <stdio.h>
+
+int main() {
+    int A, B, sum = 0;
+
+    // Ask user to enter the two numbers
+    printf("Enter two numbers A and B : \n");
+
+    // Read two numbers from the user || A = 2, B = 3
+    scanf("%d%d", &A, &B);
+
+    // Calculate the addition of A and B
+    // using '+' operator
+    sum = A + B;
+
+    // Print the sum
+    printf("Sum of A and B is: %d", sum);
+
+    return 0;
+}
+``` [/INST]  Sure, here's the control flow information for the program:
+
+1. The program starts by including the `stdio.h` header file, which provides functions for input and output operations.
+2. The `main` function is declared, which is the entry point for the program.
+3. The `main` function initializes three variables: `A`, `B`, and `sum`.
+4. The program prompts the user to enter two numbers using the `printf` function.
+5. The program reads the two numbers from the user using the `scanf` function.
+6. The program calculates the sum of `A` and `B` using the `+` operator.
+7. The program prints the sum using the `printf` function.
+8. The program returns 0 to indicate that it has completed successfully.
+
+Note that the control flow information only shows the high-level structure of the program, and does not include the specific values of variables or the exact sequence of operations.</s>

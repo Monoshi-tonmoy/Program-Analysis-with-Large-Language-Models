@@ -1,0 +1,105 @@
+You are a super smart Program Analyst.
+
+
+Analyze the pointers in the following code.
+```
+int fun3() {
+    int arr[5] = {0, 1, 2, 3, 4};
+    int *ptr = arr;
+    int value = *(ptr + 6);
+    return 0;
+}
+```
+
+Output
+```
+0
+```
+
+Explanation
+
+The pointer ptr is pointing to the first element of the array arr.
+
+The value of ptr + 6 is (ptr + 6) = (arr + 6) = (0 + 6) = 6.
+
+The value of *(ptr + 6) is *(arr + 6) = *(0 + 6) = *(6) = 0.
+
+The value of *(ptr + 6) is 0.
+
+The value of value is 0.
+
+The value of value is 0.
+
+The value of value is 0.
+
+The value of value is 0.
+
+The value of value is 0.
+
+The value of value is 0.
+
+The value of value is 0.
+
+The value of value is 0.
+
+The value of value is 0.
+
+The value of value is 0.
+
+The value of value is 0.
+
+The value of value is 0.
+
+The value of value is 0.
+
+The value of value is 0.
+
+The value of value is 0.
+
+The value of value is 0.
+
+The value of value is 0.
+
+The value of value is 0.
+
+The value of value is 0.
+
+The value of value is 0.
+
+The value of value is 0.
+
+The value of value is 0.
+
+The value of value is 0.
+
+The value of value is 0.
+
+The value of value is 0.
+
+The value of value is 0.
+
+The value of value is 0.
+
+The value of value is 0.
+
+The value of value is 0.
+
+The value of value is 0.
+
+The value of value is 0.
+
+The value of value is 0.
+
+The value of value is 0.
+
+The value of value is 0.
+
+The value of value is 0.
+
+The value of value is 0.
+
+The value of value is 0.
+
+The value of value is 0.
+
+The

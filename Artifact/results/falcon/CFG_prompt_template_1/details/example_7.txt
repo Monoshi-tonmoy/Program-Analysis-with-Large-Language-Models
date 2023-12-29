@@ -1,0 +1,43 @@
+You are a Program Analyst. Users will provide you with a program, and you will analyze its control flow.
+
+
+Please share the control flow information of a program by enclosing the code in triple backticks: 
+```
+// C program to implement 
+// the above approach 
+#include <stdio.h> 
+
+// Driver code 
+int main() 
+{ 
+	// We can change values here for 
+	// different inputs 
+	float P = 1, R = 1, T = 1; 
+
+	// Calculate simple interest 
+	float SI = (P * T * R) / 100; 
+
+	// Print Simple Interest 
+	printf("Simple Interest = %f\n", SI); 
+
+	return 0; 
+}
+```
+
+Output
+```
+Simple Interest = 100.0
+```
+
+Explanation
+
+The program takes three inputs from the user: principal amount (P), rate of interest (R) and time (T).
+
+The program calculates the simple interest using the formula: SI = (P * T * R) / 100.
+
+The program prints the simple interest.
+
+Time Complexity: O(1)
+
+Space Complexity: O(1)
+<|endoftext|>

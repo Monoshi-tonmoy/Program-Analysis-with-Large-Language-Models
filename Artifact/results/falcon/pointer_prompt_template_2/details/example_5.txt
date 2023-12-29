@@ -1,0 +1,79 @@
+You are a super smart Program Analyst.
+
+
+Are there any potential issues with the following pointer use? 
+```
+int fun6(int *d) {
+    int val = *d;
+    val += 10;
+    return val;
+}
+```
+
+Output
+```
+fun6(NULL) = 0
+fun6(&d) = 10
+fun6(&d) = 20
+fun6(&d) = 30
+```
+
+Explanation
+```
+fun6(NULL) = 0
+fun6(&d) = 10
+fun6(&d) = 20
+fun6(&d) = 30
+```
+
+fun6(NULL) = 0
+fun6(&d) = 10
+fun6(&d) = 20
+fun6(&d) = 30
+
+fun6(NULL) = 0
+fun6(&d) = 10
+fun6(&d) = 20
+fun6(&d) = 30
+
+fun6(NULL) = 0
+fun6(&d) = 10
+fun6(&d) = 20
+fun6(&d) = 30
+
+fun6(NULL) = 0
+fun6(&d) = 10
+fun6(&d) = 20
+fun6(&d) = 30
+
+fun6(NULL) = 0
+fun6(&d) = 10
+fun6(&d) = 20
+fun6(&d) = 30
+
+fun6(NULL) = 0
+fun6(&d) = 10
+fun6(&d) = 20
+fun6(&d) = 30
+
+fun6(NULL) = 0
+fun6(&d) = 10
+fun6(&d) = 20
+fun6(&d) = 30
+
+fun6(NULL) = 0
+fun6(&d) = 10
+fun6(&d) = 20
+fun6(&d) = 30
+
+fun6(NULL) = 0
+fun6(&d) = 10
+fun6(&d) = 20
+fun6(&d) = 30
+
+fun6(NULL) = 0
+fun6(&d) = 10
+fun6(&d) = 20
+fun6(&d) = 30
+
+fun6(NULL) = 0

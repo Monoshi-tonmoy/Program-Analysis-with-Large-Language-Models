@@ -1,0 +1,51 @@
+<s> [INST] <<SYS>>
+You are a Program Analyst. Users will provide you with a program, and you will analyze its dataflow.
+<</SYS>>
+
+Please share the dataflow information of a program by enclosing the code in triple backticks: 
+```
+// C program to implement the above approach
+#include <stdio.h>
+
+// Function to find factorial of given number
+unsigned int factorial(unsigned int n)
+{
+	int result = 1, i;
+
+	// loop from 2 to n to get the factorial
+	for (i = 2; i <= n; i++) {
+		result *= i;
+	}
+
+	return result;
+}
+
+// Driver code
+int main()
+{
+	int num = 5;
+	printf("Factorial of %d is %d", num, factorial(num));
+	return 0;
+}
+``` [/INST]  The dataflow of the program is as follows:
+
+1. The program starts by including the `stdio.h` header file, which provides functions for input and output operations.
+2. The program then defines a function called `factorial` that takes an unsigned integer `n` as input and returns the factorial of `n`.
+3. The `factorial` function initializes a variable `result` to 1 and a variable `i` to 2.
+4. The `factorial` function then enters a loop that runs from 2 to `n`, inclusive. In each iteration, the function multiplies `result` by `i` and updates `result` with the result.
+5. After the loop, the `factorial` function returns `result`.
+6. The program then defines a `main` function that takes no arguments and returns an integer.
+7. The `main` function initializes a variable `num` to 5 and then calls the `factorial` function with `num` as an argument.
+8. The `main` function then uses the `printf` function to print the result of the `factorial` function to the console.
+9. The `main` function then returns 0 to indicate that the program executed successfully.
+
+The dataflow of the program is as follows:
+
+1. The program starts by including the `stdio.h` header file.
+2. The program then defines a function called `factorial` that takes an unsigned integer `n` as input and returns the factorial of `n`.
+3. The `factorial` function initializes a variable `result` to 1 and a variable `i` to 2.
+4. The `factorial` function then enters a loop that runs from 2 to `n`, inclusive. In each iteration, the function multiplies `result` by `i` and updates `result` with the result.
+5. After the loop, the `factorial` function returns `result`.
+6. The program then defines a `main` function that takes no arguments and returns an integer.
+7. The `main` function initializes a variable `num` to 5 and then calls the `factorial` function with `num` as an argument.
+8. The `main` function then uses the `printf` function to print the result of the `factorial` function

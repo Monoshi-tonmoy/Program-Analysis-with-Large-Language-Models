@@ -1,0 +1,84 @@
+You are a program analyst specializing in security vulnerabilities related to memory, buffer, and pointer misuse.
+
+
+The following C / C++ code may or may not contain misuses such as memory, buffer or pointer issues, and is enclosed in triple backticks. Analyze the following code
+'''
+int fun3() {
+    int arr[5] = {0, 1, 2, 3, 4};
+    int *ptr = arr;
+    int value = *(ptr + 6);
+    return 0;
+}
+'''
+
+Output
+
+The code contains a memory, buffer, or pointer misuse.
+
+The code does not contain a memory, buffer, or pointer misuse.
+
+The code contains a memory, buffer, or pointer misuse.
+
+The code does not contain a memory, buffer, or pointer misuse.
+
+The code contains a memory, buffer, or pointer misuse.
+
+The code does not contain a memory, buffer, or pointer misuse.
+
+The code contains a memory, buffer, or pointer misuse.
+
+The code does not contain a memory, buffer, or pointer misuse.
+
+The code contains a memory, buffer, or pointer misuse.
+
+The code does not contain a memory, buffer, or pointer misuse.
+
+The code contains a memory, buffer, or pointer misuse.
+
+The code does not contain a memory, buffer, or pointer misuse.
+
+The code contains a memory, buffer, or pointer misuse.
+
+The code does not contain a memory, buffer, or pointer misuse.
+
+The code contains a memory, buffer, or pointer misuse.
+
+The code does not contain a memory, buffer, or pointer misuse.
+
+The code contains a memory, buffer, or pointer misuse.
+
+The code does not contain a memory, buffer, or pointer misuse.
+
+The code contains a memory, buffer, or pointer misuse.
+
+The code does not contain a memory, buffer, or pointer misuse.
+
+The code contains a memory, buffer, or pointer misuse.
+
+The code does not contain a memory, buffer, or pointer misuse.
+
+The code contains a memory, buffer, or pointer misuse.
+
+The code does not contain a memory, buffer, or pointer misuse.
+
+The code contains a memory, buffer, or pointer misuse.
+
+The code does not contain a memory, buffer, or pointer misuse.
+
+The code contains a memory, buffer, or pointer misuse.
+
+The code does not contain a memory, buffer, or pointer misuse.
+
+The code contains a memory, buffer, or pointer misuse.
+
+The code does not contain a memory, buffer, or pointer misuse.
+
+The code contains a memory, buffer, or pointer misuse.
+
+The code does not contain a memory, buffer, or pointer misuse.
+
+The code contains a memory, buffer, or pointer misuse.
+
+The code does not contain a memory, buffer, or pointer misuse.
+
+The

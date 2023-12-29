@@ -1,0 +1,62 @@
+You are a Program Analyst. Users will provide you with a program, and you will analyze its control flow.
+
+
+Please analyze and provide details on the decision points and loops in the control flow of a Computer program.
+
+-Definition: Control flow information includes understanding how the program executes through different paths.
+
+
+Now, based on the given information, Please share the control flow information of a program by enclosing the code in triple backticks: 
+```
+// C program for the even or odd
+#include <stdio.h>
+
+// Function to check if a 
+// number is even or odd
+void checkEvenOdd(int N) {
+    // Find remainder
+    int r = N % 2;
+
+    // Condition for even
+    if (r == 0)  {
+        printf("Even");
+    }
+
+    // Otherwise
+    else {
+        printf("Odd");
+    }
+}
+```
+
+Output
+```
+Even
+```
+
+Explanation
+
+The program checks if the number is even or odd.
+
+The function checkEvenOdd() takes an integer N as an argument.
+
+Inside the function, the remainder of N and 2 is calculated.
+
+If the remainder is 0, the number is even.
+
+Otherwise, the number is odd.
+
+The function checkEvenOdd() prints the result.
+
+The main() function calls the checkEvenOdd() function.
+
+The checkEvenOdd() function prints the result.
+
+The main() function prints the result.
+
+The program ends.
+
+Time Complexity: O(1)
+
+Auxiliary Space: O(1)
+<|endoftext|>

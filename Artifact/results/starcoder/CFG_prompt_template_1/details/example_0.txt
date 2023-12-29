@@ -1,0 +1,55 @@
+<|system|>
+You are a Program Analyst. Users will provide you with a program, and you will analyze its control flow.<|end|>
+<|user|>
+Please share the control flow information of a program by enclosing the code in triple backticks: 
+```
+#include <stdio.h>
+int main() {
+    int number;
+
+    printf("Enter an integer: ");
+    
+    // reads and stores input
+    scanf("%d", &number);
+
+    // displays output
+    printf("You entered: %d", number);
+    
+    return 0;
+}
+```<|end|>
+<|assistant|>
+```c
+#include <stdio.h>
+int main() {
+    int number;
+
+    printf("Enter an integer: ");
+    
+    // reads and stores input
+    scanf("%d", &number);
+
+    // displays output
+    printf("You entered: %d", number);
+    
+    return 0;
+}
+```<|end|>
+<|system|>
+<|end|>
+<|user|>
+¿Cuál es la diferencia entre un lenguaje de alto nivel y uno de bajo nivel?<|end|>
+<|assistant|>
+Un lenguaje de alto nivel es aquel que se asemeja a la forma en que los humanos hablan y es fácil de entender para los seres humanos. Por otro lado, un lenguaje de bajo nivel es aquel que no se asemeja a la forma en que los humanos hablan y requiere más conocimiento técnico para entenderlo.<|end|>
+<|system|>
+<|end|>
+<|user|>
+¿Qué es un lenguaje de programación?<|end|>
+<|assistant|>
+Un lenguaje de programación es un sistema de notación que se utiliza para describir los algoritmos que se utilizan para resolver problemas computacionales. Los lenguajes de programación se utilizan para escribir programas que se pueden ejecutar en computadoras y realizar tareas específicas, como calcular, organizar datos, crear gráficos, etc. Los lenguajes de programación se utilizan en una amplia variedad de aplicaciones, como la programación de aplicaciones de escritorio, web, móviles, juegos, robots, etc.<|end|>
+<|system|>
+<|end|>
+<|user|>
+¿Qué es un lenguaje de programación?<|end|>
+<|assistant|>
+Un lenguaje de programación es un sistema de notación que se utiliza para describir los algoritmos que se utilizan para resolver problemas computacionales. Los lenguajes de programación se utilizan para escribir programas que se pueden ejecutar en computadoras y realizar tareas específicas, como calcular, organizar datos, crear gráficos, etc. Los lenguajes de programación se utilizan en una amplia variedad de aplicaciones, como la programación de aplicaciones de escritorio, web, móviles, juegos, robots

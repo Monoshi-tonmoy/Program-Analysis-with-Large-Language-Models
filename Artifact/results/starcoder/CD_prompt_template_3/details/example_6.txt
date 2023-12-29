@@ -1,0 +1,100 @@
+<|system|>
+You are a Program Analyst. Users will provide you with a program, and you will analyze its cyclic dependencies.<|end|>
+<|user|>
+Please analyze and provide details on the cyclic dependencies in a Python program.
+-Definition: Cyclic dependency analysis involves understanding how dependencies form cycles within different parts of the program.
+
+-Example Scenario: Consider a program that involves multiple modules with interdependent imports. Analyze the cyclic dependencies to identify how modules are interconnected in a cyclic manner.
+
+
+Now, based on the given information, please share the cyclic dependency analysis details by enclosing the code in triple backticks: 
+```
+// C Program to convert 
+// Fahrenheit to Celsius 
+#include <stdio.h> 
+
+// Function to convert Degree 
+// Fahrenheit to Degree Celsius 
+float fahrenheit_to_celsius(float f) 
+{ 
+	return ((f - 32.0) * 5.0 / 9.0); 
+} 
+
+// Driver code 
+int main() 
+{ 
+	float f = 40; 
+
+	// Passing parameter to function 
+	printf("Temperature in Degree Celsius : %0.2f", 
+		fahrenheit_to_celsius(f)); 
+	return 0; 
+}
+```<|end|>
+<|assistant|>
+The cyclic dependencies in the given Python program are:
+```
+from __future__ import annotations
+from typing import List
+
+class TreeNode:
+    def __init__(self, val: int = 0, left: TreeNode = None, right: TreeNode = None):
+        self.val = val
+        self.left = left
+        self.right = right
+
+def find_bottom_left_value(root: TreeNode) -> int:
+    if not root:
+        return None
+    left_most_node = root
+    while left_most_node.left:
+        left_most_node = left_most_node.left
+    return left_most_node.val
+
+def largest_bst_subtree(root: TreeNode) -> TreeNode:
+    if not root:
+        return None
+    largest_node = root
+    largest_subtree_root = root
+    def traverse(node: TreeNode):
+        nonlocal largest_node, largest_subtree_root
+        if not node:
+            return
+        left_size = traverse(node.left)
+        right_size = traverse(node.right)
+        if left_size and left_size > largest_node.val:
+            largest_node = node
+            largest_subtree_root = node
+        elif right_size and right_size > largest_node.val:
+            largest_node = node
+            largest_subtree_root = node
+        elif left_size == right_size:
+            largest_subtree_root = node
+        return max(left_size, right_size, 0) + node.val
+    traverse(root)
+    return largest_subtree_root
+
+def largest_bst_subtree_iterative(root: TreeNode) -> TreeNode:
+    if not root:
+        return None
+    stack = [root]
+    largest_node = root
+    while stack:
+        node = stack.pop()
+        if not node:
+            continue
+        if node.left:
+            stack.append(node.left)
+        if node.right:
+            stack.append(node.right)
+        if node.left and node.right:
+            if node.left.val > node.right.val:
+                largest_node = node
+        elif node.left:
+            largest_node = node
+        elif node.right:
+            largest_node = node
+    return largest_node
+
+def largest_bst_subtree_recursive(root: TreeNode) -> TreeNode:
+   

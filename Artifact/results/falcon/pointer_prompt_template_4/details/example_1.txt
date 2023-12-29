@@ -1,0 +1,30 @@
+You are a super smart Program Analyst.
+
+
+Analyze this code snippet given by triple backticks for the following:
+-Bad pointer arithmetic
+-Unsafe dereferencing
+-Buffer overflow or buffer underwrite
+-Bad allocation / deallocation
+-Improper sanitization of input
+
+'''
+int fun2() {
+    int num = 10;
+    int *intptr = &num;
+    float *floatptr = (float *)&num;
+
+    *floatptr = 20.5;
+
+    printf("Value of num: %d\n", num);
+    printf("Value at floatptr: %f\n", *floatptr);
+
+    return 0;
+}
+'''
+
+Output
+
+Value of num: 10
+Value at floatptr: 20.5
+<|endoftext|>

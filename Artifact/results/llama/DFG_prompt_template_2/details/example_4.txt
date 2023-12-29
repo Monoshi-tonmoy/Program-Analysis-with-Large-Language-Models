@@ -1,0 +1,84 @@
+<s> [INST] <<SYS>>
+You are a Program Analyst. Users will provide you with a program, and you will analyze its dataflow.
+<</SYS>>
+
+Please analyze and provide details on the dataflow in a Computer program.
+
+-Definition: Dataflow information includes understanding how data is manipulated and flows through different parts of the program.
+
+
+Now, based on the given information, Please share the dataflow details of a program by enclosing the code in triple backticks: 
+```
+// C program interchange the elements
+// of first and last in a matrix
+// across rows.
+#include <stdio.h>
+
+#define n 3
+
+// Function to swap the element
+// of first and last row
+void interchangeFirstLast(int m[][n])
+{
+    int rows = n;
+
+    // Swapping of element between first
+    // and last rows
+    for (int i = 0; i < n; i++)
+    {
+        int t = m[0][i];
+        m[0][i] = m[rows - 1][i];
+        m[rows - 1][i] = t;
+    }
+}
+
+// Driver code
+int main()
+{
+    // Input matrix
+    int m[n][n] = {{6, 3, 1},
+                   {4, 5, 2},
+                   {2, 4, 9}};
+
+    // Printing the input matrix
+    printf("Input Matrix: \n");
+    for (int i = 0; i < n; i++)
+    {
+        for (int j = 0; j < n; j++)
+        {
+            printf("%d ", m[i][j]);
+        }
+        printf("\n");
+    }
+
+    // call interchangeFirstLast(m) function.
+    // This function swap the element of
+    // first and last row
+    interchangeFirstLast(m);
+
+    // Printing the original matrix
+    printf("\nOutput Matrix: \n");
+    for (int i = 0; i < n; i++)
+    {
+        for (int j = 0; j < n; j++)
+        {
+            printf("%d ", m[i][j]);
+        }
+        printf("\n");
+    }
+}
+``` [/INST]  The program is a C program that interchanges the elements of the first and last rows of a matrix. The program takes a matrix as input and swaps the elements of the first and last rows.
+
+The dataflow of the program can be analyzed as follows:
+
+1. The program starts by defining a macro `n` with the value 3, which is used to define the size of the matrix.
+2. The program then defines a function `interchangeFirstLast` that takes a matrix as input and swaps the elements of the first and last rows.
+3. The function first initializes a variable `rows` with the value `n`, which is used to store the number of rows in the matrix.
+4. The function then uses a loop to iterate over the elements of the first and last rows of the matrix. For each element, the function swaps the values of the element in the first row with the value of the element in the last row.
+5. The function then returns the modified matrix.
+6. The program then defines a driver code that takes a matrix as input and calls the `interchangeFirstLast` function with the matrix as input.
+7. The driver code then prints the input matrix and the modified matrix returned by the `interchangeFirstLast` function.
+
+The dataflow of the program can be represented as follows:
+```
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                

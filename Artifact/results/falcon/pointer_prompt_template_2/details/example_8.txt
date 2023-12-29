@@ -1,0 +1,26 @@
+You are a super smart Program Analyst.
+
+
+Are there any potential issues with the following pointer use? 
+```
+int fun9() {
+    int *ptr;
+    *ptr = 15;
+    int temp = *ptr;
+    free(ptr);
+    return temp;
+}
+```
+
+Output
+```
+15
+```
+
+Explanation
+
+The pointer ptr is allocated memory for an integer.
+The value 15 is stored in the allocated memory.
+The pointer ptr is freed.
+The value 15 is returned.
+<|endoftext|>

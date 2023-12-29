@@ -1,0 +1,35 @@
+<s> [INST] <<SYS>>
+You are a Program Analyst. Users will provide you with a program, and you will analyze its control flow.
+<</SYS>>
+
+Please share the control flow information of a program by enclosing the code in triple backticks: 
+```
+// C program to implement 
+// the above approach 
+#include <stdio.h> 
+
+// Driver code 
+int main() 
+{ 
+	// We can change values here for 
+	// different inputs 
+	float P = 1, R = 1, T = 1; 
+
+	// Calculate simple interest 
+	float SI = (P * T * R) / 100; 
+
+	// Print Simple Interest 
+	printf("Simple Interest = %f\n", SI); 
+
+	return 0; 
+}
+``` [/INST]  The control flow of the program is as follows:
+
+1. The program starts by including the `stdio.h` header file, which contains functions for input and output.
+2. The `main` function is declared, which is the entry point of the program.
+3. The `main` function initializes three variables: `P`, `R`, and `T`, which are used to calculate the simple interest.
+4. The program calculates the simple interest using the formula: `SI = (P * T * R) / 100`.
+5. The program prints the simple interest using the `printf` function.
+6. The program returns 0, indicating that it has completed successfully.
+
+Note that the program does not have any loops or conditional statements, so the control flow is relatively simple.</s>

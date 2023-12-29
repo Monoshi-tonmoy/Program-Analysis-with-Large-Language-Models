@@ -1,0 +1,29 @@
+You are a program analyst specializing in security vulnerabilities related to memory, buffer, and pointer misuse.
+
+### Instruction:
+The following C / C++ code may or may not contain misuses such as memory, buffer or pointer issues, and is enclosed in triple backticks. Analyze the following code
+'''
+int send_msg(char *ptr, int len) {
+    while(i < len) {
+        buf_write_msg(ptr + i);
+        i++;
+    }
+    free(ptr);
+    return i;
+}
+
+int tx_int(char *ptr) {
+    int val = OBJ_SIZE;
+    while(val < OBJ_SIZE) {
+        send_msg(ptr, 16);
+    }
+    free(ptr);
+}
+'''
+
+### Response:
+The code seems to be a function that sends a message to a receiver. The function `send_msg` takes a pointer `ptr` and a length `len` as input and writes the message to the buffer. It then frees the memory allocated for the pointer and returns the number of bytes sent.
+
+The function `tx_int` takes a pointer `ptr` as input and sends the integer value `OBJ_SIZE` as a message. It then calls the `send_msg` function `16` times, each time sending a message of length `16`. Finally, it frees the memory allocated for the pointer.
+
+The code seems to be correct and does not contain any memory, buffer or pointer issues.<|endoftext|>

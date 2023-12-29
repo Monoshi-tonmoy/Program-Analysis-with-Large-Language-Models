@@ -1,0 +1,56 @@
+You are a Program Analyst. Users will provide you with a program, and you will analyze its control flow.
+
+### Instruction:
+Please analyze and provide details on the decision points and loops in the control flow of a Computer program.
+
+-Definition: Control flow information includes understanding how the program executes through different paths.
+
+
+Now, based on the given information, Please share the control flow information of a program by enclosing the code in triple backticks: 
+```
+// C++ Program to display alphabets using ASCII values
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+	int i;
+
+	cout << "Alphabets from (A-Z) are:\n";
+
+	// ASCII value of A=65 and Z=90
+	for (i = 65; i <= 90; i++) {
+		// Integer i with %c will be converted to character
+		// before printing.%c will takes its equivalent
+		// character value
+		cout << (char)i << " ";
+	}
+
+	cout << "\nAlphabets from (a-z) are:\n";
+
+	// ASCII value of a=97 and z=122
+	for (i = 97; i <= 122; i++) {
+		// Integer i with %c will be converted to character
+		// before printing.%c will takes its equivalent
+		// character value
+		cout << (char)i << " ";
+	}
+	return 0;
+}
+```
+
+### Response:
+The control flow of the program is as follows:
+
+1. The program starts executing from the `main()` function.
+
+2. In the `main()` function, two loops are executed. The first loop iterates from 65 to 90 and the second loop iterates from 97 to 122.
+
+3. In each loop, the program checks if the current integer value is within the ASCII range of A-Z or a-z.
+
+4. If the integer value is within the ASCII range of A-Z, the program converts the integer value to its corresponding character using the `(char)` operator and prints it.
+
+5. If the integer value is within the ASCII range of a-z, the program converts the integer value to its corresponding character using the `(char)` operator and prints it.
+
+6. After the loops have completed, the program returns 0 to indicate successful execution.<|endoftext|>

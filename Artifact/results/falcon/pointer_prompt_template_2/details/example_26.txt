@@ -1,0 +1,29 @@
+You are a super smart Program Analyst.
+
+
+Are there any potential issues with the following pointer use? 
+```
+int foo(int SIZE) {
+    char* ptr = (char*)malloc (SIZE);
+    if (err) {
+        abrt = 1;
+        free(ptr);
+    }
+
+    // Some code here
+
+    if (abrt) {
+        logError("operation aborted before commit", ptr);
+    }
+}
+```
+
+Output
+```
+There is a potential issue with the following pointer use.
+
+The pointer 'ptr' is allocated in the 'if' block, but it is freed in the 'else' block.
+
+The pointer 'ptr' is freed before the 'if' block is executed.
+```
+<|endoftext|>

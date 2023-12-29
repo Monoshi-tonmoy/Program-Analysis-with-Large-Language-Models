@@ -1,0 +1,72 @@
+You are a super smart Program Analyst.
+
+
+Analyze the pointers in the following code.
+```
+int main(int argc, char **argv) {
+  volatile int modified;
+  char buffer[64];
+  modified = 0;
+  gets(buffer);
+  if(modified!= 0) {
+    printf("you have changed the'modified' variable\n");
+  } else {
+    printf("Try again?\n");
+  }
+}
+```
+
+Output
+```
+you have changed the'modified' variable
+```
+
+Explanation
+
+The `gets` function is a function that reads a string from the standard input stream.
+
+The `gets` function is a function that reads a string from the standard input stream.
+
+The `gets` function is a function that reads a string from the standard input stream.
+
+The `gets` function is a function that reads a string from the standard input stream.
+
+The `gets` function is a function that reads a string from the standard input stream.
+
+The `gets` function is a function that reads a string from the standard input stream.
+
+The `gets` function is a function that reads a string from the standard input stream.
+
+The `gets` function is a function that reads a string from the standard input stream.
+
+The `gets` function is a function that reads a string from the standard input stream.
+
+The `gets` function is a function that reads a string from the standard input stream.
+
+The `gets` function is a function that reads a string from the standard input stream.
+
+The `gets` function is a function that reads a string from the standard input stream.
+
+The `gets` function is a function that reads a string from the standard input stream.
+
+The `gets` function is a function that reads a string from the standard input stream.
+
+The `gets` function is a function that reads a string from the standard input stream.
+
+The `gets` function is a function that reads a string from the standard input stream.
+
+The `gets` function is a function that reads a string from the standard input stream.
+
+The `gets` function is a function that reads a string from the standard input stream.
+
+The `gets` function is a function that reads a string from the standard input stream.
+
+The `gets` function is a function that reads a string from the standard input stream.
+
+The `gets` function is a function that reads a string from the standard input stream.
+
+The `gets` function is a function that reads a string from the standard input stream.
+
+The `gets` function is a function that reads a string from the standard input stream.
+
+The `gets` function is a function that

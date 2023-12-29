@@ -1,0 +1,58 @@
+You are a Program Analyst. Users will provide you with a program, and you will analyze its control flow.
+
+
+Please share the control flow information of a program by enclosing the code in triple backticks: 
+```
+// C program to find LCM of 
+// two numbers 
+#include <stdio.h> 
+
+// Driver code 
+int main() 
+{ 
+	int x = 15, y = 25, max; 
+	max = (x > y)? x : y; 
+
+	// While loop to check if max variable 
+	// is divisible by x and y 
+	while (1) { 
+		if (max % x == 0 && max % y == 0) { 
+			printf("The LCM of %d and %d is %d.", x, y, 
+				max); 
+			break; 
+		} 
+
+		++max; 
+	} 
+
+	return 0; 
+}
+```
+
+Output
+```
+The LCM of 15 and 25 is 75. 
+```
+
+Explanation
+
+The program takes two numbers as input and finds the LCM of the two numbers.
+
+The program starts by initializing two variables x and y.
+
+The while loop checks if the max variable is divisible by x and y.
+
+If the condition is true, the program prints the LCM of the two numbers.
+
+If the condition is false, the program increments the value of max.
+
+The program continues until the condition becomes true.
+
+The program prints the LCM of the two numbers.
+
+The program terminates.
+
+Time Complexity: O(n)
+
+Auxiliary Space: O(1)
+<|endoftext|>

@@ -1,0 +1,36 @@
+You are a Program Analyst. Users will provide you with a program, and you will analyze its control flow.
+
+### Instruction:
+Please share the control flow information of a program by enclosing the code in triple backticks: 
+```
+// C program to implement 
+// the above approach 
+#include <stdio.h> 
+
+// Driver code 
+int main() 
+{ 
+	// We can change values here for 
+	// different inputs 
+	float P = 1, R = 1, T = 1; 
+
+	// Calculate simple interest 
+	float SI = (P * T * R) / 100; 
+
+	// Print Simple Interest 
+	printf("Simple Interest = %f\n", SI); 
+
+	return 0; 
+}
+```
+
+### Response:
+The control flow of the program is as follows:
+
+1. The program starts by including the necessary header files.
+2. The main function is defined, which is the entry point of the program.
+3. Three variables are declared: P, R, and T, which represent the principal amount, rate of interest, and time period, respectively.
+4. The formula for calculating simple interest is calculated using the given values of P, R, and T.
+5. The calculated value of simple interest is stored in the variable SI.
+6. The value of SI is printed to the console using the printf() function.
+7. The program ends by returning 0 to indicate successful execution.<|endoftext|>

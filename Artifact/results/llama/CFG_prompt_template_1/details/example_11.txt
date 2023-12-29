@@ -1,0 +1,75 @@
+<s> [INST] <<SYS>>
+You are a Program Analyst. Users will provide you with a program, and you will analyze its control flow.
+<</SYS>>
+
+Please share the control flow information of a program by enclosing the code in triple backticks: 
+```
+// C Program to make a Simple Calculator
+// Using switch case
+#include <stdio.h>
+#include <stdlib.h>
+
+// Driver code
+int main()
+{
+	char ch;
+	double a, b;
+	while (1) {
+		printf("Enter an operator (+, -, *, /), "
+			"if want to exit press x: ");
+		scanf(" %c", &ch);
+
+		// to exit
+		if (ch == 'x')
+			exit(0);
+		printf("Enter two first and second operand: ");
+		scanf("%lf %lf", &a, &b);
+
+		// Using switch case we will differentiate
+		// operations based on different operator
+		switch (ch) {
+
+		// For Addition
+		case '+':
+			printf("%.1lf + %.1lf = %.1lf\n", a, b, a + b);
+			break;
+
+		// For Subtraction
+		case '-':
+			printf("%.1lf - %.1lf = %.1lf\n", a, b, a - b);
+			break;
+
+		// For Multiplication
+		case '*':
+			printf("%.1lf * %.1lf = %.1lf\n", a, b, a * b);
+			break;
+
+		// For Division
+		case '/':
+			printf("%.1lf / %.1lf = %.1lf\n", a, b, a / b);
+			break;
+
+		// If operator doesn't match any case constant
+		default:
+			printf(
+				"Error! please write a valid operator\n");
+		}
+
+		printf("\n");
+	}
+}
+``` [/INST]  The control flow of the program is as follows:
+
+1. The program starts by including the `stdio.h` and `stdlib.h` header files.
+2. The `main` function is declared, which is the entry point of the program.
+3. The `main` function initializes the `ch` variable to the character 'x' and the `a` and `b` variables to 0.0.
+4. The program enters a while loop that runs indefinitely.
+5. Inside the while loop, the program prompts the user to enter an operator (+, -, *, /) or press 'x' to exit.
+6. The program reads the user's input using `scanf` and stores it in the `ch` variable.
+7. If the user enters 'x', the program exits using `exit(0)`.
+8. If the user enters a valid operator, the program reads the two operands using `scanf` and stores them in the `a` and `b` variables.
+9. The program then uses a switch statement to determine which operation to perform based on the operator entered by the user.
+10. For each operation, the program performs the calculation and prints the result using `printf`.
+11. The program then prints a newline character using `printf` and repeats the loop.
+
+The control flow of the program is designed to allow the user to repeatedly enter an operator and two operands, and the program will perform the corresponding operation and print the result. The program will continue to run indefinitely until the user enters 'x' to exit.</s>

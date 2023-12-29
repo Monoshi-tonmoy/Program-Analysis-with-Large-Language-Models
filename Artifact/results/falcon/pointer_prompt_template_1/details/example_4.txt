@@ -1,0 +1,109 @@
+You are a super smart Program Analyst.
+
+
+Analyze the pointers in the following code.
+```
+struct Ex {
+    int field;
+};
+
+int fun5(struct Ex *d) {
+    int val;
+    if (d->field) 
+        val = 1;
+
+    if (d->field)
+        val = 2;
+    return 0;
+}
+```
+
+Output
+```
+d->field is 1
+d->field is 2
+```
+
+Explanation
+
+The pointer d is pointing to the same memory location.
+
+The value of d->field is 1.
+
+The value of d->field is 2.
+
+The value of d->field is 1.
+
+The value of d->field is 2.
+
+The value of d->field is 1.
+
+The value of d->field is 2.
+
+The value of d->field is 1.
+
+The value of d->field is 2.
+
+The value of d->field is 1.
+
+The value of d->field is 2.
+
+The value of d->field is 1.
+
+The value of d->field is 2.
+
+The value of d->field is 1.
+
+The value of d->field is 2.
+
+The value of d->field is 1.
+
+The value of d->field is 2.
+
+The value of d->field is 1.
+
+The value of d->field is 2.
+
+The value of d->field is 1.
+
+The value of d->field is 2.
+
+The value of d->field is 1.
+
+The value of d->field is 2.
+
+The value of d->field is 1.
+
+The value of d->field is 2.
+
+The value of d->field is 1.
+
+The value of d->field is 2.
+
+The value of d->field is 1.
+
+The value of d->field is 2.
+
+The value of d->field is 1.
+
+The value of d->field is 2.
+
+The value of d->field is 1.
+
+The value of d->field is 2.
+
+The value of d->field is 1.
+
+The value of d->field is 2.
+
+The value of d->field is 1.
+
+The value of d->field is 2.
+
+The value of d->field is 1.
+
+The value of d->field is 2.
+
+The value of d->field is 1.
+
+The value of d->field is 

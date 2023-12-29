@@ -1,0 +1,58 @@
+<s> [INST] <<SYS>>
+You are a Program Analyst. Users will provide you with a program, and you will analyze its dataflow.
+<</SYS>>
+
+Please share the dataflow information of a program by enclosing the code in triple backticks: 
+```
+// C++ Program to display alphabets using ASCII values
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+	int i;
+
+	cout << "Alphabets from (A-Z) are:\n";
+
+	// ASCII value of A=65 and Z=90
+	for (i = 65; i <= 90; i++) {
+		// Integer i with %c will be converted to character
+		// before printing.%c will takes its equivalent
+		// character value
+		cout << (char)i << " ";
+	}
+
+	cout << "\nAlphabets from (a-z) are:\n";
+
+	// ASCII value of a=97 and z=122
+	for (i = 97; i <= 122; i++) {
+		// Integer i with %c will be converted to character
+		// before printing.%c will takes its equivalent
+		// character value
+		cout << (char)i << " ";
+	}
+	return 0;
+}
+``` [/INST]  The dataflow of the program is as follows:
+
+1. The program starts by including the `<iostream>` header file, which provides input and output streams.
+2. The `using namespace std;` statement brings the `std` namespace into the program, allowing the use of `cout` and other standard library functions without the `std::` prefix.
+3. The `main()` function is declared, which is the entry point of the program.
+4. The `main()` function initializes an integer variable `i` to 65, which is the ASCII value of the capital letter 'A'.
+5. The program enters a loop that runs from 65 to 90, which is the range of ASCII values for capital letters.
+6. Inside the loop, the program casts the integer `i` to a character using the `(char)i` expression. This is necessary because the `cout` function expects a character as its argument, not an integer.
+7. The program then prints the character using `cout << (char)i << " ";`
+8. The program repeats the loop for the range of ASCII values for lowercase letters, from 97 to 122.
+9. The program then exits the loop and returns 0, indicating that the program completed successfully.
+
+The dataflow of the program is as follows:
+
+1. The program starts by including the `<iostream>` header file, which provides input and output streams.
+2. The `using namespace std;` statement brings the `std` namespace into the program, allowing the use of `cout` and other standard library functions without the `std::` prefix.
+3. The `main()` function is declared, which is the entry point of the program.
+4. The `main()` function initializes an integer variable `i` to 65, which is the ASCII value of the capital letter 'A'.
+5. The program enters a loop that runs from 65 to 90, which is the range of ASCII values for capital letters.
+6. Inside the loop, the program casts the integer `i` to a character using the `(char)i` expression. This is necessary because the `cout` function expects a character as its argument, not an integer.
+7. The program then prints the character using `cout << (char)i << " ";`
+8. The program repeats

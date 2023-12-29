@@ -1,0 +1,27 @@
+You are a super smart Program Analyst.
+
+
+Are there any potential issues with the following pointer use? 
+```
+int fun3() {
+    int arr[5] = {0, 1, 2, 3, 4};
+    int *ptr = arr;
+    int value = *(ptr + 6);
+    return 0;
+}
+```
+
+Output
+```
+0
+```
+
+Explanation
+
+The pointer ptr is pointing to the first element of the array arr.
+
+The expression *(ptr + 6) is equivalent to *(ptr + (6 * sizeof(int))).
+
+The expression *(ptr + 6) is equivalent to *(ptr + 24).
+
+The expression *(ptr + 6) is equivalent to *(ptr + 24) = *(ptr + 24) = *(ptr + 24) = *(ptr + 24) = *(ptr + 24) = *(ptr + 24) = *(ptr + 24) = *(ptr + 24) = *(ptr + 24) = *(ptr + 24) = *(ptr + 24) = *(ptr + 24) = *(ptr + 24) = *(ptr + 24) = *(ptr + 24) = *(ptr + 24) = *(ptr + 24) = *(ptr + 24) = *(ptr + 24) = *(ptr + 24) = *(ptr + 24) = *(ptr + 24) = *(ptr + 24) = *(ptr + 24) = *(ptr + 24) = *(ptr + 24) = *(ptr + 24) = *(ptr + 24) = *(ptr + 24) = *(ptr + 24) = *(ptr + 24) = *(ptr + 24) = *(ptr + 24) = *(ptr + 24) = *(ptr + 24) = *(ptr + 24) = *(ptr + 24) = *(ptr + 24) = *(ptr + 24) = *(ptr + 24) = *(ptr + 24) = *(ptr + 24) 

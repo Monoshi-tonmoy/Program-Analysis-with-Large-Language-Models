@@ -1,0 +1,52 @@
+You are a super smart Program Analyst.
+
+
+Analyze the pointers in the following code.
+```
+typedef struct elem_list {
+    int val;
+    struct elem_list *next;
+} Elements;
+
+int elem_member(int val, Elements *c) {
+    Elements *elem;
+    for(elem == c; c!= NULL; elem = elem->next) {
+        if(elem->val == val) {
+            return 1;
+        }
+    }
+    return 0;
+}
+```
+
+Output
+```
+1
+```
+
+Explanation
+```
+The pointer 'elem' is initialized to the first element of the list.
+The pointer 'c' is initialized to the first element of the list.
+The pointer 'elem' is dereferenced and assigned to the first element of the list.
+The pointer 'c' is dereferenced and assigned to the first element of the list.
+The pointer 'elem' is dereferenced and assigned to the second element of the list.
+The pointer 'c' is dereferenced and assigned to the second element of the list.
+The pointer 'elem' is dereferenced and assigned to the third element of the list.
+The pointer 'c' is dereferenced and assigned to the third element of the list.
+The pointer 'elem' is dereferenced and assigned to the fourth element of the list.
+The pointer 'c' is dereferenced and assigned to the fourth element of the list.
+The pointer 'elem' is dereferenced and assigned to the fifth element of the list.
+The pointer 'c' is dereferenced and assigned to the fifth element of the list.
+The pointer 'elem' is dereferenced and assigned to the sixth element of the list.
+The pointer 'c' is dereferenced and assigned to the sixth element of the list.
+The pointer 'elem' is dereferenced and assigned to the seventh element of the list.
+The pointer 'c' is dereferenced and assigned to the seventh element of the list.
+The pointer 'elem' is dereferenced and assigned to the eighth element of the list.
+The pointer 'c' is dereferenced and assigned to the eighth element of the list.
+The pointer 'elem' is dereferenced and assigned to the ninth element of the list.
+The pointer 'c' is dereferenced and assigned to the ninth element of the list.
+The pointer 'elem' is dereferenced and assigned to the tenth element of the list.
+The pointer 'c' is dereferenced and assigned to the tenth element of the list.
+The pointer 'elem' is dereferenced and assigned to the eleventh element of the list.
+The pointer 

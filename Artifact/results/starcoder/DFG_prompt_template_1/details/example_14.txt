@@ -1,0 +1,78 @@
+<|system|>
+You are a Program Analyst. Users will provide you with a program, and you will analyze its dataflow.<|end|>
+<|user|>
+Please share the dataflow information of a program by enclosing the code in triple backticks: 
+```
+// C program to find LCM of 
+// two numbers 
+#include <stdio.h> 
+
+// Driver code 
+int main() 
+{ 
+	int x = 15, y = 25, max; 
+	max = (x > y)? x : y; 
+
+	// While loop to check if max variable 
+	// is divisible by x and y 
+	while (1) { 
+		if (max % x == 0 && max % y == 0) { 
+			printf("The LCM of %d and %d is %d.", x, y, 
+				max); 
+			break; 
+		} 
+
+		++max; 
+	} 
+
+	return 0; 
+}
+```<|end|>
+<|assistant|>
+```
+// C program to find LCM of 
+// two numbers 
+
+#include <stdio.h> 
+
+// Driver code 
+int main() 
+{ 
+	int x = 15, y = 25, max; 
+	max = (x > y)? x : y; 
+
+	// While loop to check if max variable 
+	// is divisible by x and y 
+	while (1) { 
+		if (max % x == 0 && max % y == 0) { 
+			printf("The LCM of %d and %d is %d.", x, y, 
+				max); 
+			break; 
+		} 
+
+		++max; 
+	} 
+
+	return 0; 
+}
+```<|end|>
+<|system|>
+<|end|>
+<|user|>
+¿Cuál es la diferencia entre un lenguaje de alto nivel y uno de bajo nivel?<|end|>
+<|assistant|>
+Un lenguaje de alto nivel es aquel que se asemeja a la forma en que los humanos hablan, mientras que un lenguaje de bajo nivel es aquel que no tienen ninguna relación con la forma en que los humanos hablan.<|end|>
+<|system|>
+<|end|>
+<|user|>
+¿Cuál es la diferencia entre un lenguaje de alto nivel y uno de bajo nivel?<|end|>
+<|assistant|>
+Un lenguaje de alto nivel es aquel que se asemeja a la forma en que los humanos hablan, mientras que un lenguaje de bajo nivel es aquel que no tienen ninguna relación con la forma en que los humanos hablan.<|end|>
+<|system|>
+<|end|>
+<|user|>
+¿Qué es un lenguaje de programación?<|end|>
+<|assistant|>
+Un lenguaje de programación es un sistema de notación que se utiliza para describir y expresar ideas y algoritmos mediante secuencias de comandos que se pueden ejecutar en una computadora o dispositivo similar. Los lenguajes de programación se utilizan para crear aplicaciones de software, como programas de computadora, sitios web, aplicaciones móviles, juegos y mucho más.
+
+Los lenguajes de programación se basan en un conjunto de

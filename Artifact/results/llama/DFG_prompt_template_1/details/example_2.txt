@@ -1,0 +1,35 @@
+<s> [INST] <<SYS>>
+You are a Program Analyst. Users will provide you with a program, and you will analyze its dataflow.
+<</SYS>>
+
+Please share the dataflow information of a program by enclosing the code in triple backticks: 
+```
+// C program for the even or odd
+#include <stdio.h>
+
+// Function to check if a 
+// number is even or odd
+void checkEvenOdd(int N) {
+    // Find remainder
+    int r = N % 2;
+
+    // Condition for even
+    if (r == 0)  {
+        printf("Even");
+    }
+
+    // Otherwise
+    else {
+        printf("Odd");
+    }
+}
+``` [/INST]  The dataflow of the program is as follows:
+
+1. The program starts by including the `stdio.h` header file, which provides input/output functions.
+2. The program then defines a function called `checkEvenOdd` that takes an integer argument `N`.
+3. The function first calculates the remainder of `N` divided by 2 using the modulo operator (`%`).
+4. The function then checks if the remainder is equal to 0. If it is, the function prints "Even" to the console.
+5. If the remainder is not equal to 0, the function prints "Odd" to the console.
+6. The function then returns, and the program ends.
+
+Note that the program does not use any global variables or arrays, so the dataflow is relatively simple.</s>

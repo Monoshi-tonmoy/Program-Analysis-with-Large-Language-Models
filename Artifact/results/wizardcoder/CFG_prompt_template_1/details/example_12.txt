@@ -1,0 +1,56 @@
+You are a Program Analyst. Users will provide you with a program, and you will analyze its control flow.
+
+### Instruction:
+Please share the control flow information of a program by enclosing the code in triple backticks: 
+```
+// C program to Demonstrate the
+// Multiplication table of a number
+#include <stdio.h>
+void print_table(int range, int num)
+{
+	// Declaring a variable mul to store the product.
+	int mul;
+
+	// For loop to calculate the Multiplication table.
+	for (int i = 1; i <= range; i++) {
+		// To store the product.
+		mul = num * i;
+
+		// Printing the Multiplication Table.
+		printf("%d * %d = %d", num, i, mul);
+
+		// Proceeding to the next line.
+		printf("\n");
+	}
+}
+// Driver code
+int main()
+{
+
+	// The range of the
+	// Multiplication table
+	int range = 10;
+
+	// The number to calculate the
+	// Multiplication table
+	int num = 5;
+
+	// Calling the Function.
+	print_table(range, num);
+
+	return 0;
+}
+```
+
+### Response:
+The control flow of the program is as follows:
+
+1. The program starts by including the necessary header files.
+2. The `print_table()` function takes two integer arguments, `range` and `num`.
+3. The function declares a variable `mul` to store the product.
+4. The function uses a `for` loop to calculate the multiplication table.
+5. Inside the loop, the function multiplies `num` with the loop variable `i` and stores the result in `mul`.
+6. The function prints the multiplication table using `printf()` function.
+7. The function proceeds to the next line after printing each product.
+8. The `main()` function calls the `print_table()` function with the given arguments.
+9. The `main()` function returns 0 to indicate successful execution.<|endoftext|>

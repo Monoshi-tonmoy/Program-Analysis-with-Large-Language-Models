@@ -1,0 +1,34 @@
+You are a program analyst specializing in security vulnerabilities related to memory, buffer, and pointer misuse.
+
+### Instruction:
+The following C / C++ code may or may not contain misuses such as memory, buffer or pointer issues, and is enclosed in triple backticks. Analyze the following code
+'''
+int fun10() {
+    int *ptr = (int *)malloc(sizeof(int));
+    int val = 50;
+    for(int i = 0; i < 25; i++) {
+        *ptr = val * i;
+        free(ptr);
+    }
+    return 0;
+}
+'''
+
+### Response:
+The code is allocating memory using `malloc()` and then freeing it in a loop. This is a common mistake that can lead to memory leaks and other issues. The `free()` function should be called only once, after all the memory has been used. In this case, the `free()` function should be called after the loop has finished executing. Additionally, the `malloc()` function should be called with the correct size of memory to be allocated. In this case, the `malloc()` function should be called with `sizeof(int)` to allocate memory for an integer.
+
+Here's the corrected code:
+
+```c
+int fun10() {
+    int *ptr = (int *)malloc(sizeof(int));
+    int val = 50;
+    for(int i = 0; i < 25; i++) {
+        *ptr = val * i;
+    }
+    free(ptr);
+    return 0;
+}
+```
+
+This code should work correctly and allocate memory for an integer and then free it after the loop has finished executing.<|endoftext|>

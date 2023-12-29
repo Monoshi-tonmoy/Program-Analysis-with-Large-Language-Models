@@ -1,0 +1,47 @@
+You are a Program Analyst. Users will provide you with a program, and you will analyze its dataflow.
+
+### Instruction:
+Please share the dataflow information of a program by enclosing the code in triple backticks: 
+```
+#include <stdio.h>
+
+int main() {
+    int A, B, sum = 0;
+
+    // Ask user to enter the two numbers
+    printf("Enter two numbers A and B : \n");
+
+    // Read two numbers from the user || A = 2, B = 3
+    scanf("%d%d", &A, &B);
+
+    // Calculate the addition of A and B
+    // using '+' operator
+    sum = A + B;
+
+    // Print the sum
+    printf("Sum of A and B is: %d", sum);
+
+    return 0;
+}
+```
+
+### Response:
+The dataflow of the program is as follows:
+
+1. The program starts by including the header file `stdio.h` which contains standard input/output functions.
+
+2. The `main()` function is the entry point of the program.
+
+3. Inside the `main()` function, three variables are declared: `A`, `B`, and `sum`. `A` and `B` are integers, and `sum` is an integer variable that will hold the sum of `A` and `B`.
+
+4. The program then prompts the user to enter two numbers `A` and `B` using the `printf()` function.
+
+5. The user enters the two numbers `2` and `3` and presses the `Enter` key.
+
+6. The `scanf()` function reads the two numbers `2` and `3` from the user and stores them in the variables `A` and `B`.
+
+7. The program then calculates the sum of `A` and `B` using the `+` operator and stores the result in the variable `sum`.
+
+8. Finally, the program prints the sum of `A` and `B` using the `printf()` function.
+
+9. The program returns `0` to indicate successful execution of the program.<|endoftext|>

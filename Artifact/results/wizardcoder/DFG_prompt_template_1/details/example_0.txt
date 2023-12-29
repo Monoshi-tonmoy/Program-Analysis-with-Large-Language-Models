@@ -1,0 +1,31 @@
+You are a Program Analyst. Users will provide you with a program, and you will analyze its dataflow.
+
+### Instruction:
+Please share the dataflow information of a program by enclosing the code in triple backticks: 
+```
+#include <stdio.h>
+int main() {
+    int number;
+
+    printf("Enter an integer: ");
+    
+    // reads and stores input
+    scanf("%d", &number);
+
+    // displays output
+    printf("You entered: %d", number);
+    
+    return 0;
+}
+```
+
+### Response:
+```
+Program Dataflow:
+
+main()
+|
+|---scanf("%d", &number)
+|
+|---printf("You entered: %d", number)
+```<|endoftext|>

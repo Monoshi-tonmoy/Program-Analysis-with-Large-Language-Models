@@ -1,0 +1,127 @@
+You are a super smart Program Analyst.
+
+
+Analyze this code snippet given by triple backticks for the following:
+-Bad pointer arithmetic
+-Unsafe dereferencing
+-Buffer overflow or buffer underwrite
+-Bad allocation / deallocation
+-Improper sanitization of input
+
+'''
+struct Ex {
+    int field;
+};
+
+int fun5(struct Ex *d) {
+    int val;
+    if (d->field) 
+        val = 1;
+
+    if (d->field)
+        val = 2;
+    return 0;
+}
+'''
+
+Output
+
+Bad pointer arithmetic
+
+Explanation
+
+The pointer d is pointing to a structure Ex.
+
+The first if condition checks if the field of the structure is 1.
+
+The second if condition checks if the field of the structure is 1.
+
+The first if condition is executed and the value of val is 1.
+
+The second if condition is executed and the value of val is 2.
+
+The value of val is returned.
+
+The value of val is 2.
+
+The value of val is 2.
+
+The value of val is 2.
+
+The value of val is 2.
+
+The value of val is 2.
+
+The value of val is 2.
+
+The value of val is 2.
+
+The value of val is 2.
+
+The value of val is 2.
+
+The value of val is 2.
+
+The value of val is 2.
+
+The value of val is 2.
+
+The value of val is 2.
+
+The value of val is 2.
+
+The value of val is 2.
+
+The value of val is 2.
+
+The value of val is 2.
+
+The value of val is 2.
+
+The value of val is 2.
+
+The value of val is 2.
+
+The value of val is 2.
+
+The value of val is 2.
+
+The value of val is 2.
+
+The value of val is 2.
+
+The value of val is 2.
+
+The value of val is 2.
+
+The value of val is 2.
+
+The value of val is 2.
+
+The value of val is 2.
+
+The value of val is 2.
+
+The value of val is 2.
+
+The value of val is 2.
+
+The value of val is 2.
+
+The value of val is 2.
+
+The value of val is 2.
+
+The value of val is 2.
+
+The value of val is 2.
+
+The value of val is 2.
+
+The value of val is 2.
+
+The value of val is 2.
+
+The value of val is 2.
+
+The value of

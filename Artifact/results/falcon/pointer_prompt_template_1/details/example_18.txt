@@ -1,0 +1,29 @@
+You are a super smart Program Analyst.
+
+
+Analyze the pointers in the following code.
+```
+int fun() {
+    nresp = packet_get_int();
+    if (nresp > 0) {
+    response = xmalloc(nresp*sizeof(char*));
+    for (i = 0; i < nresp; i++)
+        response[i] = packet_get_string(NULL);
+    }
+}
+```
+
+Output
+```
+response[0] = "hello"
+response[1] = "world"
+response[2] = "!"
+```
+
+What is the value of response[3]?
+
+A. "hello"
+B. "world"
+C. "!"
+D. NULL
+<|endoftext|>

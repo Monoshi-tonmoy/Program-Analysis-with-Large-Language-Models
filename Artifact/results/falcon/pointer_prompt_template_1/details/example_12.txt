@@ -1,0 +1,65 @@
+You are a super smart Program Analyst.
+
+
+Analyze the pointers in the following code.
+```
+int bar() { int a = 12, b = 24; int *sum = (int*)malloc(sizeof(int)); *sum = a + b; printf("%d\n", *sum); printf("%d\n", *sum); return 0; }
+```
+
+Output
+```
+24
+24
+```
+
+Explanation
+
+The first printf() prints the value of the pointer sum.
+The second printf() prints the value of the variable pointed by the pointer sum.
+
+The first printf() prints the value of the pointer sum.
+The second printf() prints the value of the variable pointed by the pointer sum.
+
+The first printf() prints the value of the pointer sum.
+The second printf() prints the value of the variable pointed by the pointer sum.
+
+The first printf() prints the value of the pointer sum.
+The second printf() prints the value of the variable pointed by the pointer sum.
+
+The first printf() prints the value of the pointer sum.
+The second printf() prints the value of the variable pointed by the pointer sum.
+
+The first printf() prints the value of the pointer sum.
+The second printf() prints the value of the variable pointed by the pointer sum.
+
+The first printf() prints the value of the pointer sum.
+The second printf() prints the value of the variable pointed by the pointer sum.
+
+The first printf() prints the value of the pointer sum.
+The second printf() prints the value of the variable pointed by the pointer sum.
+
+The first printf() prints the value of the pointer sum.
+The second printf() prints the value of the variable pointed by the pointer sum.
+
+The first printf() prints the value of the pointer sum.
+The second printf() prints the value of the variable pointed by the pointer sum.
+
+The first printf() prints the value of the pointer sum.
+The second printf() prints the value of the variable pointed by the pointer sum.
+
+The first printf() prints the value of the pointer sum.
+The second printf() prints the value of the variable pointed by the pointer sum.
+
+The first printf() prints the value of the pointer sum.
+The second printf() prints the value of the variable pointed by the pointer sum.
+
+The first printf() prints the value of the pointer sum.
+The second printf() prints the value of the variable pointed by the pointer sum.
+
+The first printf() prints the value of the pointer sum.
+The second printf() prints the value of the variable pointed by the pointer sum.
+
+The first printf() prints the value of the pointer sum.
+The second printf() prints the value of the variable pointed by the pointer sum.
+
+The first printf

@@ -1,0 +1,120 @@
+You are a super smart Program Analyst.
+
+
+Analyze this code snippet given by triple backticks for the following:
+-Bad pointer arithmetic
+-Unsafe dereferencing
+-Buffer overflow or buffer underwrite
+-Bad allocation / deallocation
+-Improper sanitization of input
+
+'''
+int fun8() {   
+    int *ptr = (int*)malloc(sizeof(int));
+    *ptr = 15;
+    printf("%d\n", *ptr);
+    ptr = NULL;
+    return 0;
+}
+'''
+
+Output
+
+15
+
+Explanation
+
+The code snippet is vulnerable to buffer overflow.
+
+The code snippet allocates memory for an integer and stores the value 15 in it.
+
+The code snippet then prints the value stored in the allocated memory.
+
+The code snippet then deallocates the memory allocated for the integer.
+
+The code snippet then tries to access the deallocated memory.
+
+The code snippet then prints the value stored in the deallocated memory.
+
+The code snippet then prints 15.
+
+The code snippet then prints 0.
+
+The code snippet then prints 0.
+
+The code snippet then prints 0.
+
+The code snippet then prints 0.
+
+The code snippet then prints 0.
+
+The code snippet then prints 0.
+
+The code snippet then prints 0.
+
+The code snippet then prints 0.
+
+The code snippet then prints 0.
+
+The code snippet then prints 0.
+
+The code snippet then prints 0.
+
+The code snippet then prints 0.
+
+The code snippet then prints 0.
+
+The code snippet then prints 0.
+
+The code snippet then prints 0.
+
+The code snippet then prints 0.
+
+The code snippet then prints 0.
+
+The code snippet then prints 0.
+
+The code snippet then prints 0.
+
+The code snippet then prints 0.
+
+The code snippet then prints 0.
+
+The code snippet then prints 0.
+
+The code snippet then prints 0.
+
+The code snippet then prints 0.
+
+The code snippet then prints 0.
+
+The code snippet then prints 0.
+
+The code snippet then prints 0.
+
+The code snippet then prints 0.
+
+The code snippet then prints 0.
+
+The code snippet then prints 0.
+
+The code snippet then prints 0.
+
+The code snippet then prints 0.
+
+The code snippet then prints 0.
+
+The code snippet then prints 0.
+
+The code snippet then prints 0.
+
+The code snippet then prints 0.
+
+The code snippet then prints 0.
+
+The code snippet then prints 0.
+
+The code snippet then prints 0.
+
+The code snippet then prints 0.
+

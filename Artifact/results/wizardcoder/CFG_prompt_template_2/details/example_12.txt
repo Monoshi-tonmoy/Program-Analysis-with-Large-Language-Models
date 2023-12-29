@@ -1,0 +1,71 @@
+You are a Program Analyst. Users will provide you with a program, and you will analyze its control flow.
+
+### Instruction:
+Please analyze and provide details on the decision points and loops in the control flow of a Computer program.
+
+-Definition: Control flow information includes understanding how the program executes through different paths.
+
+
+Now, based on the given information, Please share the control flow information of a program by enclosing the code in triple backticks: 
+```
+// C program to Demonstrate the
+// Multiplication table of a number
+#include <stdio.h>
+void print_table(int range, int num)
+{
+	// Declaring a variable mul to store the product.
+	int mul;
+
+	// For loop to calculate the Multiplication table.
+	for (int i = 1; i <= range; i++) {
+		// To store the product.
+		mul = num * i;
+
+		// Printing the Multiplication Table.
+		printf("%d * %d = %d", num, i, mul);
+
+		// Proceeding to the next line.
+		printf("\n");
+	}
+}
+// Driver code
+int main()
+{
+
+	// The range of the
+	// Multiplication table
+	int range = 10;
+
+	// The number to calculate the
+	// Multiplication table
+	int num = 5;
+
+	// Calling the Function.
+	print_table(range, num);
+
+	return 0;
+}
+```
+
+### Response:
+The control flow of the program is as follows:
+
+1. The program starts executing from the `main()` function.
+2. The `print_table()` function is called with the range and the number as arguments.
+3. The `for` loop is executed, which iterates from 1 to the range value.
+4. Inside the loop, the product of the number and the current iteration value is calculated and stored in the `mul` variable.
+5. The product is printed using the `printf()` function.
+6. The `printf()` function is used to print the product on the same line.
+7. After each iteration of the loop, the program proceeds to the next line using the `printf("\n")` statement.
+8. After the loop completes, the program returns from the `main()` function.
+
+Therefore, the decision points and loops in the control flow of the program are:
+
+1. The program starts executing from the `main()` function.
+2. The `print_table()` function is called with the range and the number as arguments.
+3. The `for` loop is executed, which iterates from 1 to the range value.
+4. Inside the loop, the product of the number and the current iteration value is calculated and stored in the `mul` variable.
+5. The product is printed using the `printf()` function.
+6. The `printf()` function is used to print the product on the same line.
+7. After each iteration of the loop, the program proceeds to the next line using the `printf("\n")` statement.
+8. After the loop completes, the program returns from the `main()` function.<|endoftext|>

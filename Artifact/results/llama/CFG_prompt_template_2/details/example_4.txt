@@ -1,0 +1,96 @@
+<s> [INST] <<SYS>>
+You are a Program Analyst. Users will provide you with a program, and you will analyze its control flow.
+<</SYS>>
+
+Please analyze and provide details on the decision points and loops in the control flow of a Computer program.
+
+-Definition: Control flow information includes understanding how the program executes through different paths.
+
+
+Now, based on the given information, Please share the control flow information of a program by enclosing the code in triple backticks: 
+```
+// C program interchange the elements
+// of first and last in a matrix
+// across rows.
+#include <stdio.h>
+
+#define n 3
+
+// Function to swap the element
+// of first and last row
+void interchangeFirstLast(int m[][n])
+{
+    int rows = n;
+
+    // Swapping of element between first
+    // and last rows
+    for (int i = 0; i < n; i++)
+    {
+        int t = m[0][i];
+        m[0][i] = m[rows - 1][i];
+        m[rows - 1][i] = t;
+    }
+}
+
+// Driver code
+int main()
+{
+    // Input matrix
+    int m[n][n] = {{6, 3, 1},
+                   {4, 5, 2},
+                   {2, 4, 9}};
+
+    // Printing the input matrix
+    printf("Input Matrix: \n");
+    for (int i = 0; i < n; i++)
+    {
+        for (int j = 0; j < n; j++)
+        {
+            printf("%d ", m[i][j]);
+        }
+        printf("\n");
+    }
+
+    // call interchangeFirstLast(m) function.
+    // This function swap the element of
+    // first and last row
+    interchangeFirstLast(m);
+
+    // Printing the original matrix
+    printf("\nOutput Matrix: \n");
+    for (int i = 0; i < n; i++)
+    {
+        for (int j = 0; j < n; j++)
+        {
+            printf("%d ", m[i][j]);
+        }
+        printf("\n");
+    }
+}
+``` [/INST]  The control flow of the program can be analyzed by understanding the decision points and loops in the code.
+
+Decision Points:
+
+1. The program starts by including the `stdio.h` header file, which provides input and output functions.
+2. The program then defines a macro `n` with the value 3, which is used to set the size of the matrix.
+3. The program then defines a function `interchangeFirstLast` that takes a matrix as an argument and swaps the elements of the first and last rows.
+4. The function first initializes a variable `rows` to the size of the matrix, and then uses a for loop to iterate over the elements of the first and last rows.
+5. Inside the for loop, the function uses a temporary variable `t` to store the value of the element at the current position in the first row, and then assigns the value of the element at the current position in the last row to the element at the current position in the first row.
+6. The function then assigns the value of `t` to the element at the current position in the last row.
+7. The function then returns to the main program.
+
+Loops:
+
+1. The main program starts by declaring a matrix `m` with the size `n x n`.
+2. The program then prints the input matrix using a for loop to iterate over the rows and columns of the matrix.
+3. The program then calls the `interchangeFirstLast` function with the matrix `m` as an argument.
+4. The program then prints the output matrix using a for loop to iterate over the rows and columns of the matrix.
+
+Based on the given information, the control flow of the program can be represented as follows:
+
+1. The program starts by including the `stdio.h` header file.
+2. The program then defines a macro `n` with the value 3.
+3. The program then defines a function `interchangeFirstLast` that takes a matrix as an argument and swaps the elements of the first and last rows.
+4. The main program starts by declaring a matrix `m` with the size `n x n`.
+5. The program then prints the input matrix using a for loop to iterate over the rows and columns of the matrix.
+6. The program then calls the `interchangeFirstLast` function with
